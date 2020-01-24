@@ -1,0 +1,124 @@
+site_name: YorkFish
+
+# theme: readthedocs
+theme:
+    name: "material"
+
+nav:
+    - "index": index.md
+
+    - "DS+Algo":
+        - "to be continued": DS+Algo/to be continued.md
+
+    - "Git":
+        - "GitHub 上的使用":
+            - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
+            - "02 往仓库里添加文件": Git/GitHub/02_往仓库里添加文件.md
+            - "03 修改仓库里的文件": Git/GitHub/03_修改仓库里的文件.md
+            - "04 查看历史记录": Git/GitHub/04_查看历史记录.md
+            - "05 创建分支与切换分支": Git/GitHub/05_创建分支与切换分支.md
+            - "06 查看历史图像": Git/GitHub/06_查看历史图像.md
+            - "07 合并分支": Git/GitHub/07_合并分支.md
+            - "08 将远程仓库克隆到本地": Git/GitHub/08_将远程仓库克隆到本地.md
+        - "GitBash 下的操作":
+            - "01 设置身份信息": Git/GitBash/01_设置身份信息.md
+            - "02 创建 SSH Key": Git/GitBash/02_创建密钥.md
+            - "03 在 GitHub 上添加公钥": Git/GitBash/03_添加公钥.md
+            - "04 克隆远程仓库": Git/GitBash/04_克隆远程仓库.md
+            - "05 本地仓库关联远程仓库": Git/GitBash/05_本地仓库关联远程仓库.md
+            - "06 本地仓库向远程仓库推送": Git/GitBash/06_本地仓库向远程仓库推送.md
+            - "07 连接失败问题的解决": Git/GitBash/07_连接失败问题的解决.md
+            - "08 删除远程仓库": Git/GitBash/08_删除远程仓库.md
+            - "09 在本地建一个仓库": Git/GitBash/09_在本地建一个仓库.md
+            - "10 三棵树": Git/GitBash/10_三棵树.md
+            - "11 向本地仓库添加文件": Git/GitBash/11_向本地仓库添加文件.md
+            - "12 status": Git/GitBash/12_status.md
+            - "13 commit": Git/GitBash/13_commit.md
+            - "14 log": Git/GitBash/14_log.md
+            - "15 checkout file": Git/GitBash/15_checkout_file.md
+            - "16 diff": Git/GitBash/16_diff.md
+            - "17 reset": Git/GitBash/17_reset.md
+            - "18 rm": Git/GitBash/18_rm.md
+            - "19 branch & checkout branch": Git/GitBash/19_branch&checkout_branch.md
+            - "20 制造冲突一": Git/GitBash/20_制造冲突一.md
+            - "21 制造冲突二": Git/GitBash/21_制造冲突二.md
+            - "22 制造冲突三": Git/GitBash/22_制造冲突三.md
+            - "23 解决冲突": Git/GitBash/23_解决冲突.md
+            - "24 merge": Git/GitBash/24_merge.md
+            - "25 stash1": Git/GitBash/25_stash1.md
+            - "26 stash2": Git/GitBash/26_stash2.md
+            - "27 删除未合并的分支": Git/GitBash/27_删除未合并的分支.md
+            - "28 推拉": Git/GitBash/28_推拉.md
+            - "29 rebase": Git/GitBash/29_rebase.md
+            - "30 tag": Git/GitBash/30_tag.md
+            - "31 config": Git/GitBash/31_config.md
+
+    - "Linux":
+        - "to be continued": Linux/to be continued.md
+
+    - "Python3":
+        - "Basic Grammar":
+            - "to be continued": Python3/Basic Grammar/to be continued.md
+        - "Advance Grammar":
+            - "to be continued": Python3/Advance Grammar/to be continued.md
+        - "Exercises":
+            - "to be continued": Python3/Exercises/to be continued.md
+
+    - "Tools":
+        - "Jupyter Notebook":
+            - "01 初识丘比特笔记本": Tools/JupyterNotebook/01_初识丘比特笔记本.md
+            - "02 命令模式的快捷键": Tools/JupyterNotebook/02_命令模式的快捷键.md
+            - "03 编辑模式的快捷键": Tools/JupyterNotebook/03_编辑模式的快捷键.md
+        - "Markdown":
+            - "01 目录与标题": Tools/Markdown/01_目录与标题.md
+            - "02 块注释与标记": Tools/Markdown/02_块注释与标记.md
+            - "03 代码块": Tools/Markdown/03_代码块.md
+            - "04 表格": Tools/Markdown/04_表格.md
+            - "05 转义字符": Tools/Markdown/05_转义字符.md
+            - "06 列表": Tools/Markdown/06_列表.md
+            - "07 分割线": Tools/Markdown/07_分割线.md
+            - "08 下划线": Tools/Markdown/08_下划线.md
+            - "09 删除线": Tools/Markdown/09_删除线.md
+            - "10 “三体”": Tools/Markdown/10_“三体”.md
+            - "11 上下标与注脚": Tools/Markdown/11_上下标与注脚.md
+            - "12 插入链接": Tools/Markdown/12_插入链接.md
+            - "13 插入图片": Tools/Markdown/13_插入图片.md
+            - "14 YAML 题头": Tools/Markdown/14_YAML题头.md
+            - "15 缩写": Tools/Markdown/15_缩写.md
+            - "16 kbd & to do list": Tools/Markdown/16_两个有意思的功能.md
+            - "17 emoji": Tools/Markdown/17_emoji.md
+            - "18 LaTex": Tools/Markdown/18_LaTeX.md
+            - "19 flow": Tools/Markdown/19_flow.md
+            - "20 GANTT": Tools/Markdown/20_GANTT.md
+            - "21 UML": Tools/Markdown/21_UML.md
+        - "MkDocs":
+            - "00 快速上手": Tools/MkDocs/00_快速上手.md
+            - "01 安装": Tools/MkDocs/01_安装.md
+            - "02 新建日志项目": Tools/MkDocs/02_新建日志项目.md
+            - "03 编辑 mkdocs.yml": Tools/MkDocs/03_编辑配置文件.md
+            - "04 公式的使用": Tools/MkDocs/04_公式的使用.md
+            - "05 导出": Tools/MkDocs/05_导出.md
+            - "06 将网站放到互联网上": Tools/MkDocs/06_将网站放到互联网上.md
+            - "07 几种博客工具简介": Tools/MkDocs/07_几种博客工具简介.md
+        - "Vim":
+            - "01 “3+1”种膜模式": Tools/Vim/01_三加一种模式.md
+            - "02 定位命令": Tools/Vim/02_定位命令.md
+            - "03 删除命令": Tools/Vim/03_删除命令.md
+            - "04 插入命令": Tools/Vim/04_插入命令.md
+            - "05 删除并插入": Tools/Vim/05_删除并插入.md
+            - "06 复制与粘贴": Tools/Vim/06_复制与粘贴.md
+            - "07 搜索与替换": Tools/Vim/07_搜索与替换.md
+            - "08 后悔药与特殊字符": Tools/Vim/08_后悔药与特殊字符.md
+            - "09 保存与退出": Tools/Vim/09_保存与退出.md
+            - "10 偷懒用的命令": Tools/Vim/10_偷懒用的命令.md
+            - "11 简洁流配置": Tools/Vim/11_简洁流配置.md
+
+    - "Web":
+        - "HTML5":
+            - "to be continued": Web/HTML5/to be continued.md
+        - "CSS3":
+            - "to be continued": Web/CSS3/to be continued.md
+        - "Javascript":
+            - "to be continued": Web/Javascript/to be continued.md
+
+    - "about": about.md

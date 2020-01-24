@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+.python-version
+
+
+# vim
+.vimrc
+.lvimrc
+.*.sw[a-z]
+*.un~
+Session.vim
+
+
+# mkdocs
+site/
+
+
+# pytest
+.pytest_cache/
