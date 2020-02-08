@@ -1481,8 +1481,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1639,6 +1639,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1900,24 +1984,24 @@
 <h2 id="1">1. 推送命令</h2>
 <ul>
 <li>
-<p><code>git push -u origin master</code></p>
+<p><code class="codehilite">git push -u origin master</code></p>
 <p><img alt="" src="../imgs/06-01_git_push_-u_origin_master.png" /></p>
 </li>
 </ul>
 <h2 id="2">2. 说明</h2>
 <ul>
-<li>第一次推送时需要加 <code>-u</code></li>
+<li>第一次推送时需要加 <code class="codehilite">-u</code></li>
 </ul>
 <blockquote>
-<p>由于远程库是空的，我们第一次推送<code>master</code>分支时，加上了<code>-u</code>参数，Git不但会把本地的<code>master</code>分支内容推送的远程新的<code>master</code>分支，还会把本地的<code>master</code>分支和远程的<code>master</code>分支关联起来，在以后的推送或者拉取时就可以简化命令。<a href="摘自廖雪峰老师的Git教程">^1</a></p>
+<p>由于远程库是空的，我们第一次推送<code class="codehilite">master</code>分支时，加上了<code class="codehilite">-u</code>参数，Git不但会把本地的<code class="codehilite">master</code>分支内容推送的远程新的<code class="codehilite">master</code>分支，还会把本地的<code class="codehilite">master</code>分支和远程的<code class="codehilite">master</code>分支关联起来，在以后的推送或者拉取时就可以简化命令。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 </blockquote>
 <ul>
-<li>第二次及以后，再推送这个仓库中的内容时，不需要加 <code>-u</code> 了</li>
+<li>第二次及以后，再推送这个仓库中的内容时，不需要加 <code class="codehilite">-u</code> 了</li>
 </ul>
 <h2 id="3">3. 查看</h2>
 <ul>
 <li>
-<p>使用命令：<code>git log --oneline</code></p>
+<p>使用命令：<code class="codehilite">git log --oneline</code></p>
 </li>
 <li>
 <p>查看时可发现版本号后面多了一串字</p>
@@ -1941,19 +2025,27 @@
 <h3 id="42-origin">4.2 没有设置 <em>origin</em> 也能工作</h3>
 <ul>
 <li>方法：用具体的地址<ul>
-<li><code>git push git@github.com:YorkFish/git_note_online.git</code></li>
+<li><code class="codehilite">git push git@github.com:YorkFish/git_note_online.git</code></li>
 </ul>
 </li>
 </ul>
 <h3 id="43-origin">4.3 可以删除 <em>origin</em></h3>
 <ul>
-<li><code>git remote rm origin</code></li>
+<li><code class="codehilite">git remote rm origin</code></li>
 </ul>
 <h3 id="44-origin">4.4 可以设置多个 <em>origin</em></h3>
 <ul>
 <li>可以这样取名：<em>origin1</em>, <em>origin2</em></li>
 </ul>
 <hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>摘自廖雪峰老师的Git教程&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 

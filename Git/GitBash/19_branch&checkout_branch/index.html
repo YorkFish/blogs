@@ -1494,8 +1494,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1652,6 +1652,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1925,23 +2009,23 @@
                 <h1 id="branch-checkout-branch"><em>branch &amp; checkout branch</em></h1>
 <h2 id="1">1. 回顾</h2>
 <ul>
-<li>此命令与 <code>git checkout -- &lt;file&gt;</code> 相似但<strong>不同</strong></li>
+<li>此命令与 <code class="codehilite">git checkout -- &lt;file&gt;</code> 相似但**不同**</li>
 </ul>
 <h2 id="2">2. 开启“平行宇宙”</h2>
 <h3 id="21">2.1 目前的状态</h3>
 <p><img alt="" src="../imgs/19-01_now_status.png" /></p>
 <h3 id="22">2.2 添加分支</h3>
 <ul>
-<li>添加命令：<code>git branch &lt;branch_name&gt;</code></li>
+<li>添加命令：<code class="codehilite">git branch &lt;branch_name&gt;</code></li>
 <li>
-<p>切换命令：<code>git checkout &lt;branch_name&gt;</code></p>
+<p>切换命令：<code class="codehilite">git checkout &lt;branch_name&gt;</code></p>
 <p><img alt="" src="../imgs/19-02_branch&amp;checkout.png" /></p>
 </li>
 </ul>
 <h4 id="_1">补充</h4>
 <ul>
 <li>添加命令与切换命令可以合成一句<ul>
-<li>命令：<code>git checkout -b dev</code></li>
+<li>命令：<code class="codehilite">git checkout -b dev</code></li>
 <li><em>b for branch</em></li>
 </ul>
 </li>
@@ -1951,7 +2035,7 @@
 <h3 id="23">2.3 查看分支</h3>
 <ol>
 <li>
-<p>查看命令：<code>git branch</code></p>
+<p>查看命令：<code class="codehilite">git branch</code></p>
 <p>./imgs/19-03_git_branch.png)</p>
 </li>
 <li>
@@ -1959,7 +2043,7 @@
 <p>./imgs/19-04_now_status.png)</p>
 </li>
 <li>
-<p>在 <em>dev</em> 分支添加一个文件 <em>dev_01.txt</em> 并 <code>add</code> + <code>commit</code></p>
+<p>在 <em>dev</em> 分支添加一个文件 <em>dev_01.txt</em> 并 <code class="codehilite">add</code> + <code class="codehilite">commit</code></p>
 <p>./imgs/19-05_touch&amp;add_commit.png)</p>
 </li>
 <li>
@@ -1984,7 +2068,7 @@
 <h3 id="24">2.4 合并分支</h3>
 <ul>
 <li>
-<p>命令：<code>git merge &lt;branch_name&gt;</code></p>
+<p>命令：<code class="codehilite">git merge &lt;branch_name&gt;</code></p>
 <p><img alt="" src="../imgs/19-09_git_merge_branch.png" /></p>
 </li>
 <li>
@@ -2003,7 +2087,7 @@
 <h3 id="25">2.5 删除分支</h3>
 <ul>
 <li>
-<p>命令：<code>git branch -d &lt;branch_name&gt;</code></p>
+<p>命令：<code class="codehilite">git branch -d &lt;branch_name&gt;</code></p>
 <p><img alt="" src="../imgs/19-11_git_branch_-d_branch.png" /></p>
 </li>
 <li>

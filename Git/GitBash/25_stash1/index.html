@@ -1520,8 +1520,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1678,6 +1678,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1982,11 +2066,16 @@
 <li><em>master</em> 那边的 <em>bug</em> 需要立即修复</li>
 <li><em>dev</em> 这里却只做到一半</li>
 <li>若在 <em>dev</em> 分支中没有提交就切到 <em>master</em> 分支，<em>dev</em> 的最新改动会被覆盖</li>
-<li><em>Git</em> 有如下提示<pre><code>error: Your local changes to the following files would be overwritten by checkout:
-...
-Please commit your changes or stash them before you switch branches.
-Aborting
-</code></pre>
+<li><em>Git</em> 有如下提示<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">error</span><span class="o">:</span> <span class="n">Your</span> <span class="n">local</span> <span class="n">changes</span> <span class="n">to</span> <span class="n">the</span> <span class="n">following</span> <span class="n">files</span> <span class="n">would</span> <span class="n">be</span> <span class="n">overwritten</span> <span class="n">by</span> <span class="n">checkout</span><span class="o">:</span>
+<span class="o">...</span>
+<span class="n">Please</span> <span class="n">commit</span> <span class="n">your</span> <span class="n">changes</span> <span class="n">or</span> <span class="n">stash</span> <span class="n">them</span> <span class="n">before</span> <span class="n">you</span> <span class="k">switch</span> <span class="n">branches</span><span class="o">.</span>
+<span class="n">Aborting</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 </ul>
 </li>
@@ -2032,17 +2121,17 @@ Aborting
 <p><img alt="" src="../imgs/25-09_now_status.png" /></p>
 </li>
 <li>
-<p>打开 <em>note_01.txt</em>，将 <code>5. master round 3.1</code> 中的 <em>round</em> 改为 <em>version</em>，并保存</p>
+<p>打开 <em>note_01.txt</em>，将 <code class="codehilite">5. master round 3.1</code> 中的 <em>round</em> 改为 <em>version</em>，并保存</p>
 <p><img alt="" src="../imgs/25-10_modify_note_01_in_stash1.png" /></p>
 </li>
 <li>
-<p><code>add</code> + <code>commit</code></p>
+<p><code class="codehilite">add</code> + <code class="codehilite">commit</code></p>
 <p><img alt="" src="../imgs/25-11_add&amp;commit_in_stash1.png" /></p>
 </li>
 <li>
 <p>切到 <em>master</em> 分支，再合并 <em>stash_01</em> 分支</p>
 <ul>
-<li>这里没有使用 <code>--no-ff</code>，下一篇有</li>
+<li>这里没有使用 <code class="codehilite">--no-ff</code>，下一篇有</li>
 </ul>
 <p><img alt="" src="../imgs/25-12_checkout&amp;merge.png" /></p>
 </li>
@@ -2055,10 +2144,10 @@ Aborting
 <h3 id="31-git-stash-list">3.1 <em>git stash list</em></h3>
 <p><img alt="" src="../imgs/25-14_git_stash_list.png" /></p>
 <ul>
-<li>此命令有些像 <code>git reflog</code>，比如 <code>stash@{0}</code> 与 <code>HEAD@{n}</code></li>
-<li>可以多次使用 <code>git stash</code><ul>
+<li>此命令有些像 <code class="codehilite">git reflog</code>，比如 <code class="codehilite">stash@{0}</code> 与 <code class="codehilite">HEAD@{n}</code></li>
+<li>可以多次使用 <code class="codehilite">git stash</code><ul>
 <li>只要在恢复时选择指定的序号即可</li>
-<li>相关命令：<code>git stash apply stash@{n}</code></li>
+<li>相关命令：<code class="codehilite">git stash apply stash@{n}</code></li>
 </ul>
 </li>
 </ul>
@@ -2067,8 +2156,8 @@ Aborting
 <h4 id="_2">说明</h4>
 <ul>
 <li>恢复有两种方法供选<ol>
-<li>方法一：<code>git stash apply</code> + <code>git stash drop</code></li>
-<li>方法二：<code>git stash pop</code></li>
+<li>方法一：<code class="codehilite">git stash apply</code> + <code class="codehilite">git stash drop</code></li>
+<li>方法二：<code class="codehilite">git stash pop</code></li>
 </ol>
 </li>
 </ul>

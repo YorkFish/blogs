@@ -1454,8 +1454,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1612,6 +1612,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1867,7 +1951,7 @@
 <li>
 <p>没有层级</p>
 </li>
-<li><code>rebase</code> 操作是把本地未 <code>push</code> 的“分叉提交历史”整理成直线，以便查看历史提交的变化</li>
+<li><code class="codehilite">rebase</code> 操作是把本地未 <code class="codehilite">push</code> 的“分叉提交历史”整理成直线，以便查看历史提交的变化</li>
 </ul>
 <h2 id="4-rebase">4. <em>rebase</em> 的恢复</h2>
 <ul>
@@ -1875,11 +1959,11 @@
 <p>方法不止一种，我暂且介绍一种</p>
 </li>
 <li>
-<p>使用 <code>git  reflog</code> 找到 <em>rebase</em> 的前一个“指针”</p>
+<p>使用 <code class="codehilite">git  reflog</code> 找到 <em>rebase</em> 的前一个“指针”</p>
 <p><img alt="" src="../imgs/29-04_git_rebase.png" /></p>
 </li>
 <li>
-<p>使用 <code>git reset --hard HEAD@{n}</code></p>
+<p>使用 <code class="codehilite">git reset --hard HEAD@{n}</code></p>
 <p><img alt="" src="../imgs/29-05_git_reset_--hard.png" /></p>
 </li>
 </ul>
@@ -1888,12 +1972,18 @@
 <li>官方文档传送门：<a href="https://git-scm.com/docs/git-rebase" target="_blank">&gt;&gt;&gt; rebase</a></li>
 <li>
 <p>概要</p>
-<pre><code>git rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;]
     [&lt;upstream&gt; [&lt;branch&gt;]]
 git rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;]
     --root [&lt;branch&gt;]
 git rebase --continue | --skip | --abort | --quit | --edit-todo | --show-current-patch
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>官方文档超详细！有需要搜索即可。</p>

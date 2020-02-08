@@ -1487,8 +1487,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1645,6 +1645,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1919,10 +2003,10 @@
 <p>进入相应目录</p>
 </li>
 <li>
-<p>右键，选择 <code>Git Bash Here</code></p>
+<p>右键，选择 <code class="codehilite">Git Bash Here</code></p>
 </li>
 <li>
-<p>执行 <code>ssh -T git@github.com</code> 命令</p>
+<p>执行 <code class="codehilite">ssh -T git@github.com</code> 命令</p>
 <ul>
 <li>
 <p>若显示如下，则说明出了问题</p>
@@ -1938,8 +2022,8 @@
 <h3 id="31-https">3.1 使用 <em>https</em> 传输</h3>
 <ul>
 <li>删除原先的 <em>origin</em>，添加新的 <em>origin</em><ul>
-<li><code>git remote rm origin</code></li>
-<li><code>git remote add origin https://github.com/YorkFish/xxx.git</code></li>
+<li><code class="codehilite">git remote rm origin</code></li>
+<li><code class="codehilite">git remote add origin https://github.com/YorkFish/xxx.git</code></li>
 </ul>
 </li>
 </ul>
@@ -1947,7 +2031,7 @@
 <h4 id="321">3.2.1 第一步</h4>
 <ol>
 <li>
-<p>使用命令 <code>ssh-keygen -t rsa -C "abc@email.com"</code> 重新创建秘钥</p>
+<p>使用命令 <code class="codehilite">ssh-keygen -t rsa -C &quot;abc@email.com&quot;</code> 重新创建秘钥</p>
 </li>
 <li>
 <p>登入 <em>GitHub</em></p>
@@ -1963,20 +2047,27 @@
 <li>
 <p>添加新的 <em>SSH Key</em></p>
 </li>
-<li>使用 <code>ssh -T git@github.com</code> 检查，若仍不行，再走第二步（大概率是要走的）</li>
+<li>使用 <code class="codehilite">ssh -T git@github.com</code> 检查，若仍不行，再走第二步（大概率是要走的）</li>
 </ol>
 <h4 id="322">3.2.2 第二步</h4>
 <ul>
-<li>在存放公钥(id_rsa.pub)的文件夹 <code>C:\Users\your_name\.ssh</code> 里，新建文本 <em>config</em></li>
+<li>在存放公钥(id_rsa.pub)的文件夹 <code class="codehilite">C:\Users\your_name\.ssh</code> 里，新建文本 <em>config</em></li>
 <li>
 <p>在 <em>config</em> 中写入如下内容</p>
-<pre><code>Host github.com
-User YourEmail@163.com
-Hostname ssh.github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Host</span> <span class="n">github</span><span class="p">.</span><span class="n">com</span>
+<span class="n">User</span> <span class="n">YourEmail</span><span class="mf">@163.</span><span class="n">com</span>
+<span class="n">Hostname</span> <span class="n">ssh</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">com</span>
+<span class="n">PreferredAuthentications</span> <span class="n">publickey</span>
+<span class="n">IdentityFile</span> <span class="o">~/</span><span class="p">.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span>
+<span class="n">Port</span> <span class="mi">443</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>说明：第二行的 <em>User</em> 为你的 <em>Github</em> 账号名</p>
@@ -1984,7 +2075,7 @@ Port 443
 </ul>
 <h4 id="_1">检验</h4>
 <ol>
-<li>执行 <code>ssh -T git@github.com</code></li>
+<li>执行 <code class="codehilite">ssh -T git@github.com</code></li>
 <li>
 <p>出现如下提示，回车 <em>yes</em> 即可</p>
 <p><img alt="" src="../imgs/07-04_check.png" /></p>
@@ -1993,7 +2084,7 @@ Port 443
 <p>这时，验证就可以通过了</p>
 </li>
 <li>
-<p>若再次执行 <code>ssh -T git@github.com</code>，显示如下</p>
+<p>若再次执行 <code class="codehilite">ssh -T git@github.com</code>，显示如下</p>
 <p><img alt="" src="../imgs/07-05_ssh_-T_again.png" /></p>
 </li>
 </ol>

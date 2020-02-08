@@ -1653,8 +1653,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1811,6 +1811,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -2244,14 +2328,14 @@
 <h2 id="1-commit-m">1. <em>commit</em> 有个参数 <em>-m</em></h2>
 <ul>
 <li>
-<p>命令：<code>git commit -m "&lt;message&gt;"</code></p>
+<p>命令：<code class="codehilite">git commit -m &quot;&lt;message&gt;&quot;</code></p>
 <p><img alt="" src="../imgs/13-01_commit_-m.png" /></p>
 </li>
 </ul>
 <h3 id="_1">说明</h3>
 <ul>
-<li>有些版本用 <code>git commit</code> 跳转并编辑后，中文部分可能会乱码</li>
-<li>使用 <code>git commit -m "&lt;message&gt;"</code> 可以避免乱码</li>
+<li>有些版本用 <code class="codehilite">git commit</code> 跳转并编辑后，中文部分可能会乱码</li>
+<li>使用 <code class="codehilite">git commit -m &quot;&lt;message&gt;&quot;</code> 可以避免乱码</li>
 <li>这里的 <em>commit</em> 作用的是<u>暂存区</u>的 <em>note_01.txt</em></li>
 </ul>
 <h2 id="2">2. 更多表现</h2>
@@ -2268,14 +2352,14 @@
 <p>“添加”与“提交”可以合并为一条命令</p>
 </li>
 <li>
-<p>命令：<code>git commit -am</code></p>
+<p>命令：<code class="codehilite">git commit -am</code></p>
 <p><img alt="" src="../imgs/13-03_git_commit_-am.png" /></p>
 </li>
 </ul>
 <h4 id="_3">说明</h4>
 <ul>
-<li><code>-am</code> 的 <code>a</code> 是 <em>all</em> 的意思</li>
-<li><code>am</code> 只对之前 <code>add</code> &amp; <code>commit</code> 过的文件有效</li>
+<li><code class="codehilite">-am</code> 的 <code class="codehilite">a</code> 是 <em>all</em> 的意思</li>
+<li><code class="codehilite">am</code> 只对之前 <code class="codehilite">add</code> &amp; <code class="codehilite">commit</code> 过的文件有效</li>
 </ul>
 <h3 id="23">2.3 骚操作</h3>
 <h4 id="_4">问题</h4>
@@ -2284,7 +2368,7 @@
 </ul>
 <h4 id="231">2.3.1 方法一</h4>
 <ul>
-<li>使用命令：<code>git commit --amend</code></li>
+<li>使用命令：<code class="codehilite">git commit --amend</code></li>
 <li>此法可将本次提交并入上一次，但纪录中仍有两条<ul>
 <li>证据：虽然 <em>commit</em> 的次数不变，但是哈希值会变</li>
 </ul>
@@ -2293,13 +2377,13 @@
 <h5 id="_5">举例</h5>
 <ul>
 <li>
-<p>在之前的基础上加入一句 <code>4. git commit -m "\&lt;message&gt;" 加入仓库</code></p>
+<p>在之前的基础上加入一句 <code class="codehilite">4. git commit -m &quot;\&lt;message&gt;&quot; 加入仓库</code></p>
 <p><img alt="" src="../imgs/13-04_add_a_line.png" /></p>
 </li>
 <li>
 <p>这里犯了个错误</p>
 <ul>
-<li>我 <code>commit</code> 之前忘记 <code>add</code> 了</li>
+<li>我 <code class="codehilite">commit</code> 之前忘记 <code class="codehilite">add</code> 了</li>
 <li>不妨将错就错，看看效果</li>
 </ul>
 <p><img alt="" src="../imgs/13-05_git_commit_--amend.png" /></p>
@@ -2309,7 +2393,7 @@
 <h4 id="232">2.3.2 方法二</h4>
 <ul>
 <li>方法二是方法一的进阶版</li>
-<li>使用命令：<code>git commit --amend --no-edit</code></li>
+<li>使用命令：<code class="codehilite">git commit --amend --no-edit</code></li>
 <li>此法可将本次提交并入上一次，并且不写“注释”，不过记录中仍有两条<ul>
 <li>证据：虽然 <em>commit</em> 的次数不变，但是哈希值会变</li>
 </ul>
@@ -2320,7 +2404,7 @@
 <li>
 <p>同方法一，这里犯了个错误</p>
 <ul>
-<li>我 <code>commit</code> 之前忘记 <code>add</code> 了</li>
+<li>我 <code class="codehilite">commit</code> 之前忘记 <code class="codehilite">add</code> 了</li>
 <li>不妨将错就错，看看效果：<font color="red">M</font> 已经说明了问题——<u>工作区</u>的文件没被追踪</li>
 </ul>
 <p><img alt="" src="../imgs/13-07_git_commit_--amend_--no-edit.png" /></p>
@@ -2362,7 +2446,7 @@
 <p><img alt="" src="../imgs/13-12_add_a_line_again.png" /></p>
 </li>
 <li>
-<p>使用命令 <code>git commit --amend</code> 更新</p>
+<p>使用命令 <code class="codehilite">git commit --amend</code> 更新</p>
 <p><img alt="" src="../imgs/13-13_git_commit_--amend&amp;page_back.png" /></p>
 <p><img alt="" src="../imgs/13-14_git_commit_--amend.png" /></p>
 </li>
@@ -2425,14 +2509,14 @@
 <p><img alt="" src="../imgs/13-19_line_feed_format.png" /></p>
 </li>
 <li>
-<p>查看、<code>add</code>、<code>commit</code> 一条龙</p>
+<p>查看、<code class="codehilite">add</code>、<code class="codehilite">commit</code> 一条龙</p>
 <p><img alt="" src="../imgs/13-20_status&amp;add&amp;commit.png" /></p>
 </li>
 </ul>
 <h5 id="_9">说明</h5>
 <ul>
 <li>
-<p>命令 <code>git add .</code> 的作用：将<u>工作区</u>的所有内容都加入<u>暂存区</u></p>
+<p>命令 <code class="codehilite">git add .</code> 的作用：将<u>工作区</u>的所有内容都加入<u>暂存区</u></p>
 </li>
 <li>
 <p>搞定！检验一下</p>
@@ -2449,13 +2533,13 @@
 <h4 id="323">3.2.3 比较</h4>
 <ul>
 <li>
-<p>使用命令：<code>git reflog</code></p>
+<p>使用命令：<code class="codehilite">git reflog</code></p>
 <p><img alt="" src="../imgs/13-22_git_reflog.png" /></p>
 </li>
 </ul>
 <h5 id="_10">分析</h5>
 <ul>
-<li><code>3.2.1</code> 与 <code>3.2.2</code> 做过两次变动，<code>commit</code> 的次数没变，但哈希值一直在变</li>
+<li><code class="codehilite">3.2.1</code> 与 <code class="codehilite">3.2.2</code> 做过两次变动，<code class="codehilite">commit</code> 的次数没变，但哈希值一直在变</li>
 <li>其实每次变动都有记录</li>
 </ul>
 <h2 id="4">4. 回滚</h2>
@@ -2464,7 +2548,7 @@
 <p>毕竟添加了新的内容，不推荐“无注释”</p>
 </li>
 <li>
-<p>用“指针”回滚的命令：<code>git reset --hard HEAD@{n}</code></p>
+<p>用“指针”回滚的命令：<code class="codehilite">git reset --hard HEAD@{n}</code></p>
 <p><img alt="" src="../imgs/13-23_git_reset_--hard_HEAD.png" /></p>
 <p><img alt="" src="../imgs/13-23_readlines.png" /></p>
 </li>

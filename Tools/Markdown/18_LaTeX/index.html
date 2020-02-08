@@ -1480,8 +1480,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1638,6 +1638,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1897,7 +1981,7 @@
                 <h1 id="latex">LaTeX</h1>
 <h2 id="1">1. 用法</h2>
 <ul>
-<li><code>$$ + 编辑的内容 + $$</code></li>
+<li><code class="codehilite">$$ + 编辑的内容 + $$</code></li>
 </ul>
 <h2 id="2">2. 说明</h2>
 <h3 id="21">2.1 几个名词解释</h3>
@@ -1927,45 +2011,67 @@
 </tr>
 </tbody>
 </table>
-<h3 id="22-mkdocs">2.2 使用 <code>mkdocs</code> 的情况</h3>
+<h3 id="22-mkdocs">2.2 使用 <code class="codehilite">mkdocs</code> 的情况</h3>
 <ul>
-<li>写数学公式时，需要用到 <code>MathJax</code></li>
-<li>哪个文本要用，就在哪个文本末尾添加下面的语句<pre><code>&lt;script&gt;
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-&lt;/script&gt;
-&lt;script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"&gt;
-&lt;/script&gt;
-</code></pre>
+<li>写数学公式时，需要用到 <code class="codehilite">MathJax</code></li>
+<li>哪个文本要用，就在哪个文本末尾添加下面的语句<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nl">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="sc">&#39;$&#39;</span><span class="p">,</span> <span class="sc">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="err">&#39;\\</span><span class="p">(</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;\\</span><span class="p">)</span><span class="err">&#39;</span><span class="p">]]</span>
+  <span class="p">},</span>
+  <span class="nl">svg</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">fontCache</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">global</span><span class="err">&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="kt">id</span><span class="o">=</span><span class="s">&quot;MathJax-script&quot;</span> <span class="n">async</span>
+  <span class="n">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 </ul>
 <h3 id="23">2.3 注意事项</h3>
 <ul>
-<li>注意：<code>LaTex</code> 是区分大小写的</li>
-<li>加了 <code>MathJax</code> 那两句，可以使用单行公式，这是一般的 <em>Markdown</em> 不具备的</li>
+<li>注意：<code class="codehilite">LaTex</code> 是区分大小写的</li>
+<li>加了 <code class="codehilite">MathJax</code> 那两句，可以使用单行公式，这是一般的 <em>Markdown</em> 不具备的</li>
 </ul>
 <h2 id="3">3. 示例与效果</h2>
 <ul>
 <li>示例（借用一下勒让德的“素数定理”）</li>
 </ul>
-<pre><code>$$
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$$
 \pi(x) = \int_0^x \frac{dt}{lnt} + C
 $$
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <ul>
 <li>
 <p>效果</p>
-<p>$$
+<div>
+<div class="MathJax_Preview">
 \pi(x) = \int_0^x \frac{dt}{lnt} + C
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+\pi(x) = \int_0^x \frac{dt}{lnt} + C
+</script>
+</div>
 </li>
 </ul>
 <h3 id="_1">补充例子</h3>
@@ -1973,17 +2079,17 @@ $$</p>
 <li>
 <p>单行示例</p>
 <ul>
-<li>素数定理：<code>$\pi(x) = \int_0^x \frac{dt}{lnt} + C$</code></li>
-<li>单个字符 <code>$C$</code> 也行</li>
+<li>素数定理：<code class="codehilite">$\pi(x) = \int_0^x \frac{dt}{lnt} + C$</code></li>
+<li>单个字符 <code class="codehilite">$C$</code> 也行</li>
 </ul>
 </li>
 <li>
 <p>效果</p>
 <ul>
-<li>素数定理：$\pi(x) = \int_0^x \frac{dt}{lnt} + C$</li>
+<li>素数定理：<span><span class="MathJax_Preview">\pi(x) = \int_0^x \frac{dt}{lnt} + C</span><script type="math/tex">\pi(x) = \int_0^x \frac{dt}{lnt} + C</script></span></li>
 <li>
 <ul>
-<li>单个字符 $C$ 也行</li>
+<li>单个字符 <span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span> 也行</li>
 </ul>
 </li>
 </ul>

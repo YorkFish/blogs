@@ -1440,8 +1440,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1598,6 +1598,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1818,33 +1902,42 @@
 <h2 id="1">1. 用法</h2>
 <ul>
 <li>标题栏 + 停靠设置 + 具体内容</li>
-<li>形如<pre><code>|  |  |  |              ——标题栏
-| :--- | :---: | ---: | ——停靠设置
-|  |  |  |              —— 具体内容
-...
-</code></pre>
+<li>形如<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>              <span class="s s-Atom">——标题栏</span>
+<span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">--</span> <span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">--:</span> <span class="p">|</span> <span class="s s-Atom">---:</span> <span class="p">|</span> <span class="s s-Atom">——停靠设置</span>
+<span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>              <span class="s s-Atom">——</span> <span class="s s-Atom">具体内容</span>
+<span class="p">...</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 </ul>
 <h2 id="2">2. 说明</h2>
 <ul>
 <li>停靠效果有三种<ul>
-<li><code>:---</code> ——左对齐</li>
-<li><code>:---:</code> ——居中</li>
-<li><code>---:</code> —— 右对齐</li>
+<li><code class="codehilite"><span class="p">:-</span><span class="s s-Atom">--</span></code> ——左对齐</li>
+<li><code class="codehilite"><span class="p">:-</span><span class="s s-Atom">--:</span></code> ——居中</li>
+<li><code class="codehilite">---:</code> —— 右对齐</li>
 </ul>
 </li>
-<li><code>-</code> 必须大于等于 <em>3</em> 个</li>
-<li>只用 <code>-</code> 也行，但需要计算个数，默认为左对齐</li>
+<li><code class="codehilite">-</code> 必须大于等于 <em>3</em> 个</li>
+<li>只用 <code class="codehilite">-</code> 也行，但需要计算个数，默认为左对齐</li>
 <li>有的软件，表格上下各空一行，表格可以居中</li>
 </ul>
 <h2 id="3">3. 示例与效果</h2>
 <ul>
 <li>
 <p>示例</p>
-<pre><code>| 靠左  | 居中  |  靠右 |
-| :---- | :---: | ----: |
-| 12345 | 12345 | 12345 |
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">|</span> <span class="s s-Atom">靠左</span>  <span class="p">|</span> <span class="s s-Atom">居中</span>  <span class="p">|</span>  <span class="s s-Atom">靠右</span> <span class="p">|</span>
+<span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">---</span> <span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">--:</span> <span class="p">|</span> <span class="s s-Atom">----:</span> <span class="p">|</span>
+<span class="p">|</span> <span class="mi">12345</span> <span class="p">|</span> <span class="mi">12345</span> <span class="p">|</span> <span class="mi">12345</span> <span class="p">|</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>

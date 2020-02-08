@@ -1553,8 +1553,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1711,6 +1711,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -2044,14 +2128,14 @@
 <h2 id="1">1. 我的回忆</h2>
 <ul>
 <li>小时候看《剑花-烟雨-江南》，惊讶于那个拥有多重身份的“小侯爷”</li>
-<li><em>Git</em> 中也可以有“拥有多重身份”的分支，关键就在于这个 <code>tag</code> 命令</li>
+<li><em>Git</em> 中也可以有“拥有多重身份”的分支，关键就在于这个 <code class="codehilite">tag</code> 命令</li>
 <li>简单地说，<em>tag</em> 就是指向某个 <em>commit</em> 的指针</li>
 </ul>
 <h2 id="2">2. 打标签 &amp; 查看标签</h2>
 <ol>
 <li>切到要打标签的分支上</li>
 <li>
-<p>使用命令 <code>git tag &lt;name&gt;</code> 打标签，<code>git tag</code> 查看标签</p>
+<p>使用命令 <code class="codehilite">git tag &lt;name&gt;</code> 打标签，<code class="codehilite">git tag</code> 查看标签</p>
 <p><img alt="" src="../imgs/30-01_git_tag.png" /></p>
 </li>
 </ol>
@@ -2076,7 +2160,7 @@
 </ul>
 <h2 id="4">4. 查看标签信息</h2>
 <ul>
-<li>使用命令 <code>git show &lt;tag_name&gt;</code> 即可</li>
+<li>使用命令 <code class="codehilite">git show &lt;tag_name&gt;</code> 即可</li>
 </ul>
 <h3 id="_3">参数补充</h3>
 <table>
@@ -2088,15 +2172,15 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><code>-a</code></td>
+<td align="center"><code class="codehilite">-a</code></td>
 <td align="left">指定标签名</td>
 </tr>
 <tr>
-<td align="center"><code>-m</code></td>
-<td align="left">指定说明文字（和 <code>commit</code>、<code>merge --no-ff</code> 一致）</td>
+<td align="center"><code class="codehilite">-m</code></td>
+<td align="left">指定说明文字（和 <code class="codehilite">commit</code>、<code class="codehilite">merge --no-ff</code> 一致）</td>
 </tr>
 <tr>
-<td align="center"><code>show</code></td>
+<td align="center"><code class="codehilite">show</code></td>
 <td align="left">显示更详细的信息</td>
 </tr>
 </tbody>
@@ -2110,12 +2194,12 @@
 </ul>
 <h2 id="5">5. 删除标签</h2>
 <ul>
-<li>与 <em>branch</em> 一样，标签也可以使用 <code>-d</code> 删除</li>
+<li>与 <em>branch</em> 一样，标签也可以使用 <code class="codehilite">-d</code> 删除</li>
 </ul>
 <h3 id="51">5.1 标签未同步到远程时</h3>
 <ul>
 <li>
-<p>使用 <code>git tag -d &lt;tag_name&gt;</code> 即可</p>
+<p>使用 <code class="codehilite">git tag -d &lt;tag_name&gt;</code> 即可</p>
 <p><img alt="" src="../imgs/30-5_git_tag_-d.png" /></p>
 </li>
 </ul>

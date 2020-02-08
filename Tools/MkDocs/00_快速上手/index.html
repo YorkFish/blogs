@@ -1474,8 +1474,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1632,6 +1632,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1884,57 +1968,75 @@
                 
                 <h1 id="mkdocs">MkDocs 快速上手</h1>
 <h2 id="1">1. 新建日志项目</h2>
-<pre><code>$ mkdocs new mysite
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ mkdocs new mysite
+</pre></div>
+</td></tr></table>
 
 <h2 id="2">2. 启动日志服务</h2>
-<pre><code>$ cd .\mysite
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> .<span class="se">\m</span>ysite
 $ mkdocs serve
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h2 id="3">3. 增加页面</h2>
 <h3 id="31-docs">3.1 在 <em>docs</em> 目录下增加</h3>
-<pre><code>mysite/           # The project document.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>mysite/           # The project document.
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h3 id="32-mkdocsyml">3.2 编辑 <em>mkdocs.yml</em></h3>
-<pre><code>site_name: YorkFish
-pages:
-  - &quot;index&quot;: index.md
-  - &quot;about&quot;: about.md
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">site_name</span><span class="o">:</span> <span class="n">YorkFish</span>
+<span class="n">pages</span><span class="o">:</span>
+  <span class="o">-</span> <span class="s2">&quot;index&quot;</span><span class="o">:</span> <span class="n">index</span><span class="o">.</span><span class="na">md</span>
+  <span class="o">-</span> <span class="s2">&quot;about&quot;</span><span class="o">:</span> <span class="n">about</span><span class="o">.</span><span class="na">md</span>
+</pre></div>
+</td></tr></table>
 
 <h2 id="4">4. 安装主题</h2>
 <ul>
 <li>安装 <em>material</em></li>
 </ul>
-<pre><code>$ pip install mkdocs-material
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pip install mkdocs-material
+</pre></div>
+</td></tr></table>
 
 <ul>
 <li>编辑 <em>mkdocs.yml</em></li>
 </ul>
-<pre><code>...
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>...
 
 theme:
-  name: 'material'
-</code></pre>
+  name: &#39;material&#39;
+</pre></div>
+</td></tr></table>
 
 <h2 id="5">5. 将网站放到互联网上</h2>
 <ul>
 <li>推荐的“服务器”<ul>
-<li><code>https://app.netlify.com/drop</code></li>
+<li><code class="codehilite">https://app.netlify.com/drop</code></li>
 <li>原名：<em>BitBalloon</em></li>
 </ul>
 </li>
 <li>打包</li>
 </ul>
-<pre><code>$ mkdocs build
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ mkdocs build
+</pre></div>
+</td></tr></table>
 
 <ul>
 <li>登录 <em>Netlify</em>，将 <em>site.zip</em> 拖到 <em>Drag &amp; drop a new site</em></li>

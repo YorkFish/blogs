@@ -1440,8 +1440,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1598,6 +1598,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1824,7 +1908,7 @@ summary: Markdown 进阶语法</p>
 <h2 id="1">1. 用法</h2>
 <ul>
 <li>必须写在开头</li>
-<li>用两行 <code>---</code> 包起来</li>
+<li>用两行 <code class="codehilite">---</code> 包起来</li>
 <li>里面是“属性名” + <em>1</em> 个英文冒号 + 空格（至少 <em>1</em> 个，可以多个） + 解释</li>
 </ul>
 <h2 id="2">2. 说明</h2>
@@ -1834,7 +1918,7 @@ summary: Markdown 进阶语法</p>
 <li>是一个可读性高并且容易被人类阅读，容易和脚本语言交互，用来表达资料序列的编程语言</li>
 <li>不同的编辑器有所不同<ul>
 <li>有的没有效果（因为不支持）</li>
-<li>有的没有换行（可以手动加 <code>&lt;br&gt;</code>）</li>
+<li>有的没有换行（可以手动加 <code class="codehilite">&lt;br&gt;</code>）</li>
 <li>有的没有空格、制表效果</li>
 </ul>
 </li>
@@ -1843,22 +1927,37 @@ summary: Markdown 进阶语法</p>
 <ul>
 <li>
 <p>示例</p>
-<pre><code>---
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>---
 title:   [Markdown] 03 进阶语法 第一弹
 date:    2019/04/25
 tags:    Markdown
 summary: Markdown 进阶语法
 ---
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>
 <ul>
-<li>最上方那个长得像代码块的就是 <em>YAML</em><a href="" title="Yet Another Markup Language">^1</a> 题头</li>
+<li>最上方那个长得像代码块的就是 <em>YAML</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> 题头</li>
 </ul>
 </li>
 </ul>
 <hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>"Yet Another Markup Language"&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 

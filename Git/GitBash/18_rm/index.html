@@ -1534,8 +1534,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1692,6 +1692,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -2005,7 +2089,7 @@
                 <h1 id="rm"><em>rm</em></h1>
 <h2 id="1-git-rm-4545cached-file62">1. <em>git rm --cached &lt;file></em></h2>
 <ul>
-<li><a href="" target="_blank">09_在本地建一个仓库</a> 的 <code>5. 删除添加到暂存区的文件</code> 有提及</li>
+<li><a href="" target="_blank">09_在本地建一个仓库</a> 的 <code class="codehilite">5. 删除添加到暂存区的文件</code> 有提及</li>
 <li>命令作用：仅删除<u>暂存区</u>的文件 <em>\&lt;file></em></li>
 </ul>
 <h2 id="2-git-rm-file62">2. <em>git rm &lt;file></em></h2>
@@ -2016,13 +2100,13 @@
 <p><img alt="" src="../imgs/18-01_new_a_file&amp;add&amp;commit.png" /></p>
 </li>
 <li>
-<p>利用 <code>rm &lt;file&gt;</code> 命令删除<u>工作区</u>的文档 <em>will_be_deleted.txt</em></p>
+<p>利用 <code class="codehilite">rm &lt;file&gt;</code> 命令删除<u>工作区</u>的文档 <em>will_be_deleted.txt</em></p>
 <p><img alt="" src="../imgs/18-02_rm_will_be_deleted.png" /></p>
 </li>
 </ol>
 <h4 id="_1">分析</h4>
 <ul>
-<li><code>rm &lt;file&gt;</code> 仅删除<u>工作区</u>的文件，对<u>暂存区</u>无效</li>
+<li><code class="codehilite">rm &lt;file&gt;</code> 仅删除<u>工作区</u>的文件，对<u>暂存区</u>无效</li>
 <li><em><font color="red">D</font> for deleted</em></li>
 </ul>
 <h3 id="22-">2.2 右键 -&gt; 删除</h3>
@@ -2051,7 +2135,7 @@
 </ol>
 <h4 id="_2">分析</h4>
 <ul>
-<li>与 <code>2.1</code> 一样，文件管理器仅删除<u>工作区</u>的文件，对<u>暂存区</u>无效</li>
+<li>与 <code class="codehilite">2.1</code> 一样，文件管理器仅删除<u>工作区</u>的文件，对<u>暂存区</u>无效</li>
 <li>其实这一茬没必要提，但小心一点总是没错的</li>
 </ul>
 <h3 id="23-git-rm-file62">2.3 <em>git rm &lt;file></em></h3>
@@ -2065,15 +2149,15 @@
 <h4 id="232">2.3.2 操作</h4>
 <ul>
 <li>
-<p>使用命令 <code>git rm &lt;file&gt;</code> 同时删除<u>工作区</u>与<u>暂存区</u>的文件 <em>will_be_deleted.txt</em></p>
+<p>使用命令 <code class="codehilite">git rm &lt;file&gt;</code> 同时删除<u>工作区</u>与<u>暂存区</u>的文件 <em>will_be_deleted.txt</em></p>
 <p><img alt="" src="../imgs/18-07_git_rm_will_be_deleted.png" /></p>
 </li>
 </ul>
 <h4 id="_3">分析</h4>
 <ul>
-<li><code>git rm &lt;file&gt;</code> 有两种理解方式<ol>
+<li><code class="codehilite">git rm &lt;file&gt;</code> 有两种理解方式<ol>
 <li>相当于：同时删除是<u>工作区</u>与<u>暂存区</u>的 <em>\&lt;file></em></li>
-<li>相当于：先删除<u>工作区</u>的 <em>\&lt;file></em>，再使用 <code>git add .</code></li>
+<li>相当于：先删除<u>工作区</u>的 <em>\&lt;file></em>，再使用 <code class="codehilite">git add .</code></li>
 </ol>
 </li>
 </ul>

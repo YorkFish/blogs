@@ -1386,8 +1386,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1639,6 +1639,90 @@
   <li class="md-nav__item">
     <a href="../11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1900,7 +1984,7 @@
 <h2 id="1">1. 快速添加注释</h2>
 <ul>
 <li>
-<p>下方的 <code>n1</code>, <code>n2</code>  是虚指，实际用时由具体命令或数字代替</p>
+<p>下方的 <code class="codehilite">n1</code>, <code class="codehilite">n2</code>  是虚指，实际用时由具体命令或数字代替</p>
 <table>
 <thead>
 <tr>
@@ -1911,7 +1995,7 @@
 <tbody>
 <tr>
 <td align="left"><strong>:n1,n2 s/^/#/g</strong></td>
-<td align="left"><em>^</em> 表示行首，多行行首加 <code>#</code></td>
+<td align="left"><em>^</em> 表示行首，多行行首加 <code class="codehilite">#</code></td>
 </tr>
 <tr>
 <td align="left"><strong>:n1,n2 s/^#//g</strong></td>
@@ -1925,26 +2009,26 @@
 </table>
 </li>
 <li>
-<p><code>:n1,n2s/^/\/\//g</code> 可以继续偷懒</p>
+<p><code class="codehilite">:n1,n2s/^/\/\//g</code> 可以继续偷懒</p>
 <ul>
-<li><code>:n1,n2s/^/\/\/</code> ——行数与 <code>s</code> 之间不空一格；省去末尾的 <code>/g</code></li>
-<li><code>:n1,n2 s/^/\/\/ /</code> ——行号、注释符号后加空格可看得清晰；省去末尾的 <code>g</code></li>
+<li><code class="codehilite">:n1,n2s/^/\/\/</code> ——行数与 <code class="codehilite">s</code> 之间不空一格；省去末尾的 <code class="codehilite">/g</code></li>
+<li><code class="codehilite">:n1,n2 s/^/\/\/ /</code> ——行号、注释符号后加空格可看得清晰；省去末尾的 <code class="codehilite">g</code></li>
 </ul>
 </li>
 <li>利用“可视-块”模式进行多行注释也很方便<ol>
-<li>按组合键 <kbd>ctrl</kbd>+<kbd>v</kbd>，左下角出现 <code>-- 可视 块--</code></li>
+<li>按组合键 <kbd>ctrl</kbd>+<kbd>v</kbd>，左下角出现 <code class="codehilite">-- 可视 块--</code></li>
 <li>使用 <kbd>j</kbd>、<kbd>k</kbd> 等选中需要注释的区域</li>
 <li>按 <kbd>I</kbd></li>
-<li>键入 <code>\\</code> （其他注释符也行）</li>
+<li>键入 <code class="codehilite">\\</code> （其他注释符也行）</li>
 <li>按 <kbd>Esc</kbd> (Over)</li>
 </ol>
 </li>
 </ul>
 <h2 id="2-map">2. map 命令</h2>
 <ul>
-<li><code>:help map</code> 可以查看相关帮助信息</li>
+<li><code class="codehilite">:help map</code> 可以查看相关帮助信息</li>
 <li><em>map</em> 可以映射得很复杂<ul>
-<li>基本格式是：<code>:map 快捷键 命令</code></li>
+<li>基本格式是：<code class="codehilite">:map 快捷键 命令</code></li>
 <li>若要写入配置文件 <em>_vimrc</em>，把开头的“冒号”去掉</li>
 </ul>
 </li>
@@ -1952,39 +2036,39 @@
 </ul>
 <h3 id="1_1">例1</h3>
 <ul>
-<li><code>:map &lt;A-3&gt; :s/^/# /</code> —— <kbd>Alt</kbd>+<kbd>3</kbd>：单行注释</li>
-<li><code>:map &lt;A-4&gt; :s/^# //</code> ——<kbd>Alt</kbd>+<kbd>4</kbd>：取消单行注释</li>
+<li><code class="codehilite">:map &lt;A-3&gt; :s/^/# /</code> —— <kbd>Alt</kbd>+<kbd>3</kbd>：单行注释</li>
+<li><code class="codehilite">:map &lt;A-4&gt; :s/^# //</code> ——<kbd>Alt</kbd>+<kbd>4</kbd>：取消单行注释</li>
 </ul>
 <h3 id="2">例2</h3>
 <ul>
-<li><code>:map &lt;F5&gt; :!python %</code> —— <kbd>F5</kbd>：运行当前的 <code>.py</code> 文件</li>
+<li><code class="codehilite">:map &lt;F5&gt; :!python %</code> —— <kbd>F5</kbd>：运行当前的 <code class="codehilite"><span class="na">.py</span></code> 文件</li>
 </ul>
 <h2 id="3-shell">3. 执行 <em>Shell</em> 命令</h2>
 <ul>
-<li><code>:! ls ./</code> ——在当前目录使用 <code>ls</code> 命令</li>
+<li><code class="codehilite">:! ls ./</code> ——在当前目录使用 <code class="codehilite">ls</code> 命令</li>
 </ul>
 <h2 id="4">4. 局部内容另存为</h2>
 <ol>
 <li>按组合键 <kbd>ctrl</kbd>+<kbd>v</kbd> 进入“可视-块”模式</li>
 <li>使用方向键等选择内容</li>
 <li>按组合键 <kbd>shift</kbd>+<kbd>:</kbd> 进入“命令模式”</li>
-<li>输入 <code>w filename</code> 进行另存为，新文件名为 <em>filename</em></li>
-<li>若上一步输入的是 <code>w! filename</code>，则为强制覆盖</li>
+<li>输入 <code class="codehilite">w filename</code> 进行另存为，新文件名为 <em>filename</em></li>
+<li>若上一步输入的是 <code class="codehilite">w! filename</code>，则为强制覆盖</li>
 </ol>
 <h2 id="5">5. 合并文件</h2>
 <ul>
-<li><code>:r filename</code> ——将 <em>filename</em> 这个文件中的所有内容复制到当前文件末尾</li>
+<li><code class="codehilite">:r filename</code> ——将 <em>filename</em> 这个文件中的所有内容复制到当前文件末尾</li>
 </ul>
 <h2 id="6">6. 打开多个文件</h2>
 <ol>
 <li>对 <em>gVim</em> 而言，需要设置好环境变量</li>
-<li>在命令行下（<code>cmd</code>、<code>PowerShell</code> 或其他）进入目标目录</li>
-<li>输入 <code>vim -o filename1 filename2 ...</code>，其中 <em>o</em> 为小写字母，文件垂直（上下）分布</li>
-<li>输入 <code>vim -O filename1 filename2 ...</code>，其中 <em>O</em> 为大写字母，文件水平（左右）分布</li>
-<li>用 <kbd>ctrl</kbd>+<kbd>w</kbd>+<code>方向键</code> 或 <kbd>ctrl</kbd>+<kbd>w</kbd>+<kbd>w</kbd> 可以在各文件中切换</li>
+<li>在命令行下（<code class="codehilite">cmd</code>、<code class="codehilite">PowerShell</code> 或其他）进入目标目录</li>
+<li>输入 <code class="codehilite">vim -o filename1 filename2 ...</code>，其中 <em>o</em> 为小写字母，文件垂直（上下）分布</li>
+<li>输入 <code class="codehilite">vim -O filename1 filename2 ...</code>，其中 <em>O</em> 为大写字母，文件水平（左右）分布</li>
+<li>用 <kbd>ctrl</kbd>+<kbd>w</kbd>+<code class="codehilite">方向键</code> 或 <kbd>ctrl</kbd>+<kbd>w</kbd>+<kbd>w</kbd> 可以在各文件中切换</li>
 <li>退出的两种方法<ol>
-<li>使用 <code>:q</code>、<code>:wq</code>、<code>:x</code>、<code>:q!</code>、<code>:wq!</code>、<code>ZZ</code> 中的任意一个，可以一个一个地退出</li>
-<li>使用 <code>:wqa</code>、<code>:qa!</code> 可以一起退出 (<em>a for all</em>)</li>
+<li>使用 <code class="codehilite">:q</code>、<code class="codehilite">:wq</code>、<code class="codehilite">:x</code>、<code class="codehilite">:q!</code>、<code class="codehilite">:wq!</code>、<code class="codehilite">ZZ</code> 中的任意一个，可以一个一个地退出</li>
+<li>使用 <code class="codehilite">:wqa</code>、<code class="codehilite">:qa!</code> 可以一起退出 (<em>a for all</em>)</li>
 </ol>
 </li>
 </ol>

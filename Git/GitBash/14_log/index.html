@@ -1494,8 +1494,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1652,6 +1652,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1927,7 +2011,7 @@
 <p><img alt="" src="../imgs/14-01_git_log.png" /></p>
 <h2 id="2-git-log-oneline">2. <em>git log --oneline</em></h2>
 <ul>
-<li>此命令的显示结果比 <code>git log</code> 简洁</li>
+<li>此命令的显示结果比 <code class="codehilite">git log</code> 简洁</li>
 <li>
 <p>毕竟是 <em>oneline</em></p>
 <p><img alt="" src="../imgs/14-02_git_log_--oneline.png" /></p>
@@ -1936,7 +2020,7 @@
 <h3 id="_1">命令补充</h3>
 <ul>
 <li>
-<p>命令：<code>git log --oneline --graph</code></p>
+<p>命令：<code class="codehilite">git log --oneline --graph</code></p>
 </li>
 <li>
 <p>举例：详见 <a href="" target="_blank">23_解决冲突</a> 的第 <em>4</em> 步</p>
@@ -1954,15 +2038,15 @@
 <h2 id="5">5. 补充</h2>
 <h3 id="51-git-4545pretty-oneline">5.1 <em>git --pretty=--oneline</em></h3>
 <ul>
-<li><code>--pretty</code> 是“关键字参数”</li>
-<li><code>--oneline</code> 只是 <code>--pretty</code> 的一种格式</li>
-<li>此外还有 <code>short</code>, <code>full</code>, <code>fuller</code>, <code>format</code>, <code>raw</code> 等参数</li>
-<li>用法：如 <code>git --pretty=short</code></li>
+<li><code class="codehilite">--pretty</code> 是“关键字参数”</li>
+<li><code class="codehilite">--oneline</code> 只是 <code class="codehilite">--pretty</code> 的一种格式</li>
+<li>此外还有 <code class="codehilite">short</code>, <code class="codehilite">full</code>, <code class="codehilite">fuller</code>, <code class="codehilite">format</code>, <code class="codehilite">raw</code> 等参数</li>
+<li>用法：如 <code class="codehilite">git --pretty=short</code></li>
 </ul>
 <h3 id="52-git-log-4545graph-4545oneline-4545decorate-4545all">5.2 <em>git log --graph --oneline --decorate --all</em></h3>
 <ul>
-<li><code>--decorate</code> —— 用来显示 <code>HEAD</code>、分支名、标签名等信息</li>
-<li><code>--all</code> —— 简单地说，就是显示更全的信息，它会把过往的 <code>commit</code> 信息都列出来</li>
+<li><code class="codehilite">--decorate</code> —— 用来显示 <code class="codehilite">HEAD</code>、分支名、标签名等信息</li>
+<li><code class="codehilite">--all</code> —— 简单地说，就是显示更全的信息，它会把过往的 <code class="codehilite">commit</code> 信息都列出来</li>
 <li>举例：详见 <a href="" target="_blank">29_rebase</a> 的 <em>2</em></li>
 </ul>
 <h3 id="53">5.3 更多的参数</h3>
@@ -1975,35 +2059,35 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><code>--abbrev-commit</code></td>
+<td align="center"><code class="codehilite">--abbrev-commit</code></td>
 <td align="left">简化 "commit" 的哈希值信息（提交次数较少时，效果不明显）</td>
 </tr>
 <tr>
-<td align="center"><code>--author=sb.</code></td>
+<td align="center"><code class="codehilite">--author=sb.</code></td>
 <td align="left">显示 sb. 的信息</td>
 </tr>
 <tr>
-<td align="center"><code>--before={}</code><br><code>--after={}</code></td>
-<td align="left">可以定查看的时间区间<br>{} 中的格式可以是 <code>2.weeks.ago</code> 或 <code>2020-01-01</code></td>
+<td align="center"><code class="codehilite">--before={}</code><br><code class="codehilite">--after={}</code></td>
+<td align="left">可以定查看的时间区间<br>{} 中的格式可以是 <code class="codehilite">2.weeks.ago</code> 或 <code class="codehilite">2020-01-01</code></td>
 </tr>
 <tr>
-<td align="center"><code>-n</code></td>
+<td align="center"><code class="codehilite">-n</code></td>
 <td align="left">显示 n 条信息</td>
 </tr>
 <tr>
-<td align="center"><code>--no-merges</code></td>
+<td align="center"><code class="codehilite">--no-merges</code></td>
 <td align="left">隐藏“合并提交”</td>
 </tr>
 <tr>
-<td align="center"><code>-p</code></td>
+<td align="center"><code class="codehilite">-p</code></td>
 <td align="left">显示更详细的信息</td>
 </tr>
 <tr>
-<td align="center"><code>--reverse</code></td>
+<td align="center"><code class="codehilite">--reverse</code></td>
 <td align="left">逆向显示</td>
 </tr>
 <tr>
-<td align="center"><code>--skip=n</code></td>
+<td align="center"><code class="codehilite">--skip=n</code></td>
 <td align="left">跳过前 n 条信息</td>
 </tr>
 </tbody>

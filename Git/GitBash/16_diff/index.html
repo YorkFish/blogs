@@ -1540,8 +1540,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1698,6 +1698,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -2035,7 +2119,7 @@
 </ul>
 <h3 id="_2">分析</h3>
 <ul>
-<li>目前，<u>工作区</u>，<u>暂存区</u>和<u>仓库</u>这“三棵树”的内容是一样的，故，<code>diff</code> 找不出 <em>note_01.txt</em> 的不同之处</li>
+<li>目前，<u>工作区</u>，<u>暂存区</u>和<u>仓库</u>这“三棵树”的内容是一样的，故，<code class="codehilite">diff</code> 找不出 <em>note_01.txt</em> 的不同之处</li>
 </ul>
 <h2 id="3-git-diff-head-file62">3. <em>git diff HEAD &lt;file></em></h2>
 <ul>
@@ -2046,19 +2130,19 @@
 </ul>
 <h3 id="_3">分析</h3>
 <ul>
-<li>目前，<u>工作区</u>，<u>暂存区</u>和<u>仓库</u>这“三棵树”的内容是一样的，故，<code>diff</code> 找不出 <em>note_01.txt</em> 的不同之处</li>
+<li>目前，<u>工作区</u>，<u>暂存区</u>和<u>仓库</u>这“三棵树”的内容是一样的，故，<code class="codehilite">diff</code> 找不出 <em>note_01.txt</em> 的不同之处</li>
 </ul>
 <h2 id="4-git-diff-hash_id62-file62">4. <em>git diff &lt;hash_id> &lt;file></em></h2>
 <ul>
 <li>
-<p><code>git reflog</code> 所列出的哈希值与 <code>HEAD@{n}</code> 均有妙用</p>
+<p><code class="codehilite">git reflog</code> 所列出的哈希值与 <code class="codehilite">HEAD@{n}</code> 均有妙用</p>
 <p><img alt="" src="../imgs/16-04_git_reflog.png" /></p>
 </li>
 <li>
-<p>用 <code>hash_id</code> 代替 <code>git diff HEAD &lt;file&gt;</code> 中的 <code>HEAD</code>，用于比较 <strong><em>file</em></strong> 在<u>工作区</u>与<u>仓库的历史版本</u>的异同</p>
+<p>用 <code class="codehilite">hash_id</code> 代替 <code class="codehilite">git diff HEAD &lt;file&gt;</code> 中的 <code class="codehilite">HEAD</code>，用于比较 <strong><em>file</em></strong> 在<u>工作区</u>与<u>仓库的历史版本</u>的异同</p>
 </li>
 <li>
-<p>如，我要与 <code>HEAD@{3}</code> 比较</p>
+<p>如，我要与 <code class="codehilite">HEAD@{3}</code> 比较</p>
 <p><img alt="" src="../imgs/16-05_git_diff_hash.png" /></p>
 </li>
 </ul>
@@ -2066,7 +2150,7 @@
 <ul>
 <li>此命令比较的是：<u>工作区</u>的 <em>note_01.txt</em> 和<u>仓库中版本号为 <em>9884432</em></u> 的 <em>note_01.txt</em></li>
 <li>
-<p>在 <code>2. git status 查看</code> 的下方多了两行</p>
+<p>在 <code class="codehilite">2. git status 查看</code> 的下方多了两行</p>
 <p><img alt="" src="../imgs/16-06_git_diff_hash.png" /></p>
 </li>
 </ul>
@@ -2089,20 +2173,20 @@
 <ul>
 <li>以 <font color="green">+</font> 开头，说明增加了 xxx</li>
 <li>以 <font color="red">-</font> 开头，说明减少了 xxx</li>
-<li>上面的例子是以 <code>&lt;hash_id2&gt;</code> 为“对照组”，以 <code>&lt;hash_id1&gt;</code> 为“实验组”，即<ul>
-<li><code>&lt;hash_id2&gt;</code> 是比较的基准</li>
-<li>结果显示 <code>&lt;hash_id2&gt;</code> 比 <code>&lt;hash_id1&gt;</code> 多了/少了 xxx</li>
+<li>上面的例子是以 <code class="codehilite">&lt;hash_id2&gt;</code> 为“对照组”，以 <code class="codehilite">&lt;hash_id1&gt;</code> 为“实验组”，即<ul>
+<li><code class="codehilite">&lt;hash_id2&gt;</code> 是比较的基准</li>
+<li>结果显示 <code class="codehilite">&lt;hash_id2&gt;</code> 比 <code class="codehilite">&lt;hash_id1&gt;</code> 多了/少了 xxx</li>
 </ul>
 </li>
 <li>
-<p>证据：<code>&lt;hash_id1&gt;</code> 与 <code>&lt;hash_id2&gt;</code> 换一下顺序，结果会变</p>
+<p>证据：<code class="codehilite">&lt;hash_id1&gt;</code> 与 <code class="codehilite">&lt;hash_id2&gt;</code> 换一下顺序，结果会变</p>
 <p><img alt="" src="../imgs/16-09_git_diff_hash2_hash1.png" /></p>
 </li>
 </ul>
 <h3 id="_6">补充</h3>
 <ul>
-<li>可以使用 <code>git reflog</code> 出来的 <code>HEAD@{n}</code> 代替 <code>hash_id</code></li>
-<li>具体例子见博文：<code>13_commit</code> 的 <code>4. 回滚</code></li>
+<li>可以使用 <code class="codehilite">git reflog</code> 出来的 <code class="codehilite">HEAD@{n}</code> 代替 <code class="codehilite">hash_id</code></li>
+<li>具体例子见博文：<code class="codehilite">13_commit</code> 的 <code class="codehilite">4. 回滚</code></li>
 </ul>
 <h2 id="7">7. 小结</h2>
 <ul>
@@ -2111,7 +2195,7 @@
 <p><img alt="" src="../imgs/16-10_git_diff_brief_summary.png" /></p>
 </li>
 <li>
-<p>图片出处：<a href="https://fishc.com.cn/thread-71718-1-1.html" target="_blank">https://fishc.com.cn/thread-71718-1-1.html</a></p>
+<p>图片出处：<a href="https://fishc.com.cn/thread-71718-1-1.html" target="_blank"><a href="https://fishc.com.cn/thread-71718-1-1.html">https://fishc.com.cn/thread-71718-1-1.html</a></a></p>
 </li>
 </ul>
                 

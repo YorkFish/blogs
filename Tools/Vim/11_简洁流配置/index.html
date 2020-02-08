@@ -1386,8 +1386,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1822,6 +1822,90 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
+    </a>
   </li>
 
         
@@ -2293,10 +2377,10 @@
 <h4 id="222">2.2.2 选择配色</h4>
 <ul>
 <li><em>gVim 8.1.1</em> 自带 <strong>18</strong> 种配色方案，我一开始选了 <em>evening</em></li>
-<li>对应代码：<code>colorsheme evening</code></li>
+<li>对应代码：<code class="codehilite">colorsheme evening</code></li>
 <li>注意事项<ul>
 <li><em>Windows</em> 下装好软件后，<em>_vimrc</em> 里面大概率是有代码的，把配置加到开头即可</li>
-<li><code>"</code> 为注释符号</li>
+<li><code class="codehilite">&quot;</code> 为注释符号</li>
 </ul>
 </li>
 </ul>
@@ -2304,46 +2388,48 @@
 <h5 id="_2">隐藏菜单栏</h5>
 <ul>
 <li>
-<p>代码：<code>set guioptions-=m</code></p>
+<p>代码：<code class="codehilite">set guioptions-=m</code></p>
 </li>
 <li>
-<p>注意：<code>-=</code> 前后不要加空格，下方的 <code>=</code> 前后也不要加</p>
+<p>注意：<code class="codehilite">-=</code> 前后不要加空格，下方的 <code class="codehilite">=</code> 前后也不要加</p>
 </li>
 </ul>
 <h5 id="_3">隐藏工具栏</h5>
 <ul>
-<li>代码：<code>set guioptions-=T</code></li>
+<li>代码：<code class="codehilite">set guioptions-=T</code></li>
 </ul>
 <hr />
 <h2 id="3-python">3. 为 Python 再配几条命令</h2>
 <h3 id="31">3.1 显示行号</h3>
 <ul>
 <li>以下两种均可<ol>
-<li><code>set number</code></li>
-<li><code>set nu</code></li>
+<li><code class="codehilite">set number</code></li>
+<li><code class="codehilite">set nu</code></li>
 </ol>
 </li>
 </ul>
 <h3 id="32-4">3.2 统一缩进数为 4</h3>
-<pre><code class="shell">set fofttabstop=4
-set shiftwidth=4
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">set</span> <span class="nv">fofttabstop</span><span class="o">=</span><span class="m">4</span>
+<span class="nb">set</span> <span class="nv">shiftwidth</span><span class="o">=</span><span class="m">4</span>
+</pre></div>
+</td></tr></table>
 
 <h3 id="33-tab-4">3.3 设置 Tab 键为 4 个空格</h3>
 <ul>
-<li><code>set tabstop=4</code></li>
+<li><code class="codehilite">set tabstop=4</code></li>
 </ul>
 <h3 id="34-tab">3.4 让空格代替 Tab</h3>
 <ul>
-<li><code>set expandtab</code></li>
+<li><code class="codehilite">set expandtab</code></li>
 </ul>
 <h3 id="35">3.5 启动语法高亮</h3>
 <ul>
-<li><code>syntax on</code></li>
+<li><code class="codehilite">syntax on</code></li>
 </ul>
 <h3 id="36">3.6 设置字体</h3>
 <ul>
-<li><code>set guifont=Consolas:h16</code><ul>
+<li><code class="codehilite">set guifont=Consolas:h16</code><ul>
 <li>字体样式：<em>Consolas</em></li>
 <li>字体大小：<em>16</em> 号</li>
 </ul>
@@ -2352,34 +2438,34 @@ set shiftwidth=4
 <h4 id="_4">补充</h4>
 <ol>
 <li><em>Linux</em> 下的设置略有不同<ul>
-<li><code>set guifont=consolas\ 16</code></li>
+<li><code class="codehilite">set guifont=consolas\ 16</code></li>
 <li><em>16</em> 前的空格不要省</li>
 </ul>
 </li>
 <li>如果需要设置多个字体，可以在各个字体之间添加逗号<ul>
-<li><code>set  guifont=Consolas:h16,Courier_New:h14</code></li>
+<li><code class="codehilite">set  guifont=Consolas:h16,Courier_New:h14</code></li>
 <li><em>Vim</em> 会从前往后选择字体，比如：第一款没找到，就用第二款，以此类推</li>
 </ul>
 </li>
-<li>偷懒写法：<code>set guifont=*</code></li>
+<li>偷懒写法：<code class="codehilite">set guifont=*</code></li>
 <li>可以对特定的文件类型使用特定的字体<ul>
-<li><code>autocmd BufEnter *.txt set guifont=Arial:h14</code></li>
-<li>上面这句意为：所有的 <code>txt</code> 文件使用 <em>14</em> 号 <code>Arial</code> 字体</li>
+<li><code class="codehilite">autocmd BufEnter *.txt set guifont=Arial:h14</code></li>
+<li>上面这句意为：所有的 <code class="codehilite">txt</code> 文件使用 <em>14</em> 号 <code class="codehilite">Arial</code> 字体</li>
 </ul>
 </li>
 <li><em>guifont</em> 的其他参数<ul>
-<li><code>set guifont=Consolas:h16:cGB2312:qDRAFT</code></li>
+<li><code class="codehilite">set guifont=Consolas:h16:cGB2312:qDRAFT</code></li>
 <li>设置字体=字体类型:字体大小:字符集:字体质量</li>
 </ul>
 </li>
 </ol>
 <h3 id="37">3.7 设置编码格式</h3>
 <ul>
-<li><code>set encoding=utf-8</code></li>
+<li><code class="codehilite">set encoding=utf-8</code></li>
 </ul>
 <h3 id="38">3.8 设置快速运行快捷键</h3>
 <ul>
-<li><code>map &lt;F5&gt; :!python %</code></li>
+<li><code class="codehilite">map &lt;F5&gt; :!python %</code></li>
 </ul>
 <h3 id="39">3.9 最终效果</h3>
 <p><img alt="" src="../imgs/11-03_vim_show.png" /></p>
@@ -2409,55 +2495,95 @@ source $VIMRUNTIME/menu.vim
 <ul>
 <li>若不满足于自带的配色方案，可以上 <em>GitHub</em> 上搜索</li>
 <li>比如<ol>
-<li>搜索 <code>molokai</code></li>
+<li>搜索 <code class="codehilite">molokai</code></li>
 <li>复制 <em>Code</em></li>
-<li>在 <code>安装目录\vim81\colos</code> 下新建文本、粘贴 <em>Code</em>、保存为 <code>molokai.vim</code></li>
-<li>在 <em>_vimrc</em> 里更改配色方案：<code>colorscheme molokai</code></li>
+<li>在 <code class="codehilite">安装目录\vim81\colos</code> 下新建文本、粘贴 <em>Code</em>、保存为 <code class="codehilite">molokai.vim</code></li>
+<li>在 <em>_vimrc</em> 里更改配色方案：<code class="codehilite">colorscheme molokai</code></li>
 </ol>
 </li>
 </ul>
 <h3 id="43">4.3 本文的配置汇总</h3>
-<pre><code class="bash">&quot; 1. 设置配色方案
-&quot; colorscheme evening
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot; 1. 设置配色方案</span>
+<span class="s2">&quot;</span> colorscheme evening
 colorscheme molokai
 
-&quot; 2.1 隐藏菜单栏
-set guioptions-=m
+<span class="s2">&quot; 2.1 隐藏菜单栏</span>
+<span class="s2">set guioptions-=m</span>
 
-&quot; 2.2 隐藏工具栏
-set guioptions-=T
+<span class="s2">&quot;</span> <span class="m">2</span>.2 隐藏工具栏
+<span class="nb">set</span> guioptions-<span class="o">=</span>T
 
-&quot; 3. 显示行号
-set number
+<span class="s2">&quot; 3. 显示行号</span>
+<span class="s2">set number</span>
 
-&quot; 4. 统一缩进数为 4
-set softtabstop=4
-set shiftwidth=4
+<span class="s2">&quot;</span> <span class="m">4</span>. 统一缩进数为 <span class="m">4</span>
+<span class="nb">set</span> <span class="nv">softtabstop</span><span class="o">=</span><span class="m">4</span>
+<span class="nb">set</span> <span class="nv">shiftwidth</span><span class="o">=</span><span class="m">4</span>
 
-&quot; 5. 设置 Tab 键为 4 个空格
-set tabstop=4
+<span class="s2">&quot; 5. 设置 Tab 键为 4 个空格</span>
+<span class="s2">set tabstop=4</span>
 
-&quot; 6. 让空格代替 Tab
-set expandtab
+<span class="s2">&quot;</span> <span class="m">6</span>. 让空格代替 Tab
+<span class="nb">set</span> expandtab
 
-&quot; 7. 启动语法高亮
-syntax on
+<span class="s2">&quot; 7. 启动语法高亮</span>
+<span class="s2">syntax on</span>
 
-&quot; 8. 设置字体
-set guifont=Consolas:h16
+<span class="s2">&quot;</span> <span class="m">8</span>. 设置字体
+<span class="nb">set</span> <span class="nv">guifont</span><span class="o">=</span>Consolas:h16
 
-&quot; 9. 设置编码格式
-set encoding=utf-8
+<span class="s2">&quot; 9. 设置编码格式</span>
+<span class="s2">set encoding=utf-8</span>
 
-&quot; 10. 设置快速运行快捷键
+<span class="s2">&quot;</span> <span class="m">10</span>. 设置快速运行快捷键
 map &lt;F5&gt; :!python %
 
-&quot; 11. 备用，防止乱码
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+<span class="s2">&quot; 11. 备用，防止乱码</span>
+<span class="s2">source </span><span class="nv">$VIMRUNTIME</span><span class="s2">/delmenu.vim</span>
+<span class="s2">source </span><span class="nv">$VIMRUNTIME</span><span class="s2">/menu.vim</span>
 
-&quot; 下面是原来的 Code
-</code></pre>
+<span class="s2">&quot;</span> 下面是原来的 Code
+</pre></div>
+</td></tr></table>
                 
                   
                 
@@ -2494,13 +2620,13 @@ source $VIMRUNTIME/menu.vim
           </a>
         
         
-          <a href="../../../Web/HTML5/to be continued/" title="to be continued" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                to be continued
+                01 搭建博客的几种选择
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

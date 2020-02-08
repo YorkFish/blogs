@@ -1520,8 +1520,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1678,6 +1678,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1983,11 +2067,11 @@
 <li><u>暂存区</u>上一个版本的文件均已提交至<u>仓库</u></li>
 <li>此时<u>暂存区</u>的内容与<u>仓库</u>指向的版本的内容一致</li>
 <li>似曾相识的 <font color="red">modified</font><ul>
-<li><code>git status -s</code> 回馈的 <font color="red">m</font> 就是指 <font color="red">modified</font></li>
+<li><code class="codehilite">git status -s</code> 回馈的 <font color="red">m</font> 就是指 <font color="red">modified</font></li>
 <li>这里表明<u>工作区</u>的 <em>README.md</em> 与 <em>note_01.txt</em> 发生了变动</li>
 </ul>
 </li>
-<li>提示中最后一行表明 <code>git add</code> 与 <code>git commit -a</code> 有相同的效果</li>
+<li>提示中最后一行表明 <code class="codehilite">git add</code> 与 <code class="codehilite">git commit -a</code> 有相同的效果</li>
 </ul>
 <h3 id="_2">补充</h3>
 <ul>
@@ -2026,7 +2110,7 @@
 <li>即，将<u>工作区</u>的内容拉回到<u>暂存区</u>的版本</li>
 <li>即，用<u>暂存区</u>的内容覆盖<u>工作区</u></li>
 <li>虽说这条命令要少用，做实验嘛，不妨用一下</li>
-<li><code>&lt;file&gt;</code> 可以是多个文件，用空格隔开即可</li>
+<li><code class="codehilite">&lt;file&gt;</code> 可以是多个文件，用空格隔开即可</li>
 </ul>
 </li>
 </ul>
@@ -2039,14 +2123,14 @@
 <p><img alt="" src="../imgs/15-05_read_README.png" /></p>
 <h4 id="_3">说明</h4>
 <ul>
-<li><em>note_01.txt</em> 少了一句 <code>4. git commit -m "&lt;message&gt;" 加入仓库</code><ul>
+<li><em>note_01.txt</em> 少了一句 <code class="codehilite">4. git commit -m &quot;&lt;message&gt;&quot; 加入仓库</code><ul>
 <li>这句话并不是消失了，而是当初就没存在过</li>
-<li>之前的博文 <code>13_commit</code> 的 <code>2.3 骚操作</code> 中光顾着 <code>commit</code>，而在 <code>commit</code> 之前忘了 <code>add</code></li>
+<li>之前的博文 <code class="codehilite">13_commit</code> 的 <code class="codehilite">2.3 骚操作</code> 中光顾着 <code class="codehilite">commit</code>，而在 <code class="codehilite">commit</code> 之前忘了 <code class="codehilite">add</code></li>
 </ul>
 </li>
 <li><em>README.md</em><ul>
 <li><u>暂存区</u>里的 <em>README.md</em> 本来就没写东西，所以是空白的</li>
-<li><code>2.1</code> 的 <font color="red">modified</font> 是因为我当时变动了<u>工作区</u>的 <em>README.md</em></li>
+<li><code class="codehilite">2.1</code> 的 <font color="red">modified</font> 是因为我当时变动了<u>工作区</u>的 <em>README.md</em></li>
 </ul>
 </li>
 </ul>
@@ -2063,18 +2147,18 @@
 <p><img alt="" src="../imgs/15-06_git_status_-s.png" /></p>
 </li>
 <li>
-<p>使用 <code>git checkout .</code></p>
+<p>使用 <code class="codehilite">git checkout .</code></p>
 <p><img alt="" src="../imgs/15-07_git_checkout.png" /></p>
 </li>
 </ol>
 <h3 id="32">3.2 分析</h3>
 <ul>
-<li>仅仅使用 <code>git checkout</code><ul>
+<li>仅仅使用 <code class="codehilite">git checkout</code><ul>
 <li>没有效果</li>
 <li>有一个反馈：<em>note_n1.txt</em> 处于“未追踪”状态</li>
 </ul>
 </li>
-<li>只有使用 <code>git checkout .</code> 才生效</li>
+<li>只有使用 <code class="codehilite">git checkout .</code> 才生效</li>
 </ul>
                 
                   

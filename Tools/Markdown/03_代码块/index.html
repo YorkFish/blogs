@@ -1494,8 +1494,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1652,6 +1652,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1937,9 +2021,9 @@
 </ul>
 <h3 id="13">1.3 用法三</h3>
 <ul>
-<li>借助 <em>H5</em> 的标签 <code>&lt;code&gt;</code></li>
+<li>借助 <em>H5</em> 的标签 <code class="codehilite">&lt;code&gt;</code></li>
 <li>类似加引号</li>
-<li>需要配合换行标签 <code>&lt;br&gt;</code></li>
+<li>需要配合换行标签 <code class="codehilite">&lt;br&gt;</code></li>
 </ul>
 <h2 id="2">2. 说明</h2>
 <ul>
@@ -1951,48 +2035,70 @@
 <ul>
 <li>
 <p>示例</p>
-<pre><code>        print("Markdown")
-        print('1')
-        print('2')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>        print(&quot;Markdown&quot;)
+        print(&#39;1&#39;)
+        print(&#39;2&#39;)
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>
-<pre><code>print("Markdown")
-print('1')
-print('2')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>print(&quot;Markdown&quot;)
+print(&#39;1&#39;)
+print(&#39;2&#39;)
+</pre></div>
+</td></tr></table>
+
 </li>
 </ul>
 <h3 id="32">3.2 关于用法二</h3>
 <ul>
 <li>示例</li>
 </ul>
-<pre><code class="python">​```python
-print(&quot;Markdown&quot;)
-print('1')
-print('2')
-​```
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">​</span><span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Markdown&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
+<span class="err">​</span><span class="sb">``</span><span class="err">`</span>
+</pre></div>
+</td></tr></table>
 
 <ul>
 <li>效果</li>
 </ul>
-<pre><code class="python">print(&quot;Markdown&quot;)
-print('1')
-print('2')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Markdown&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <h3 id="32_1">3.2 关于用法三</h3>
 <ul>
 <li>
 <p>示例</p>
-<pre><code>&lt;code&gt;
-print("Markdown") &lt;br&gt;
-print('1') &lt;br&gt;
-print('2')
-&lt;/code&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;code&gt;</span>
+print(&quot;Markdown&quot;) <span class="nt">&lt;br&gt;</span>
+print(&#39;1&#39;) <span class="nt">&lt;br&gt;</span>
+print(&#39;2&#39;)
+<span class="nt">&lt;/code&gt;</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>

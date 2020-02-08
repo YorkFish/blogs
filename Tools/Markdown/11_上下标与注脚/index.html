@@ -1507,8 +1507,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1665,6 +1665,90 @@
   <li class="md-nav__item">
     <a href="../../Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1953,11 +2037,11 @@
 <h3 id="11">1.1 用法</h3>
 <h4 id="_2">上标</h4>
 <ul>
-<li>借助 <em>H5</em> 的标签 <code>&lt;sup&gt;</code></li>
+<li>借助 <em>H5</em> 的标签 <code class="codehilite">&lt;sup&gt;</code></li>
 </ul>
 <h4 id="_3">下标</h4>
 <ul>
-<li>借助 <em>H5</em> 的标签 <code>&lt;sub&gt;</code></li>
+<li>借助 <em>H5</em> 的标签 <code class="codehilite">&lt;sub&gt;</code></li>
 </ul>
 <h3 id="12">1.2 说明</h3>
 <ul>
@@ -1967,9 +2051,12 @@
 <ul>
 <li>
 <p>用法</p>
-<pre><code>2&lt;sup&gt;10&lt;/sup&gt;
-H&lt;sub&gt;2&lt;/sub&gt;O
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>2<span class="nt">&lt;sup&gt;</span>10<span class="nt">&lt;/sup&gt;</span>
+H<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>O
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>
@@ -1981,8 +2068,8 @@ H<sub>2</sub>O</p>
 <h3 id="21">2.1 用法</h3>
 <ul>
 <li>分两块<ol>
-<li>在需要放注脚的地方写 <code>[^String]</code>，其中 <em>String</em> 可以是任意字符串</li>
-<li>在注脚处的下方写 <code>[^String]: 相应的注脚</code></li>
+<li>在需要放注脚的地方写 <code class="codehilite">[^String]</code>，其中 <em>String</em> 可以是任意字符串</li>
+<li>在注脚处的下方写 <code class="codehilite">[^String]: 相应的注脚</code></li>
 </ol>
 </li>
 </ul>
@@ -1995,17 +2082,29 @@ H<sub>2</sub>O</p>
 <ul>
 <li>
 <p>示例</p>
-<pre><code>把鼠标移到注脚上试试，没反应的话就看看左下角。[^one]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>把鼠标移到注脚上试试，没反应的话就看看左下角。[^one]
 
 [^one]: 这个可以放到文中，但有些平台不支持；保险起见，放在文末吧
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 </li>
 <li>
 <p>效果</p>
-<p>把鼠标移到注脚上试试，没反应的话就看看左下角。<a href="这个可以放到文中，但有些平台不支持；保险起见，放在文末吧">^one</a></p>
+<p>把鼠标移到注脚上试试，没反应的话就看看左下角。<sup id="fnref:one"><a class="footnote-ref" href="#fn:one">1</a></sup></p>
 </li>
 </ul>
 <hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:one">
+<p>这个可以放到文中，但有些平台不支持；保险起见，放在文末吧&#160;<a class="footnote-backref" href="#fnref:one" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 

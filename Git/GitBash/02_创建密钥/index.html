@@ -1433,8 +1433,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1591,6 +1591,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1804,7 +1888,7 @@
 <h2 id="1">1. 输入命令</h2>
 <ul>
 <li>
-<p>命令格式：<code>ssh-keygen -t rsa -C "abc@email.com"</code></p>
+<p>命令格式：<code class="codehilite">ssh-keygen -t rsa -C &quot;abc@email.com&quot;</code></p>
 </li>
 <li>
 <p>命令说明：<em>C</em> 是大写</p>
@@ -1812,17 +1896,17 @@
 <li>
 <p>我的操作</p>
 <ul>
-<li>假设我的邮箱地址是 <em>york@email.com</em></li>
+<li>假设我的邮箱地址是 <em><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#111;&#114;&#107;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#121;&#111;&#114;&#107;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></em></li>
 </ul>
 <blockquote>
-<p>$ ssh-keygen -t rsa -C "york@email.com"</p>
+<p>$ ssh-keygen -t rsa -C "<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#111;&#114;&#107;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#121;&#111;&#114;&#107;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>"</p>
 </blockquote>
 </li>
 <li>
 <p>命令反馈</p>
 <ul>
-<li><code>Enter passphrase (empty for no pass phrase):</code></li>
-<li><code>Enter same passphrase again:</code></li>
+<li><code class="codehilite">Enter passphrase (empty for no pass phrase):</code></li>
+<li><code class="codehilite">Enter same passphrase again:</code></li>
 </ul>
 </li>
 <li>
@@ -1837,23 +1921,23 @@
 <h2 id="2">2. 复制公钥</h2>
 <ul>
 <li>
-<p>此时 <code>C:\Users\xxx\</code> 下会有一个隐藏文件夹：<code>.ssh</code></p>
+<p>此时 <code class="codehilite">C:\Users\xxx\</code> 下会有一个隐藏文件夹：<code class="codehilite"><span class="na">.ssh</span></code></p>
 </li>
 <li>
-<p>我进入 <code>C:\Users\york\.ssh</code>，里面有三个文件</p>
+<p>我进入 <code class="codehilite">C:\Users\york\.ssh</code>，里面有三个文件</p>
 <p><img alt="" src="../imgs/02-02_three_files.png" /></p>
 </li>
 <li>
 <p>说明</p>
 <ul>
-<li><code>id_rsa</code> 是私钥，不要泄露了</li>
-<li><code>id_rsa.pub</code> 是公钥，可以让他人知道</li>
+<li><code class="codehilite">id_rsa</code> 是私钥，不要泄露了</li>
+<li><code class="codehilite">id_rsa.pub</code> 是公钥，可以让他人知道</li>
 </ul>
 </li>
 <li>
 <p>操作</p>
 <ol>
-<li>打开 <code>id_rsa.pub</code></li>
+<li>打开 <code class="codehilite">id_rsa.pub</code></li>
 <li>复制里面的一堆文本</li>
 </ol>
 </li>

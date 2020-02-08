@@ -1500,8 +1500,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1658,6 +1658,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1949,11 +2033,11 @@
 <h3 id="21">2.1 准备</h3>
 <ol>
 <li>
-<p>在 <em>dev</em> 分支下 <code>add</code></p>
+<p>在 <em>dev</em> 分支下 <code class="codehilite">add</code></p>
 <p><img alt="" src="../imgs/26-02_add&amp;status.png" /></p>
 </li>
 <li>
-<p>对 <em>note_02.txt</em> 进行 <code>add</code>，然后 <code>commit</code></p>
+<p>对 <em>note_02.txt</em> 进行 <code class="codehilite">add</code>，然后 <code class="codehilite">commit</code></p>
 <p><img alt="" src="../imgs/26-03_commit&amp;status.png" /></p>
 </li>
 <li>
@@ -1969,7 +2053,7 @@
 <ul>
 <li>第一步的图<ul>
 <li>因为 <em>note_02.txt</em> 是在 <em>Git Bash</em> 下，用 <em>vim</em> 写入数据的，所以有个格式提醒</li>
-<li>我给 <em>note_02.txt</em> 转了格式后，才用 <code>git status</code> 查看，所以 <em>Git</em> 有个 <font color="red">modified</font> 提示</li>
+<li>我给 <em>note_02.txt</em> 转了格式后，才用 <code class="codehilite">git status</code> 查看，所以 <em>Git</em> 有个 <font color="red">modified</font> 提示</li>
 </ul>
 </li>
 <li>第四步的图<ul>
@@ -1984,13 +2068,13 @@
 <p><img alt="" src="../imgs/26-06_now_status.png" /></p>
 </li>
 <li>
-<p>切到 <em>dev</em> 分支，更改 <em>note_01.txt</em> 并 <code>add</code></p>
+<p>切到 <em>dev</em> 分支，更改 <em>note_01.txt</em> 并 <code class="codehilite">add</code></p>
 <p><img alt="" src="../imgs/26-07_checkout&amp;add.png" /></p>
 </li>
 </ol>
 <h4 id="_2">说明</h4>
 <ul>
-<li>此时的情况可以类似当成 <code>1. 情景描述</code></li>
+<li>此时的情况可以类似当成 <code class="codehilite">1. 情景描述</code></li>
 </ul>
 <h4 id="_3">注意</h4>
 <ul>
@@ -1999,18 +2083,18 @@
 <h3 id="23-bug">2.3 开始修复 Bug</h3>
 <ol>
 <li>
-<p><code>git stash</code></p>
+<p><code class="codehilite">git stash</code></p>
 <p><img alt="" src="../imgs/26-08_stash&amp;checkout&amp;commit.png" /></p>
 </li>
 <li>
-<p>这次使用 <code>--no-ff</code> 与 <code>pop</code></p>
+<p>这次使用 <code class="codehilite">--no-ff</code> 与 <code class="codehilite">pop</code></p>
 <p><img alt="" src="../imgs/26-09_--no-ff&amp;pop.png" /></p>
 </li>
 </ol>
 <h2 id="3">3. 一个注意点</h2>
 <ul>
 <li>
-<p>我在 <code>2.2</code> 的第二步将 <em>note_01.txt</em> 加入暂存区了</p>
+<p>我在 <code class="codehilite">2.2</code> 的第二步将 <em>note_01.txt</em> 加入暂存区了</p>
 <ul>
 <li>但现在的显示表明暂存区没有收入</li>
 <li>不过工作区的还在</li>

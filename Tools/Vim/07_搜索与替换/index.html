@@ -1386,8 +1386,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1645,6 +1645,90 @@
   <li class="md-nav__item">
     <a href="../11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -1912,9 +1996,9 @@
 <h2 id="1">1. 搜索</h2>
 <h3 id="11-string">1.1 <em>/String</em></h3>
 <ul>
-<li>即<strong>“斜杠”+“需要搜索的内容”+回车</strong></li>
-<li><code>String</code> 是虚指，实际用时由具体字符串代替</li>
-<li>若文本中有 <code>String</code>，光标在第一个词的首位</li>
+<li>即**“斜杠”+“需要搜索的内容”+回车**</li>
+<li><code class="codehilite">String</code> 是虚指，实际用时由具体字符串代替</li>
+<li>若文本中有 <code class="codehilite">String</code>，光标在第一个词的首位</li>
 <li>若搜索出多个<ul>
 <li>按 <kbd>n</kbd> 跳至下一处</li>
 <li>按 <kbd>N</kbd> 跳至上一处</li>
@@ -1924,22 +2008,22 @@
 <h3 id="12-string">1.2 <em>?String</em></h3>
 <ul>
 <li>即 <strong>“英文问号”+“需要搜索的内容”+回车</strong></li>
-<li><code>String</code> 是虚指，实际用时由具体字符串代替</li>
-<li>若文本中有匹配的 <code>String</code>，粗光标会显示在有该词的最后一行的第一个词的首位</li>
-<li>若搜索出多个（与 <code>/String</code> 相反）</li>
+<li><code class="codehilite">String</code> 是虚指，实际用时由具体字符串代替</li>
+<li>若文本中有匹配的 <code class="codehilite">String</code>，粗光标会显示在有该词的最后一行的第一个词的首位</li>
+<li>若搜索出多个（与 <code class="codehilite">/String</code> 相反）</li>
 <li>按 <kbd>N</kbd> 跳至下一处</li>
 <li>按 <kbd>n</kbd> 跳至上一处</li>
 </ul>
 <h3 id="13">1.3 知识点</h3>
 <ul>
 <li>若搜索时需要忽略大小写，以下两种方法均可<ol>
-<li>在配置文件 <em>_vimrc</em> 中添加命令 <code>set ic</code></li>
-<li>在当前页面敲击命令 <code>:set ic</code></li>
+<li>在配置文件 <em>_vimrc</em> 中添加命令 <code class="codehilite">set ic</code></li>
+<li>在当前页面敲击命令 <code class="codehilite">:set ic</code></li>
 </ol>
 </li>
 <li>搜索成功后会有高亮，若要消去高亮，以下两种方法均可<ul>
-<li><code>:nohl</code></li>
-<li><code>:noh</code></li>
+<li><code class="codehilite">:nohl</code></li>
+<li><code class="codehilite">:noh</code></li>
 </ul>
 </li>
 </ul>
@@ -1965,9 +2049,9 @@
 </table>
 <h3 id="22">2.2 搜索替换</h3>
 <ul>
-<li>下方的 <code>old</code> 和 <code>new</code> 是虚指，实际用时由具体字符串代替</li>
+<li>下方的 <code class="codehilite">old</code> 和 <code class="codehilite">new</code> 是虚指，实际用时由具体字符串代替</li>
 <li>
-<p>下方的 <code>n1</code> 和 <code>n2</code>  也是虚指，实际用时由具体数字代替</p>
+<p>下方的 <code class="codehilite">n1</code> 和 <code class="codehilite">n2</code>  也是虚指，实际用时由具体数字代替</p>
 <table>
 <thead>
 <tr>
@@ -1978,23 +2062,23 @@
 <tbody>
 <tr>
 <td align="left"><strong>:s/old/new</strong></td>
-<td align="left">将粗光标所在行第一个 <code>old</code> 替换成 <code>new</code></td>
+<td align="left">将粗光标所在行第一个 <code class="codehilite">old</code> 替换成 <code class="codehilite">new</code></td>
 </tr>
 <tr>
 <td align="left"><strong>:s/old/new/g</strong></td>
-<td align="left">将粗光标所在行所有的 <code>old</code> 替换成 <code>new</code></td>
+<td align="left">将粗光标所在行所有的 <code class="codehilite">old</code> 替换成 <code class="codehilite">new</code></td>
 </tr>
 <tr>
 <td align="left"><strong>:%s/old/new/g</strong></td>
-<td align="left">将当前文本所有的 <code>old</code> 替换成 <code>new</code></td>
+<td align="left">将当前文本所有的 <code class="codehilite">old</code> 替换成 <code class="codehilite">new</code></td>
 </tr>
 <tr>
 <td align="left"><strong>:n1,n2s/old/new/g</strong></td>
-<td align="left">将当前文本的第 <code>n1</code> 行到第 <code>n2</code> 行的 <code>old</code> 替换成 <code>new</code></td>
+<td align="left">将当前文本的第 <code class="codehilite">n1</code> 行到第 <code class="codehilite">n2</code> 行的 <code class="codehilite">old</code> 替换成 <code class="codehilite">new</code></td>
 </tr>
 <tr>
 <td align="left"><strong>:n1,n2s/old/new/gc</strong></td>
-<td align="left">1. 在上一条基础上，每替换一个都要确认 <br>2. 后续命令 <code>y/n/a/q/l</code> 分别代表 <br><code>确认/跳过/之后的全部/取消/换一个就结束</code></td>
+<td align="left">1. 在上一条基础上，每替换一个都要确认 <br>2. 后续命令 <code class="codehilite">y/n/a/q/l</code> 分别代表 <br><code class="codehilite">确认/跳过/之后的全部/取消/换一个就结束</code></td>
 </tr>
 </tbody>
 </table>

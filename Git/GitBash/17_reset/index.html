@@ -1534,8 +1534,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Tools/MkDocs/07_几种博客工具简介/" title="07 几种博客工具简介" class="md-nav__link">
-      07 几种博客工具简介
+    <a href="../../../Tools/MkDocs/07_MkDocs-Markdown/" title="07 MkDocs 上的 Markdown" class="md-nav__link">
+      07 MkDocs 上的 Markdown
     </a>
   </li>
 
@@ -1692,6 +1692,90 @@
   <li class="md-nav__item">
     <a href="../../../Tools/Vim/11_简洁流配置/" title="11 简洁流配置" class="md-nav__link">
       11 简洁流配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      搭建个人博客
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        搭建个人博客
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/01_搭建博客的几种选择/" title="01 搭建博客的几种选择" class="md-nav__link">
+      01 搭建博客的几种选择
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/02_几种博客工具简介/" title="02 几种博客工具简介" class="md-nav__link">
+      02 几种博客工具简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/03_docsify/" title="03 docsify" class="md-nav__link">
+      03 docsify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/04_gridea/" title="04 gridea" class="md-nav__link">
+      04 gridea
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Tools/搭建个人博客/05_hexo/" title="05 hexo" class="md-nav__link">
+      05 hexo
     </a>
   </li>
 
@@ -2014,27 +2098,27 @@
 <h2 id="2-git-reset-4545hard-hash_id62">2. <em>git reset --hard &lt;hash_id></em></h2>
 <ul>
 <li>
-<p>命令作用：回滚到 <code>hash_id</code> 对应的版本</p>
+<p>命令作用：回滚到 <code class="codehilite">hash_id</code> 对应的版本</p>
 <p><img alt="" src="../imgs/17-03_git_reset_--hard_hash.png" /></p>
 </li>
 </ul>
 <h3 id="_2">说明</h3>
 <ul>
-<li><code>hash_id</code> 可以不写全</li>
-<li>上图的 <code>hash_id</code> 已经是缩写了，而且还可以再缩</li>
-<li>前提：缩写后的值得是<strong>“唯一”</strong>的</li>
-<li>若忘了 <code>hash_id</code>，可以使用 <code>git reflog</code> 找回</li>
+<li><code class="codehilite">hash_id</code> 可以不写全</li>
+<li>上图的 <code class="codehilite">hash_id</code> 已经是缩写了，而且还可以再缩</li>
+<li>前提：缩写后的值得是**“唯一”**的</li>
+<li>若忘了 <code class="codehilite">hash_id</code>，可以使用 <code class="codehilite">git reflog</code> 找回</li>
 </ul>
 <h2 id="3-git-reset-4545hard-head">3. <em>git reset --hard HEAD^</em></h2>
 <ul>
 <li>
-<p>大多数的情况下，与 <code>git reset --hard HEAD~</code> 等效</p>
+<p>大多数的情况下，与 <code class="codehilite">git reset --hard HEAD~</code> 等效</p>
 <p><img alt="" src="../imgs/17-04_git_reset_--hard_HEAD.png" /></p>
 </li>
 </ul>
 <h3 id="_3">说明</h3>
 <ul>
-<li>有些版本的 <code>^</code> 需要加引号，如 <code>git reset --hard HEAD"^"</code></li>
+<li>有些版本的 <code class="codehilite">^</code> 需要加引号，如 <code class="codehilite">git reset --hard HEAD&quot;^&quot;</code></li>
 </ul>
 <h2 id="4">4. 几个注意点</h2>
 <ol>
@@ -2043,13 +2127,13 @@
 <p><img alt="" src="../imgs/17-05_git_reflog.png" /></p>
 </li>
 <li>
-<p><code>~</code> 或 <code>^</code> 可以累加，如果有许多记录</p>
+<p><code class="codehilite">~</code> 或 <code class="codehilite">^</code> 可以累加，如果有许多记录</p>
 <ul>
-<li>可以用 <code>git reset --hard HEAD~~</code> 回到上上个版本，并以此类推</li>
-<li>可以用 <code>git reset --hard HEAD~10</code> 依次往前回滚 <em>10</em> 下</li>
-<li><code>命令 git reset --hard HEAD</code> 虽没效果，但仍然要算一次记录</li>
-<li>保险起见，先 <code>git reflog</code>，再 <code>git reset --hard &lt;hash_id&gt;</code></li>
-<li>不喜欢 <code>hash_id</code> 的话，可以用“指针”，即 <code>HEAD@{n}</code></li>
+<li>可以用 <code class="codehilite">git reset --hard HEAD~~</code> 回到上上个版本，并以此类推</li>
+<li>可以用 <code class="codehilite">git reset --hard HEAD~10</code> 依次往前回滚 <em>10</em> 下</li>
+<li><code class="codehilite">命令 git reset --hard HEAD</code> 虽没效果，但仍然要算一次记录</li>
+<li>保险起见，先 <code class="codehilite">git reflog</code>，再 <code class="codehilite">git reset --hard &lt;hash_id&gt;</code></li>
+<li>不喜欢 <code class="codehilite">hash_id</code> 的话，可以用“指针”，即 <code class="codehilite">HEAD@{n}</code></li>
 </ul>
 </li>
 </ol>
@@ -2058,7 +2142,7 @@
 <h2 id="6">6. 关于单个文件的回滚</h2>
 <h3 id="61">6.1 操作</h3>
 <ul>
-<li>命令：<code>git reset HEAD~ &lt;file&gt;</code></li>
+<li>命令：<code class="codehilite">git reset HEAD~ &lt;file&gt;</code></li>
 <li>作用：将<u>仓库</u>中上个版本的 *\<file\>* 拉倒<u>暂存区</u></li>
 </ul>
 <p><img alt="" src="../imgs/17-07_git_reset_--hard_onefile.png" /></p>
@@ -2081,15 +2165,15 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><code>--hard</code></td>
+<td align="center"><code class="codehilite">--hard</code></td>
 <td align="left">移动 <em>HEAD</em>，使指向的“快照”用于<u>工作区</u>与<u>暂存区</u></td>
 </tr>
 <tr>
-<td align="center"><code>--soft</code></td>
+<td align="center"><code class="codehilite">--soft</code></td>
 <td align="left">移动 <em>HEAD</em> 的指向，但不回滚</td>
 </tr>
 <tr>
-<td align="center"><code>--mixed</code></td>
+<td align="center"><code class="codehilite">--mixed</code></td>
 <td align="left">仅对<u>暂存区</u>做回滚</td>
 </tr>
 </tbody>
