@@ -1,8 +1,31 @@
 site_name: YorkFish
 
-# theme: readthedocs
 theme:
     name: "material"
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        # guess_lang: false
+        linenums: true
+    - footnotes
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
 
 nav:
     - "index": index.md
@@ -99,7 +122,7 @@ nav:
             - "04 公式的使用": Tools/MkDocs/04_公式的使用.md
             - "05 导出": Tools/MkDocs/05_导出.md
             - "06 将网站放到互联网上": Tools/MkDocs/06_将网站放到互联网上.md
-            - "07 几种博客工具简介": Tools/MkDocs/07_几种博客工具简介.md
+            - "07 MkDocs 上的 Markdown": Tools/MkDocs/07_MkDocs-Markdown.md
         - "Vim":
             - "01 “3+1”种膜模式": Tools/Vim/01_三加一种模式.md
             - "02 定位命令": Tools/Vim/02_定位命令.md
@@ -112,6 +135,12 @@ nav:
             - "09 保存与退出": Tools/Vim/09_保存与退出.md
             - "10 偷懒用的命令": Tools/Vim/10_偷懒用的命令.md
             - "11 简洁流配置": Tools/Vim/11_简洁流配置.md
+        - "搭建个人博客":
+            - "01 搭建博客的几种选择": Tools/搭建个人博客/01_搭建博客的几种选择.md
+            - "02 几种博客工具简介": Tools/搭建个人博客/02_几种博客工具简介.md
+            - "03 docsify": Tools/搭建个人博客/03_docsify.md
+            - "04 gridea": Tools/搭建个人博客/04_gridea.md
+            - "05 hexo": Tools/搭建个人博客/05_hexo.md
 
     - "Web":
         - "HTML5":
