@@ -6,7 +6,6 @@ theme:
 markdown_extensions:
     - admonition
     - codehilite:
-        # guess_lang: false
         linenums: true
     - footnotes
     - pymdownx.arithmatex
@@ -77,7 +76,92 @@ nav:
             - "31 config": Git/GitBash/31_config.md
 
     - "Linux":
-        - "to be continued": Linux/to be continued.md
+        - "<001-008> 基础知识":
+            - "001 Unix": Linux/001_Unix.md
+            - "002 Linux": Linux/002_Linux.md
+            - "003 预备知识": Linux/003_预备知识.md
+            - "004 分区": Linux/004_分区.md
+            - "005 安装": Linux/005_安装.md
+            - "006 常见目录及其作用": Linux/006_常见目录及其作用.md
+            - "007 一些注意事项": Linux/007_一些注意事项.md
+            - "008 命令格式": Linux/008_命令格式.md
+        - "<009-016> 目标处理命令":
+            - "009 ls": Linux/009_ls.md
+            - "010 mkdir": Linux/010_mkdir.md
+            - "011 cd": Linux/011_cd.md
+            - "012 pwd": Linux/012_pwd.md
+            - "013 rmdir": Linux/013_rmdir.md
+            - "014 cp": Linux/014_cp.md
+            - "015 mv": Linux/015_mv.md
+            - "016 rm": Linux/016_rm.md
+        - "<017-023> 文件处理命令":
+            - "017 touch": Linux/017_touch.md
+            - "018 cat": Linux/018_cat.md
+            - "019 tac": Linux/019_tac.md
+            - "020 more": Linux/020_more.md
+            - "021 less": Linux/021_less.md
+            - "022 head": Linux/022_head.md
+            - "023 tail": Linux/023_tail.md
+        - "024 链接命令 ln": Linux/024_ln.md
+        - "<025-028> 权限管理命令":
+            - "025 chmod": Linux/025_chmod.md
+            - "026 chown": Linux/026_chown.md
+            - "027 chgrp": Linux/027_chgrp.md
+            - "028 umask": Linux/028_umask.md
+        - "<029-033> 文件搜索命令":
+            - "029 find": Linux/029_find.md
+            - "030 locate": Linux/030_locate.md
+            - "031 which": Linux/031_which.md
+            - "032 whereis": Linux/032_whereis.md
+            - "033 grep": Linux/033_grep.md
+        - "<034-035> 帮助命令":
+            - "034 man": Linux/034_man.md
+            - "035 help": Linux/035_help.md
+        - "<036-039> 用户管理命令":
+            - "036 useradd": Linux/036_useradd.md
+            - "037 passwd": Linux/037_passwd.md
+            - "038 who": Linux/038_who.md
+            - "039 w": Linux/039_w.md
+        - "<040-046> 压缩解压命令":
+            - "040 gzip": Linux/040_gzip.md
+            - "041 gunzip": Linux/041_gunzip.md
+            - "042 tar": Linux/042_tar.md
+            - "043 zip": Linux/043_zip.md
+            - "044 unzip": Linux/044_unzip.md
+            - "045 bzip2": Linux/045_bzip2.md
+            - "046 bunzip2": Linux/046_bunzip2.md
+        - "<047-056> 网络命令":
+            - "047 write": Linux/047_write.md
+            - "048 well": Linux/048_wall.md
+            - "049 ping": Linux/049_ping.md
+            - "050 ifconfig": Linux/050_ifconfig.md
+            - "051 mail": Linux/051_mail.md
+            - "052 last": Linux/052_last.md
+            - "053 lastlog": Linux/053_lastlog.md
+            - "054 traceroute": Linux/054_traceroute.md
+            - "055 netstat": Linux/055_netstat.md
+            - "056 setup": Linux/056_setup.md
+        - "057 挂载命令 mount": Linux/057_mount.md
+        - "<058-060> 关机重启等命令":
+            - "058 关机命令": Linux/058_关机命令.md
+            - "059 重启命令": Linux/059_重启命令.md
+            - "060 登出命令": Linux/060_logout.md
+        - "<061-066> RPM 命令管理":
+            - "061 软件包管理简介": Linux/061_软件包管理简介.md
+            - "062 RPM 包的命名原则与依赖性": Linux/062_RPM_包名与依赖性.md
+            - "063 RPM 包的安装、升级与卸载": Linux/063_RPM_包的安装、升级与卸载.md
+            - "064 RPM 包的查询": Linux/064_RPM_包的查询.md
+            - "065 RPM 包的校验": Linux/065_RPM_包的校验.md
+            - "066 RPM 包的文件提取": Linux/066_RPM_包的文件提取.md
+        - "<067-070> IP & yum":
+            - "067 IP 地址的配置": Linux/067_IP_地址的配置.md
+            - "068 网络 yum 源": Linux/068_网络_yum_源.md
+            - "069 yum 命令": Linux/069_yum_命令.md
+            - "070 光盘 yum 源搭建": Linux/070_光盘_yum_源搭建.md
+        - "<071-072> 源码包安装":
+            - "071 RPM 包与源码包的区别": Linux/071_RPM_包与源码包的区别.md
+            - "072 源码包的安装过程": Linux/072_源码包的安装过程.md
+        - "073 脚本安装": Linux/073_脚本安装包.md
 
     - "Python3":
         - "Basic Grammar":
