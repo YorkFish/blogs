@@ -169,7 +169,41 @@ nav:
         - "Advance Grammar":
             - "to be continued": Python3/Advance Grammar/to be continued.md
         - "Exercises":
-            - "to be continued": Python3/Exercises/to be continued.md
+            - "PythonChallenge":
+                - "00 warming up": Python3/Exercises/PythonChallenge/00_warming_up.md
+                - "01 what about making trans": Python3/Exercises/PythonChallenge/01_what_about_making_trans.md
+                - "02 ocr": Python3/Exercises/PythonChallenge/02_ocr.md
+                - "03 re": Python3/Exercises/PythonChallenge/03_re.md
+                - "04 follow the chain": Python3/Exercises/PythonChallenge/04_follow_the_chain.md
+                - "05 peak hell": Python3/Exercises/PythonChallenge/05_peak_hell.md
+                - "06 now there are pairs": Python3/Exercises/PythonChallenge/06_now_there_are_pairs.md
+                - "07 smarty": Python3/Exercises/PythonChallenge/07_smarty.md
+                - "08 working hard": Python3/Exercises/PythonChallenge/08_working_hard.md
+                - "09 connect the dots": Python3/Exercises/PythonChallenge/09_connect_the_dots.md
+                - "10 what are you looking at": Python3/Exercises/PythonChallenge/10_what_are_you_looking_at.md
+                - "11 odd even": Python3/Exercises/PythonChallenge/11_odd_even.md
+                - "12 dealing evil": Python3/Exercises/PythonChallenge/12_dealing_evil.md
+                - "13 call him": Python3/Exercises/PythonChallenge/13_call_him.md
+                - "14 walk around": Python3/Exercises/PythonChallenge/14_walk_around.md
+                - "15 whom": Python3/Exercises/PythonChallenge/15_whom.md
+                - "16 let me get this straight": Python3/Exercises/PythonChallenge/16_let_me_get_this_straight.md
+                - "17 eat": Python3/Exercises/PythonChallenge/17_eat.md
+                - "18 can you tell the difference": Python3/Exercises/PythonChallenge/18_can_you_tell_the_difference.md
+                - "19 please": Python3/Exercises/PythonChallenge/19_please.md
+                - "20 go away": Python3/Exercises/PythonChallenge/20_go_away.md
+                - "21 dealing package.pack": Python3/Exercises/PythonChallenge/21_dealing_package-pack.md
+                - "22 emulate": Python3/Exercises/PythonChallenge/22_emulate.md
+                - "23 what is this mudule": Python3/Exercises/PythonChallenge/23_what_is_this_module.md
+                - "24 from top to bottom": Python3/Exercises/PythonChallenge/24_from_top_to_bottom.md
+                - "25 imagine how they sound": Python3/Exercises/PythonChallenge/25_imagine_how_they_sound.md
+                - "26 be a man-apologize": Python3/Exercises/PythonChallenge/26_be_a_man-applogize.md
+                - "27 between the tables": Python3/Exercises/PythonChallenge/27_between_the_tables.md
+                - "28 many pairs ring-ring": Python3/Exercises/PythonChallenge/28_many_pairs_ring-ring.md
+                - "29 silence": Python3/Exercises/PythonChallenge/29_silence.md
+                - "30 relax you are on 30": Python3/Exercises/PythonChallenge/30_relax_you_are_on_30.md
+                - "31 where am I": Python3/Exercises/PythonChallenge/31_where_am_I.md
+                - "32 etch-a-scetch": Python3/Exercises/PythonChallenge/32_etch-a-scetch.md
+                - "33 33 bottles of beer of wall": Python3/Exercises/PythonChallenge/33_33_bottles_of_beer_of_wall.md
 
     - "Tools":
         - "Jupyter Notebook":

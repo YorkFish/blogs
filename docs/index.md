@@ -28,7 +28,10 @@
 
 1. - [ ] <font color="red">Basic Grammar</font>
 2. - [ ] <font color="red">Advance Grammar</font>
-3. - [ ] <font color="red">Exercises</font>
+
+### 4.3 *Exercises*
+
+1. - [x] <font color="green">PythonChallenge</font>
 
 ## 5. *Tools*
 
