@@ -2260,7 +2260,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2483,7 +2483,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2567,8 +2567,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3481,7 +3493,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3526,10 +3538,8 @@
                 
                 <h1 id="10-what-are-you-looking-at">第 <em>10</em> 题 <em>what are you looking at?</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/return/bull.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/bull.html">http://www.pythonchallenge.com/pc/return/bull.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/return/bull.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/bull.html">http://www.pythonchallenge.com/pc/return/bull.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="bull" src="../imgs/10_bull.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <blockquote>
@@ -3547,7 +3557,8 @@
 <li><code class="codehilite">a[4]</code> 的 <code class="codehilite">111221</code> 表示 <code class="codehilite">a[3]</code> 有 1 个 <code class="codehilite">1</code>，1 个 <code class="codehilite">2</code>，2 个 <code class="codehilite">1</code></li>
 </ul>
 </li>
-</ol>
+<li>
+<p>方法有许多，我来个抛砖引玉</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3565,31 +3576,29 @@
 15
 16
 17
-18
-19
-20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;11&quot;</span><span class="p">,</span> <span class="s2">&quot;21&quot;</span><span class="p">,</span> <span class="s2">&quot;1211&quot;</span><span class="p">,</span> <span class="s2">&quot;111221&quot;</span><span class="p">]</span>
-<span class="n">cnt</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="k">while</span> <span class="n">cnt</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">cnt</span><span class="p">]</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">num</span><span class="p">[</span><span class="n">e</span><span class="p">]</span> <span class="o">==</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-            <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">num</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+            <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">+</span> <span class="n">num</span><span class="p">[</span><span class="n">e</span><span class="p">]</span>
-            <span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span>
-    <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">+</span> <span class="n">num</span><span class="p">[</span><span class="n">e</span><span class="p">]</span>
-    <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-    <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">30</span><span class="p">]))</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span> <span class="o">+</span> <span class="n">t</span>
+            <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">c</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span> <span class="o">+</span> <span class="n">t</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">s</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 
 <span class="o">&gt;&gt;&gt;</span>
 <span class="mi">5808</span>
 </pre></div>
 </td></tr></table>
 
+</li>
+</ol>
 <h2 id="5">5. 答案</h2>
 <ul>
 <li><code class="codehilite">http://www.pythonchallenge.com/pc/return/5808.html</code></li>

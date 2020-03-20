@@ -2284,7 +2284,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2524,7 +2524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2608,8 +2608,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3522,7 +3534,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3608,10 +3620,8 @@
                 
                 <h1 id="12-dealing-evil">第 <em>12</em> 题 <em>dealing evil</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/return/evil.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/evil.html">http://www.pythonchallenge.com/pc/return/evil.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/return/evil.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/evil.html">http://www.pythonchallenge.com/pc/return/evil.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="evil1" src="../imgs/12_evil1.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3620,12 +3630,8 @@
 <h2 id="4">4. 解法</h2>
 <h3 id="part1">part1</h3>
 <ol>
-<li>
-<p>将题图另存为时发现此图名为 <code class="codehilite">evil1.jpg</code></p>
-</li>
-<li>
-<p>右键-复制图片地址，得到：<code class="codehilite">http://www.pythonchallenge.com/pc/return/evil1.jpg</code></p>
-</li>
+<li>将题图另存为时发现此图名为 <code class="codehilite">evil1.jpg</code></li>
+<li>图片地址：<code class="codehilite">http://www.pythonchallenge.com/pc/return/evil1.jpg</code></li>
 <li>
 <p>将 <code class="codehilite">evil1</code> 改为 <code class="codehilite">evil2</code>，得到下图</p>
 <p><img alt="evil2" src="../imgs/12_evil2.jpg" /></p>
@@ -3633,12 +3639,12 @@
 <li>
 <p>按图中提示，将地址的后缀改为 <code class="codehilite"><span class="na">.gfx</span></code>，可以下载到一个 <code class="codehilite">evil2.gfx</code> 的文件</p>
 </li>
+<li>搜索得知，<code class="codehilite">PS</code> 支持 <code class="codehilite"><span class="na">.gfx</span></code> 格式，我没有 <code class="codehilite">PS</code>，从结果看，这个文件是打不开的</li>
 </ol>
 <h3 id="part2">part2</h3>
-<ul>
-<li>从 <code class="codehilite">evil3</code> 往后试</li>
+<ol>
 <li>
-<p><code class="codehilite">evil3</code></p>
+<p>试试 <code class="codehilite">evil3</code>，果然还有图片</p>
 <p><img alt="evil3" src="../imgs/12_evil3.jpg" /></p>
 </li>
 <li>
@@ -3648,14 +3654,12 @@
 <li>
 <p><code class="codehilite">evil5</code> 是 <code class="codehilite">404</code>，所以到此为止了</p>
 </li>
-</ul>
+</ol>
 <h3 id="part3">part3</h3>
 <ol>
+<li>题图中，主角将牌分成了五堆，这是暗示我们将 <code class="codehilite">evil2.gfx</code> 分成五份</li>
 <li>
-<p>题图中，主角将牌分成了五堆，这是暗示我们将 <code class="codehilite">evil2.gfx</code> 分成五份</p>
-</li>
-<li>
-<p>检查一下数据是否是 5 的倍数</p>
+<p>检查一下数据是否是 <em>5</em> 的倍数</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3754,17 +3758,13 @@
 </ul>
 <h3 id="part5">part5</h3>
 <ul>
-<li>
-<p>第 4 张图是破损的</p>
-<ul>
+<li>第 <em>4</em> 张图是破损的，个人认为有以下三种解释<ol>
 <li>对应网页中的无法显示的 <code class="codehilite">evil4</code></li>
 <li>五组等长的数据合成不同格式的图片后，分辨率各异，还出现了破损的图片，结合题图，这可能暗示“赌桌”上存在 <code class="codehilite">evil</code></li>
-<li>也许作者的原意是：让我们通过 4 张正常的图片推测剩下的那张</li>
-</ul>
+<li>也许作者是想让我们通过四张正常的图片推测剩下的这张</li>
+</ol>
 </li>
-<li>
-<p>第 4 张图片虽然破损，但仍能辨认出，而将前四张图中的字母连起来，可得到：<code class="codehilite">disproportional</code></p>
-</li>
+<li>第 <em>4</em> 张图片虽然破损，但仍能辨认出，而将前四张图中的字母连起来，可得到：<code class="codehilite">disproportional</code></li>
 </ul>
 <h2 id="5">5. 答案</h2>
 <ul>

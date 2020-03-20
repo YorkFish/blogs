@@ -2404,7 +2404,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2524,7 +2524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2608,8 +2608,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3522,7 +3534,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3608,10 +3620,8 @@
                 
                 <h1 id="22-emulate">第 <em>22</em> 题 <em>emulate</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/hex/copper.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/copper.html">http://www.pythonchallenge.com/pc/hex/copper.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/hex/copper.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/copper.html">http://www.pythonchallenge.com/pc/hex/copper.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="level22" src="../imgs/22_level22.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3632,20 +3642,18 @@
 <li>
 <p>图片是 <code class="codehilite">gif</code> 格式，尺寸：<code class="codehilite">200x200</code></p>
 </li>
-<li>
-<p>图片一片漆黑，却有 39k</p>
-</li>
-<li>
-<p>使用“十六进制编辑器”打开图片，为文件头 <code class="codehilite">47 49 46 38 39 61 c8 00 c8 00 ...</code></p>
-<ul>
-<li>有过第 12 题的经验，可知前 6 组个字节对应 <code class="codehilite">GIF89a</code></li>
-<li><code class="codehilite">c8</code> 的十进制是 <code class="codehilite">200</code>，故后 4 个字节对应图片尺寸</li>
-<li>从第 14 个字节开始，3 个数据一组，表示调色板信息</li>
+<li>图片一片漆黑，却有 <em>39k</em></li>
+<li>使用“十六进制编辑器”打开图片，为文件头 <code class="codehilite">47 49 46 38 39 61 c8 00 c8 00 ...</code><ul>
+<li>有过第 <em>12</em> 题的经验，可知前六组个字节对应 <code class="codehilite">GIF89a</code></li>
+<li><code class="codehilite">c8</code> 的十进制是 <code class="codehilite">200</code>，故后四个字节对应图片尺寸</li>
+<li>从第 <em>14</em> 个字节开始，三个数据一组，表示调色板信息</li>
 <li>再往下走，还能看到 <code class="codehilite">NETSCAPE2.0</code> 和 <code class="codehilite">Created with The GIMP</code></li>
 <li>再往下走，还能看到 <code class="codehilite">c800c800</code>，且不止一次，这说明此图是由好几帧图片合成的动图</li>
 </ul>
-<h3 id="part2">part2</h3>
 </li>
+</ol>
+<h3 id="part2">part2</h3>
+<ol>
 <li>
 <p>查看颜色分布</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -3745,7 +3753,7 @@
 
 </li>
 <li>
-<p>该图有 133 帧</p>
+<p>该图有 <em>133</em> 帧</p>
 </li>
 </ol>
 <h3 id="part4">part4</h3>
@@ -3818,7 +3826,7 @@
 <span class="p">(</span><span class="mi">102</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="p">(</span><span class="mi">102</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="p">(</span><span class="mi">102</span><span class="p">,</span>  <span class="mi">98</span><span class="p">)</span>
-<span class="o">...</span>
+<span class="o">...</span>  <span class="c1"># 后面省略</span>
 </pre></div>
 </td></tr></table>
 
@@ -3886,7 +3894,7 @@
 
 </li>
 <li>
-<p>除去 <code class="codehilite">(0, 0)</code>，共有 8 种方向，这正对应手柄的八个方向</p>
+<p>除去 <code class="codehilite">(0, 0)</code>，共有八种方向，这正对应手柄的八个方向</p>
 </li>
 </ol>
 <h3 id="part5">part5</h3>
@@ -3946,25 +3954,7 @@
 54
 55
 56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+57</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 
 
 <span class="k">def</span> <span class="nf">get_movements</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
@@ -4008,23 +3998,6 @@
             <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
             <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">x</span> <span class="o">+=</span> <span class="n">dx</span>  <span class="c1"># 这样做，每个字母都需要顺时针转 180°</span>
-            <span class="n">y</span> <span class="o">+=</span> <span class="n">dy</span>
-        <span class="n">img</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">white</span><span class="p">)</span>
-    <span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-
-<span class="k">def</span> <span class="nf">get_script4</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">white</span> <span class="o">=</span> <span class="mi">255</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">dx</span> <span class="o">==</span> <span class="n">dy</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">x</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="n">cnt</span> <span class="o">*</span> <span class="mi">100</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
-            <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
             <span class="n">x</span> <span class="o">-=</span> <span class="n">dx</span>
             <span class="n">y</span> <span class="o">-=</span> <span class="n">dy</span>
         <span class="n">img</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">white</span><span class="p">)</span>
@@ -4037,8 +4010,7 @@
     <span class="n">gif</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="c1"># get_script1(res)  # 字母重叠在一起</span>
     <span class="c1"># get_script2(res)  # 5 -&gt; 5 letters</span>
-    <span class="c1"># get_script3(res)</span>
-    <span class="n">get_script4</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    <span class="n">get_script3</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 

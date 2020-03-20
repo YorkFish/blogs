@@ -2428,7 +2428,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2510,7 +2510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2594,8 +2594,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3508,7 +3520,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3580,10 +3592,8 @@
                 
                 <h1 id="24-from-top-to-bottom">第 <em>24</em> 题  <em>from top to bottom</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html">http://www.pythonchallenge.com/pc/hex/ambiguity.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html">http://www.pythonchallenge.com/pc/hex/ambiguity.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="maze" src="../imgs/24_maze.png" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3605,7 +3615,7 @@
 <p><img alt="out" src="../imgs/24_maze_out.png" /></p>
 </li>
 <li>
-<p>当然，使用 Python 解得入口与出口更有说服力</p>
+<p>当然，使用 <em>Python</em> 解得入口与出口更有说服力</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3643,7 +3653,7 @@
 </li>
 </ol>
 <h3 id="part2">part2</h3>
-<ul>
+<ol>
 <li>
 <p>使用 <em>BFS</em> 从出口反推路径，并绘制出路线（也有别的方法，比如 A-Star）</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -3747,12 +3757,10 @@
 <p>得到图片</p>
 <p><img alt="maze_route" src="../imgs/24_maze_route.png" /></p>
 </li>
-</ul>
+</ol>
 <h3 id="part3">part3</h3>
 <ol>
-<li>
-<p>黑色的像素点值是 0，这样的点都是在路径的偶数点 (0, 2, ...)</p>
-</li>
+<li>黑色的像素点值是 <code class="codehilite">0</code>，这样的点都是在路径的偶数点 <code class="codehilite">(0, 2, ...)</code></li>
 <li>
 <p>查看非黑色像素点的值，即路径数为奇数的点的像素值</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3763,7 +3771,7 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">maze</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">639</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># 入口的下一个点</span>
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">maze</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">639</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># 入口 (639, 0) 的下一个点</span>
 <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">maze</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">639</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
@@ -3777,7 +3785,7 @@
 
 </li>
 <li>
-<p>发现以 <code class="codehilite">PK</code> 开头，有了第 20 题的经验，可知这是 <code class="codehilite">zip</code> 格式的文件头</p>
+<p>发现以 <code class="codehilite">PK</code> 开头，有了第 <em>20</em> 题的经验，可知这是 <code class="codehilite">zip</code> 格式的文件头</p>
 </li>
 <li>
 <p>将这些数据写入</p>

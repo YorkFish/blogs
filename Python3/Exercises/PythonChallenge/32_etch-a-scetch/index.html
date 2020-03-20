@@ -2417,7 +2417,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2524,7 +2524,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2601,8 +2601,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3515,7 +3527,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3594,15 +3606,16 @@
                 
                 <h1 id="32-etch-a-scetch">第 <em>32</em> 题 <em>etch-a-scetch</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/rock/arecibo.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/rock/arecibo.html">http://www.pythonchallenge.com/pc/rock/arecibo.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/rock/arecibo.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/rock/arecibo.html">http://www.pythonchallenge.com/pc/rock/arecibo.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <ul>
 <li>准确地说，这一题的网页中显示的不是图片</li>
 <li>更像是用 <code class="codehilite">Js</code> 写的小游戏</li>
-</ul>
+<li>
+<p>截图</p>
 <p><img alt="arecibo" src="../imgs/32_arecibo.png" /></p>
+</li>
+</ul>
 <h2 id="3">3. 提示</h2>
 <ul>
 <li>
@@ -3621,9 +3634,7 @@
 <h2 id="4">4. 解法</h2>
 <h3 id="part1">part1</h3>
 <ol>
-<li>
-<p>进入 <code class="codehilite">http://www.pythonchallenge.com/pc/rock/warmup.txt</code></p>
-</li>
+<li>进入 <code class="codehilite">http://www.pythonchallenge.com/pc/rock/warmup.txt</code></li>
 <li>
 <p>得到</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -3690,10 +3701,8 @@
 </li>
 </ol>
 <h3 id="part2">part2</h3>
-<ul>
-<li>
 <p>这是一种名为 <code class="codehilite">Nonograms</code> 的游戏，从纵向数据看，左右很有可能是对称的</p>
-</li>
+<ol>
 <li>
 <p>凑横向的 <code class="codehilite">232</code></p>
 <p><img alt="01" src="../imgs/32_01.png" /></p>
@@ -3713,8 +3722,8 @@
 <li>
 <p>此时横向第三行已满</p>
 <ul>
-<li>此时的第 4 行只有一种填法</li>
-<li>若第 4 行定下，则第 1 列与第 9 列也只有一种填法</li>
+<li>此时的第 <em>4</em> 行只有一种填法</li>
+<li>若第 <em>4</em> 行定下，则第 <em>1</em> 列与第 <em>9</em> 列也只有一种填法</li>
 <li>如此，最后两个也就定了</li>
 </ul>
 </li>
@@ -3722,12 +3731,10 @@
 <p>最终效果</p>
 <p><img alt="05" src="../imgs/32_05.png" /></p>
 </li>
-</ul>
+</ol>
 <h3 id="part3">part3</h3>
 <ol>
-<li>
-<p>图像是向上的箭头，故关键字为 <code class="codehilite">up</code></p>
-</li>
+<li>图像是向上的箭头，故关键字为 <code class="codehilite">up</code></li>
 <li>
 <p>更改地址：<code class="codehilite">http://www.pythonchallenge.com/pc/rock/up.html</code>，得到</p>
 <blockquote>
@@ -3915,7 +3922,7 @@
 <li>递归地获取每行/列的所有组合方式</li>
 <li>若某一行/列的所有组合中，某一点的值不变，则这一点可以被确定</li>
 <li>用行/列中的确定点去筛选掉列/行中不符合该点值的组合</li>
-<li>反复筛选，直到剩下唯一的组合（作者凑好的）</li>
+<li>反复筛选，直到剩下唯一的组合（作者肯定凑好的）</li>
 </ol>
 </li>
 </ul>
@@ -4078,7 +4085,7 @@
         <span class="k">for</span> <span class="n">row</span><span class="p">,</span> <span class="n">lines</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">candi_h</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">lines</span> <span class="o">==</span> <span class="s2">&quot;done&quot;</span><span class="p">:</span>
                 <span class="k">continue</span>
-            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># 确定</span>
                 <span class="n">cnt</span> <span class="o">+=</span> <span class="n">res</span><span class="p">[</span><span class="n">row</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
                 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
                     <span class="n">res</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">col</span><span class="p">]</span>
@@ -4098,7 +4105,7 @@
         <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">lines</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">candi_v</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">lines</span> <span class="o">==</span> <span class="s2">&quot;done&quot;</span><span class="p">:</span>
                 <span class="k">continue</span>
-            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># 确定</span>
                 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
                     <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
                         <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -4193,7 +4200,7 @@
 </td></tr></table>
 
 <ul>
-<li>迷你龙？不，是一条 Python</li>
+<li>迷你龙？不，是一条 <em>Python</em></li>
 <li>登入 <code class="codehilite">http://www.pythonchallenge.com/pc/rock/python.html</code>，得到</li>
 <li>
 <p>图片</p>
@@ -4250,13 +4257,13 @@
           </a>
         
         
-          <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                33 33 bottles of beer of wall
+                33 33 bottles of beer on the wall
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

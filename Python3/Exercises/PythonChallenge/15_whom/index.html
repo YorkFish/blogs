@@ -2320,7 +2320,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2503,7 +2503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2587,8 +2587,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3501,7 +3513,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3566,10 +3578,8 @@
                 
                 <h1 id="15-whom">第 <em>15</em> 题 <em>whom</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/return/uzi.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/uzi.html">http://www.pythonchallenge.com/pc/return/uzi.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/return/uzi.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/uzi.html">http://www.pythonchallenge.com/pc/return/uzi.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="screen" src="../imgs/15_screen15.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3585,9 +3595,10 @@
 <h3 id="part1">part1</h3>
 <ol>
 <li>年份范围：<code class="codehilite">1xx6</code></li>
-<li>该年的 1 月 26 日是周一</li>
-<li>题图右下角的二月有 29 天，所以这一年是闰年</li>
-</ol>
+<li>该年的 <em>1</em> 月 <em>26</em> 日是周一</li>
+<li>题图右下角的二月有 <em>29</em> 天，所以这一年是闰年</li>
+<li>
+<p>用程序得到所有符合条件的年份</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3605,7 +3616,7 @@
 
 <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1006</span><span class="p">,</span> <span class="mi">1997</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
     <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">26</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># 周六对应 0</span>
+    <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># 周一对应 0</span>
         <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># 1xx6 年只需判断是否为 4 的倍数</span>
             <span class="k">print</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
 
@@ -3618,10 +3629,13 @@
 </pre></div>
 </td></tr></table>
 
+</li>
+</ol>
 <h3 id="part2">part2</h3>
 <ol>
-<li>因为是第二年轻，所以是 1756</li>
-<li>因为第二天要买花，所以 1756-1-27 可能是纪念日，搜索得知是奥地利作曲家**莫扎特** <code class="codehilite">mozart</code></li>
+<li>因为是第二年轻，所以是 <em>1756</em></li>
+<li>因为第二天要买花，所以 <code class="codehilite">1756-1-27</code> 可能是纪念日</li>
+<li>搜索得知：这天奥地利音乐大师**莫扎特**，也就是 <code class="codehilite">mozart</code></li>
 </ol>
 <h2 id="5">5. 答案</h2>
 <ul>

@@ -2417,7 +2417,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2500,7 +2500,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2601,8 +2601,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3515,7 +3527,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3594,10 +3606,8 @@
                 
                 <h1 id="30-relax-you-are-on-30">第 <em>30</em> 题 <em>relax you are on 30</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html">http://www.pythonchallenge.com/pc/ring/yankeedoodle.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html">http://www.pythonchallenge.com/pc/ring/yankeedoodle.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="yankeedoodle" src="../imgs/30_yankeedoodle.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3617,17 +3627,11 @@
 <h2 id="4">4. 解法</h2>
 <h3 id="part1">part1</h3>
 <ol>
+<li>题图是作者让我们放松心情的</li>
+<li>至于 <code class="codehilite">csv</code>，按照惯例，将网址后缀改为 <code class="codehilite">csv</code>，如此可以下载到文件 <code class="codehilite">yankeedoodle.csv</code></li>
+<li>可以使用 <code class="codehilite">Excel</code> 打开看看，都是数字</li>
 <li>
-<p>题图是作者让我们放松心情的</p>
-</li>
-<li>
-<p>至于 <code class="codehilite">csv</code>，按照惯例，将网址后缀改为 <code class="codehilite">csv</code>，如此可以下载到文件 <code class="codehilite">yankeedoodle.csv</code></p>
-</li>
-<li>
-<p>可以使用 <code class="codehilite">Excel</code> 打开看看，都是数字</p>
-</li>
-<li>
-<p>使用 Python 算一下数据数量</p>
+<p>使用 <em>Python</em> 算一下数据数量</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3642,7 +3646,7 @@
 
 </li>
 <li>
-<p>将 7367 分解质因数</p>
+<p>将 <code class="codehilite">7367</code> 分解质因数</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3721,8 +3725,8 @@
 
 <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;30_result.png&quot;</span><span class="p">)</span>
 <span class="n">tmp</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">tmp</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ROTATE_90</span><span class="p">)</span>  <span class="c1"># 顺时针 90 度</span>
-<span class="n">tmp</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">FLIP_TOP_BOTTOM</span><span class="p">)</span>  <span class="c1"># 水平翻转</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ROTATE_90</span><span class="p">)</span>  <span class="c1"># 逆时针旋转 90 度</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">FLIP_TOP_BOTTOM</span><span class="p">)</span>  <span class="c1"># 上下翻转转</span>
 <span class="n">tmp</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;30_result2.png&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
@@ -3735,8 +3739,8 @@
 </ol>
 <h3 id="part4">part4</h3>
 <ol>
-<li>按上图的公式做</li>
-</ol>
+<li>
+<p>按上图的公式做</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3759,9 +3763,12 @@
 </pre></div>
 </td></tr></table>
 
-<ul>
-<li>关键字：<code class="codehilite">grandpa</code></li>
-</ul>
+</li>
+<li>
+<p>关键字：<code class="codehilite">grandpa</code></p>
+</li>
+<li>之后的 <em>gibberish</em> 都可以忽略</li>
+</ol>
 <h2 id="5">5. 答案</h2>
 <ul>
 <li><code class="codehilite">http://www.pythonchallenge.com/pc/ring/grandpa.html</code></li>

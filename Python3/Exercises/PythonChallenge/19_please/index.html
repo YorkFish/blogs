@@ -2368,7 +2368,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2531,7 +2531,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2615,8 +2615,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3529,7 +3541,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3622,10 +3634,8 @@
                 
                 <h1 id="19-please">第 <em>19</em> 题 <em>please!</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/hex/bin.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/bin.html">http://www.pythonchallenge.com/pc/hex/bin.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/hex/bin.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/bin.html">http://www.pythonchallenge.com/pc/hex/bin.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="please" src="../imgs/19_map.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3704,13 +3714,21 @@
 </ol>
 <h3 id="part2">part2</h3>
 <ul>
-<li>打开网址：<code class="codehilite">http://www.pythonchallenge.com/pc/hex/sorry.html</code></li>
-<li>网页内有一句话：<code class="codehilite">- &quot;what are you apologizing for?&quot;</code></li>
+<li>
+<p>打开网址：<code class="codehilite">http://www.pythonchallenge.com/pc/hex/sorry.html</code>，看到</p>
+<blockquote>
+<p>"what are you apologizing for?"</p>
+</blockquote>
+</li>
 </ul>
 <h3 id="part3">part3</h3>
-<ul>
-<li>音频约 5 秒，不该只有一个单词</li>
-<li><code class="codehilite">wav</code> 格式文件头的 44 个字节是固定的，其余的数据分高低位，高位影响大，低位影响小</li>
+<ol>
+<li>音频约 <em>5</em> 秒，不该只有一个单词</li>
+<li>关于 <code class="codehilite">wav</code> 格式的文件头<ul>
+<li>前 <em>44</em> 个字节是固定的</li>
+<li>其余的数据分高八位与低八位，高位影响大，低位影响小</li>
+</ul>
+</li>
 <li>
 <p>试着“翻转高低位”</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3733,17 +3751,18 @@
 
 </li>
 <li>
-<p>打开 <code class="codehilite">newIndian.wav</code>，声音变得丰富了，但听不清词</p>
+<p>打开 <code class="codehilite">indian_1.wav</code>，声音变得丰富了，但听不清词</p>
 </li>
-</ul>
+</ol>
 <h3 id="part4">part4</h3>
-<ul>
+<ol>
 <li>翻转有误<ul>
 <li>上面是将 <code class="codehilite">12345678</code> 翻转为 <code class="codehilite">87654321</code></li>
 <li>应该翻转为 <code class="codehilite">21436587</code></li>
 </ul>
 </li>
-</ul>
+<li>
+<p>简单地说，除了文件头，其他的数据需要翻转各自的“高八位与低八位”</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3768,26 +3787,27 @@
 </pre></div>
 </td></tr></table>
 
-<ul>
-<li>播放 <code class="codehilite">secIndian.wav</code>，听到：<code class="codehilite">You are an idiot. Ha, ha, ha, ...</code></li>
+</li>
+<li>
+<p>播放 <code class="codehilite">indian_2.wav</code>，听到：<code class="codehilite">You are an idiot. Ha, ha, ha, ...</code></p>
+</li>
 <li>关键字：<code class="codehilite">idiot</code></li>
-</ul>
+</ol>
 <h3 id="part5">part5</h3>
 <ol>
-<li>打开网址：<code class="codehilite">http://www.pythonchallenge.com/pc/hex/idiot.html</code><ul>
+<li>打开网址：<code class="codehilite">http://www.pythonchallenge.com/pc/hex/idiot.html</code></li>
 <li>网页内容<ul>
 <li>上方：<code class="codehilite">Leopold</code> 的肖像</li>
 <li>下方：<code class="codehilite">&quot;Now you should apologize...&quot;</code> 和 <code class="codehilite">Continue to the next level</code></li>
-</ul>
-</li>
 </ul>
 </li>
 <li>点击 <code class="codehilite">Continue to the next level</code>，去到下一题</li>
 </ol>
 <h3 id="other">other</h3>
 <ul>
-<li>做一件与本题无关的事：将图中每个像素的 <code class="codehilite">R, G, B</code> 改为其“补色”</li>
-</ul>
+<li>做一件与本题无关的事：将图中的每个像素改为其“补色”</li>
+<li>
+<p>补色的 <code class="codehilite">R, G, B</code> 的算法：<code class="codehilite">255 - color_value</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3816,7 +3836,7 @@
 </pre></div>
 </td></tr></table>
 
-<ul>
+</li>
 <li>
 <p>得到一张清晰的图片</p>
 <p><img alt="new_map" src="../imgs/19_new_map.jpg" /></p>

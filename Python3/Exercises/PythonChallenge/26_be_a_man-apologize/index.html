@@ -2452,7 +2452,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2594,8 +2594,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3508,7 +3520,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3580,10 +3592,8 @@
                 
                 <h1 id="26-be-a-man-apologize">第 <em>26</em> 题 <em>be a man - apologize!</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/hex/decent.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/decent.html">http://www.pythonchallenge.com/pc/hex/decent.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/hex/decent.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/hex/decent.html">http://www.pythonchallenge.com/pc/hex/decent.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="decent" src="../imgs/26_decent.jpg" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3604,12 +3614,8 @@
 <h2 id="4">4. 解法</h2>
 <h3 id="part1">part1</h3>
 <ol>
-<li>
-<p>第 23 题开头，我曾给 <code class="codehilite">Leopold</code> 老爷子发过一封“道歉信”</p>
-</li>
-<li>
-<p>第 24 题结尾，我从 <code class="codehilite">maze.zip</code> 中得到了 <code class="codehilite">mybroken.zip</code>，并得知其中有 <code class="codehilite">mybroken.gif</code></p>
-</li>
+<li>第 <em>23</em> 题开头，我曾给 <code class="codehilite">Leopold</code> 老爷子发过一封“道歉信”</li>
+<li>第 <em>24</em> 题结尾，我从 <code class="codehilite">maze.zip</code> 中得到了 <code class="codehilite">mybroken.zip</code>，并得知其中有 <code class="codehilite">mybroken.gif</code></li>
 <li>
 <p>回顾一下 <code class="codehilite">Leopold</code> 的回信</p>
 <blockquote>
@@ -3622,15 +3628,11 @@
 <li>
 <p><code class="codehilite">Leopold</code> 大概想说：仅仅一个字节的改变，就会令文件的 <code class="codehilite">md5</code> 值发生巨大的变化</p>
 </li>
-<li>
-<p>可以推断，压缩文件 <code class="codehilite">mybroken.zip</code> 被改动了一个字节</p>
-</li>
+<li>可以推断，压缩文件 <code class="codehilite">mybroken.zip</code> 被改动了一个字节</li>
 </ol>
 <h3 id="part2">part2</h3>
 <ol>
-<li>
-<p>查看压缩包属性，其大小为 <code class="codehilite">2,701 bytes</code>（去掉一个字节恰能凑整，可惜不是这条思路）</p>
-</li>
+<li>查看压缩包属性，其大小为 <code class="codehilite">2,701 bytes</code>（去掉一个字节恰能凑整，可惜不是这条思路）</li>
 <li>
 <p>按暴力破解的方法，每次修改一个字节，直到算出的 <code class="codehilite">md5</code> 值与 <code class="codehilite">Leopold</code> 给出的一样为止</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -3714,17 +3716,12 @@
 <p><img alt="mybroken" src="../imgs/26_mybroken.gif" /></p>
 </li>
 <li>
-<p>其实使用 <code class="codehilite">bandzip</code> 可以直接看到 <code class="codehilite">speed</code>，原因可能和第 12 题相同，也许当时可以这样查看的软件不多</p>
+<p>其实使用 <code class="codehilite">bandzip</code> 可以直接看到 <code class="codehilite">speed</code>，原因可能和第 <em>12</em> 题的第四张破损的图片相同</p>
 </li>
-<li>
-<p>打不开网址 <code class="codehilite">http://www.pythonchallenge.com/pc/hex/speed.html</code></p>
-</li>
-<li>
-<p>回顾提示语：<code class="codehilite">I&#39;m missing the boat</code> 和第 23 题的 <code class="codehilite">this</code> 一样，也是双关语，意指 <code class="codehilite">speed</code> 漏下了 <code class="codehilite">boat</code></p>
-</li>
-<li>
-<p>解为  <code class="codehilite">speedboat</code></p>
-</li>
+<li>打不开网址 <code class="codehilite">http://www.pythonchallenge.com/pc/hex/speed.html</code></li>
+<li>回顾提示语：<code class="codehilite">I&#39;m missing the boat</code></li>
+<li>和第 <em>23</em> 题的 <code class="codehilite">this</code> 一样，这也是双关语，意指 <code class="codehilite">speed</code> 漏下了 <code class="codehilite">boat</code></li>
+<li>解为  <code class="codehilite">speedboat</code></li>
 </ol>
 <h2 id="5">5. 答案</h2>
 <ul>

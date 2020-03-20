@@ -2332,7 +2332,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -2510,7 +2510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2594,8 +2594,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3508,7 +3520,7 @@
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 图片
+    2. 题图
   </a>
   
 </li>
@@ -3580,10 +3592,8 @@
                 
                 <h1 id="16-let-me-get-this-straight">第 <em>16</em> 题 <em>let me get this straight</em></h1>
 <h2 id="1">1. 地址</h2>
-<ul>
-<li><a href="http://www.pythonchallenge.com/pc/return/mozart.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/mozart.html">http://www.pythonchallenge.com/pc/return/mozart.html</a></a></li>
-</ul>
-<h2 id="2">2. 图片</h2>
+<p><a href="http://www.pythonchallenge.com/pc/return/mozart.html" target="_blank">&gt;&gt;&gt; <a href="http://www.pythonchallenge.com/pc/return/mozart.html">http://www.pythonchallenge.com/pc/return/mozart.html</a></a></p>
+<h2 id="2">2. 题图</h2>
 <p><img alt="mozart" src="../imgs/16_mozart.gif" /></p>
 <h2 id="3">3. 提示</h2>
 <ul>
@@ -3599,11 +3609,9 @@
 <li>
 <p>第 <em>14</em> 题有 <code class="codehilite">1000X1</code> 的图片，此图为 <code class="codehilite">640X480</code></p>
 <ul>
-<li>可将此图看成是 480 个 <code class="codehilite">640X1</code> 的图片层叠而成</li>
+<li>可将此图看成是 <em>480</em> 个 <code class="codehilite">640X1</code> 的图片层叠而成</li>
+<li>检验每个 <code class="codehilite">640X1</code> 区域中紫色线段的数量（使用截图工具测量，紫色线段约 <em>5</em> 个像素）</li>
 </ul>
-</li>
-<li>
-<p>检验每个 <code class="codehilite">640X1</code> 区域中紫色线段的数量（使用截图工具测量，紫色线段约 5 个像素）</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3632,6 +3640,7 @@
 26
 27
 28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 
 
 <span class="k">def</span> <span class="nf">check_lines</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -3640,8 +3649,8 @@
     <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">line_num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
         <span class="n">line</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="n">pix</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">line_num</span><span class="p">))</span>
+        <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
             <span class="n">tmp</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">line_num</span><span class="p">))</span>
             <span class="k">if</span> <span class="n">tmp</span> <span class="o">==</span> <span class="n">pix</span><span class="p">:</span>
@@ -3651,14 +3660,13 @@
                 <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">if</span> <span class="n">cnt</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
                 <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
-                <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">res</span>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;16_mozart.gif&quot;</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">check_lines</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;mozart.gif&quot;</span>
+    <span class="n">pprint</span><span class="p">(</span><span class="n">check_lines</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
 </pre></div>
 </td></tr></table>
 
@@ -3666,22 +3674,21 @@
 <li>
 <p>结论</p>
 <ul>
-<li>每行均有连续 5 个像素一致的值</li>
-<li>连续 5 个 <code class="codehilite">195</code> 在每行都出现了一次</li>
+<li>每行均有连续 <em>5</em> 个像素一致的值</li>
+<li>有些行这样的值不值一个</li>
+<li>唯独 <code class="codehilite">195</code> 在每行都出现了一次</li>
 </ul>
 </li>
-<li>
-<p>关于 <code class="codehilite">195</code></p>
-<ul>
+<li>关于 <code class="codehilite">195</code><ul>
 <li>题图为 <code class="codehilite"><span class="na">.gif</span></code> 格式，此格式除了有 <code class="codehilite">R, G, B</code>，还有“调色板”信息</li>
-<li>0-255 对应 256 种颜色，195 的 <code class="codehilite">R, G, B</code> 对应 <code class="codehilite">(255, 0, 255)</code></li>
+<li><em>0-255</em> 对应 <em>256</em> 种颜色，<em>195</em> 的 <code class="codehilite">R, G, B</code> 对应 <code class="codehilite">(255, 0, 255)</code></li>
 </ul>
 </li>
 </ol>
 <h3 id="part2">part2</h3>
 <ol>
 <li>
-<p>可以对 part1 中的结论进行检验</p>
+<p>可以对 <em>part1</em> 中的结论进行检验</p>
 <p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3701,13 +3708,13 @@
 <span class="o">&gt;&gt;&gt;</span> 
 </pre></div>
 </td></tr></table>
-2. 640 x 4 = 2400, ok</p>
+2. 640 x 5 = 2400, ok</p>
 </li>
 </ol>
 <h3 id="part3">part3</h3>
-<ul>
-<li>把每一“条” <code class="codehilite">640X1</code> 以紫色线段为开头，多余的部分移到该行末尾</li>
-</ul>
+<ol>
+<li>
+<p>把每一“条” <code class="codehilite">640X1</code> 以紫色线段为开头，多余的部分移到该行末尾</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3722,24 +3729,29 @@
 12
 13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageChops</span>
 
-<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;mozart.gif&quot;</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;mozart.gif&quot;</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-    <span class="n">box</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="n">row</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
-    <span class="nb">bytes</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">tobytes</span><span class="p">()</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">195</span><span class="p">)</span>
-    <span class="n">row</span> <span class="o">=</span> <span class="n">ImageChops</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="o">-</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">image</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">box</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+    <span class="n">box</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
+    <span class="n">row_bytes</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">tobytes</span><span class="p">()</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">row_bytes</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">195</span><span class="p">)</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">ImageChops</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="o">-</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># like &#39;crol&#39; in c</span>
+    <span class="n">img</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">box</span><span class="p">)</span>
 
-<span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;16_result.gif&quot;</span><span class="p">)</span>
+<span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;16_result.gif&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
+</li>
+<li>
+<p>得到图片</p>
 <p><img alt="result" src="../imgs/16_result.gif" /></p>
-<ul>
-<li>答案就是 <code class="codehilite">romance</code></li>
-</ul>
+</li>
+<li>
+<p>得到答案：<code class="codehilite">romance</code></p>
+</li>
+</ol>
 <h2 id="5">5. 答案</h2>
 <ul>
 <li><code class="codehilite">www.pythonchallenge.com/pc/return/romance.html</code></li>

@@ -2517,7 +2517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../26_be_a_man-applogize/" title="26 be a man-apologize" class="md-nav__link">
+    <a href="../26_be_a_man-apologize/" title="26 be a man-apologize" class="md-nav__link">
       26 be a man-apologize
     </a>
   </li>
@@ -2601,8 +2601,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../33_33_bottles_of_beer_of_wall/" title="33 33 bottles of beer of wall" class="md-nav__link">
-      33 33 bottles of beer of wall
+    <a href="../33_33_bottles_of_beer_on_the_wall/" title="33 33 bottles of beer on the wall" class="md-nav__link">
+      33 33 bottles of beer on the wall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../summary/" title="summary" class="md-nav__link">
+      summary
     </a>
   </li>
 
@@ -3598,11 +3610,14 @@
 <li>无</li>
 </ul>
 <h2 id="2">2. 文件</h2>
-<ul>
+<ol>
 <li><code class="codehilite">readme.txt</code></li>
 <li><code class="codehilite">package.pack</code></li>
-</ul>
+</ol>
 <h2 id="3">3. 提示</h2>
+<ul>
+<li>
+<p><code class="codehilite">readme.txt</code>中的信息如下</p>
 <blockquote>
 <p>Yes! This is really level 21 in here. 
 And yes, After you solve it, you'll be in level 22!</p>
@@ -3612,20 +3627,18 @@ And yes, After you solve it, you'll be in level 22!</p>
 <li>When I had no idea what to do, I looked backwards.</li>
 </ul>
 </blockquote>
+</li>
+</ul>
 <h2 id="4">4. 解法</h2>
 <h3 id="part1">part1</h3>
 <ol>
 <li>使用“十六进制编辑器”打开 <code class="codehilite">readme.txt</code></li>
-<li>
-<p>搜索得知：<code class="codehilite">78 9c 00 0a</code>  为 <code class="codehilite">zlib</code> 文件头，此外还搜得</p>
-<ul>
+<li>搜索得知：<code class="codehilite">78 9c 00 0a</code>  为 <code class="codehilite">zlib</code> 文件头，此外还搜得<ul>
 <li><code class="codehilite"><span class="n">gzip</span><span class="o">:</span> <span class="mi">1</span><span class="n">f</span> <span class="mi">8</span><span class="n">b</span> <span class="mi">08</span></code></li>
-<li><code class="codehilite">lzma; 6c 00</code></li>
+<li><code class="codehilite"><span class="n">lzma</span><span class="o">:</span> <span class="mi">6</span><span class="n">c</span> <span class="mi">00</span></code></li>
 </ul>
 </li>
-<li>
-<p>至于“小时候玩的游戏”，确实没想到是“击鼓传花”</p>
-</li>
+<li>至于“小时候玩的游戏”，有人说是“击鼓传花”，我感觉像“套娃”</li>
 </ol>
 <h3 id="part2">part2</h3>
 <ol>
@@ -3683,7 +3696,7 @@ And yes, After you solve it, you'll be in level 22!</p>
 
 </li>
 <li>
-<p>上方使用 <code class="codehilite">zlib.decompress(data)</code> 6 次后，<code class="codehilite">data</code> 的“文件头”变为了 <code class="codehilite">BZh</code></p>
+<p>上方使用 <code class="codehilite">zlib.decompress(data)</code> 六次后，<code class="codehilite">data</code> 的“文件头”变为了 <code class="codehilite">BZh</code></p>
 </li>
 <li>
 <p>改使用 <code class="codehilite">Bz2</code></p>
@@ -3713,7 +3726,7 @@ And yes, After you solve it, you'll be in level 22!</p>
 
 </li>
 <li>
-<p>上方使用 <code class="codehilite">bz2.decompress(data)</code> 3 次后又回到 <code class="codehilite">zlib</code> 了</p>
+<p>上方使用 <code class="codehilite">bz2.decompress(data)</code> 三次后又回到 <code class="codehilite">zlib</code> 了</p>
 </li>
 <li>
 <p>加速，让 <code class="codehilite">while</code> 处理</p>
@@ -3748,12 +3761,10 @@ And yes, After you solve it, you'll be in level 22!</p>
 </li>
 </ol>
 <h3 id="part3">part3</h3>
-<blockquote>
-<p>When I had no idea what to do, I looked backwards.</p>
-</blockquote>
 <ol>
+<li>回想提示：<code class="codehilite">When I had no idea what to do, I looked backwards.</code></li>
 <li>
-<p>按 <code class="codehilite">readme</code> 中提示的做</p>
+<p>做一次 <code class="codehilite">reverse</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3766,7 +3777,7 @@ And yes, After you solve it, you'll be in level 22!</p>
 
 </li>
 <li>
-<p>看来，总共三种操作：zlib.decompress, bz2.decompress and reverse</p>
+<p>看来，总共三种操作：<code class="codehilite">zlib.decompress, bz2.decompress, reverse</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3817,7 +3828,7 @@ And yes, After you solve it, you'll be in level 22!</p>
 <h3 id="part4">part4</h3>
 <ol>
 <li>
-<p>按 part3 的提示，记录 <code class="codehilite">zlib.decompress</code> 与 <code class="codehilite">bz2.decompress</code> 与 <code class="codehilite"><span class="s s-Atom">data</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span></code> 的次数</p>
+<p>按 <em>part3</em> 的提示，记录 <code class="codehilite">zlib.decompress</code> 与 <code class="codehilite">bz2.decompress</code> 与 <code class="codehilite"><span class="s s-Atom">data</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span></code> 的次数</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3832,7 +3843,17 @@ And yes, After you solve it, you'll be in level 22!</p>
 12
 13
 14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">...</span>
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">bz2</span>
+<span class="kn">import</span> <span class="nn">zlib</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;package.pack&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
 <span class="n">cnt_zlib</span> <span class="o">=</span> <span class="n">cnt_bz2</span> <span class="o">=</span> <span class="n">cnt_reverse</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;x</span><span class="se">\x9c</span><span class="s1">&#39;</span><span class="p">):</span>
@@ -3852,7 +3873,7 @@ And yes, After you solve it, you'll be in level 22!</p>
 
 </li>
 <li>
-<p>发现反转只做了 9 次</p>
+<p>发现反转只做了 <em>9</em> 次</p>
 </li>
 <li>
 <p>将每次操作记录到列表中</p>
@@ -3870,21 +3891,31 @@ And yes, After you solve it, you'll be in level 22!</p>
 12
 13
 14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">...</span>
-<span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">bz2</span>
+<span class="kn">import</span> <span class="nn">zlib</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;package.pack&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;x</span><span class="se">\x9c</span><span class="s1">&#39;</span><span class="p">):</span>
         <span class="n">data</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;zlib&quot;</span><span class="p">)</span>  <span class="c1"># 因为不清晰，下一步改为 lst.append(&#39;z&#39;)</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;zlib&quot;</span><span class="p">)</span>  <span class="c1"># 因为不清晰，下一步改为 res.append(&#39;z&#39;)</span>
     <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;BZh&#39;</span><span class="p">):</span>
         <span class="n">data</span> <span class="o">=</span> <span class="n">bz2</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;bz2&quot;</span><span class="p">)</span>  <span class="c1"># 因为不清晰，下一步改为 lst.append(&#39;b&#39;)</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;bz2&quot;</span><span class="p">)</span>  <span class="c1"># 因为不清晰，下一步改为 res.append(&#39;b&#39;)</span>
     <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x9c</span><span class="s1">x&#39;</span><span class="p">):</span>
         <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;reverse&quot;</span><span class="p">)</span>  <span class="c1"># 因为稀有，猜测是 9 行的字符画，改为 \n，下一步把 list 改为 str</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;reverse&quot;</span><span class="p">)</span>  <span class="c1"># 因为稀有，猜测是 9 行的字符画，改为 \n，下一步把 list 改为 str</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">break</span>
-<span class="k">print</span><span class="p">(</span><span class="n">cnt_zlib</span><span class="p">,</span> <span class="n">cnt_bz2</span><span class="p">,</span> <span class="n">cnt_reverse</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
