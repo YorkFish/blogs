@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/hex/idiot2.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/idiot2.html</a>
+<a href="http://www.pythonchallenge.com/pc/hex/idiot2.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/idiot2.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![unreal](.\imgs\20_unreal.jpg)
 
@@ -47,7 +47,7 @@
 
     ```python
     import requests
-
+    
     # request
     url = "http://www.pythonchallenge.com/pc/hex/unreal.jpg"
     usr_and_pwd = ("butter", "fly")
@@ -57,7 +57,7 @@
     print("Response Headers:", res.headers)
     print("Size of Content:", len(res.content), "bytes")
     print("Content:", repr(res.content[:200]))
-
+    
     >>>
     Response Status Code: 200
     Response Headers: {'Content-Type': 'image/jpeg', 'Content-Range': 'bytes 0-30202/2123456789', 'Transfer-Encoding': 'chunked', 'Date': 'Sat, 07 Mar 2020 06:52:45 GMT', 'Server': 'lighttpd/1.4.35'}
@@ -100,7 +100,8 @@
 
 ### part3
 
-- 重复 part2 的第二步操作
+重复 *part2* 的第二步操作
+
 1. 从 `30236 + 1` 开始，得到
 
     ```txt
@@ -138,20 +139,19 @@
     ```
 
 5. 再重复，就没下文了
-   
+    
     - 抛出异常：`KeyError: 'content-range'`
 
 ### part4
 
 1. `Content` 中出现了三次 `invader`，拿它试试
-
 2. 打开 `http://www.pythonchallenge.com/pc/hex/invader.html`，得到
 
     > Yes! that's you!
 
 ### part5
 
-- 电影《头号玩家》中，第一关的“赛车”是从后方倒车打通的，试试主角的方法
+电影《头号玩家》中，第一关的“赛车”是从后方倒车打通的，试试主角的方法
 
 1. 从 `2123456789 - 1` 开始，得到
 
@@ -181,7 +181,7 @@
 
 ### part6
 
-- 重复 part5 的第一步操作
+重复 part5 的第一步操作
 
 1. 从 `2123456744 - 1` 开始，得到
 
@@ -202,9 +202,7 @@
     ```
 
 3. 内容分析
-    
     - `Content` 开头有个 `PK`，往后读还能看到 `readme.txt`
-    
     - 搜索得知 `PK` 是 `.zip` 的文件头
 4. 至此，反向走也到头了
 
@@ -226,7 +224,7 @@
         print("Response Status Code:", res.status_code)
         print("Content Range:", res.headers["Content-Range"])
         print("Size of Content:", len(res.content), "bytes")
-    
+        
         return res.content
     
     
@@ -237,7 +235,6 @@
     ```
 
 2. 打开 `unreal.zip`，内有两个文件，需要密码
-
 3. 使用 part5 得到的密码 `redavni` 打开 `readme.txt`
 
     ```txt

@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/ring/bell.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/bell.html</a>
+<a href="http://www.pythonchallenge.com/pc/ring/bell.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/bell.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![ring](.\imgs\28_bell.png)
 
@@ -20,10 +20,10 @@
 
 ### part1
 
-1. 按第一条提示，`Ring-Ring-Ring` 地多读几遍，像第 5 题的 `pickle` 那样，可以读出 `green`
-2. 修改网址，去到：`http://www.pythonchallenge.com/pc/ring/green.html`
+1. 按第一条提示，`Ring-Ring-Ring` 地多读几遍，像第 *5* 题的 `pickle` 那样，可以读出 `green`
+2. 修改网址，去到：`http://www.pythonchallenge.com/pc/ring/green.html`，看到
 
-3. 得到 `yes! green!`
+    > yes! green!
 
 ### part2
 
@@ -59,8 +59,7 @@
     >>> 
     ```
 
-4. 题外话：《银河系漫游指南》里，“生命、宇宙以及任何事情的终极答案”为 42
-
+4. 题外话：《银河系漫游指南》里，“生命、宇宙以及任何事情的终极答案”为 *42*
 5. 上一题的 `zigzag` 看似符合规律，但其中有 `9465` 个例外，这一题也是
 
     ```python

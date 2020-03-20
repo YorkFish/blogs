@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/def/ocr.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/ocr.html</a>
+<a href="http://www.pythonchallenge.com/pc/def/ocr.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/ocr.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![orc](.\imgs\02_ocr.jpg)
 
@@ -19,13 +19,13 @@
 
     ```txt
     find rare characters in the mess below:
-
+    
     %%$@_$^__#)^)&!_+]!*@&^}@[@%]()%+$&...  # 略去千余行
     ```
 
 2. 既然是“寻找稀有字符”，那么这一题是“统计词频”了
-
 3. 方便起见，我将上述乱码另存为 `ocr.txt`
+
 ### 4.1 方法一
 
 ```python
@@ -37,7 +37,7 @@ with open("ocr.txt") as f:
     lst.sort(key=lambda x: d[x])
     print(''.join(lst))
 
->>> 
+>>>
 equality
 ^*&${+!%}[_#](@)
 ```
@@ -54,7 +54,7 @@ with open("ocr.txt") as f:
     res = [e for e in c if c[e] == 1]
     print(''.join(res))
 
->>> 
+>>>
 equality
 ```
 

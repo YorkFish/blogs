@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/hex/copper.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/copper.html</a>
+<a href="http://www.pythonchallenge.com/pc/hex/copper.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/copper.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![level22](.\imgs\22_level22.jpg)
 
@@ -23,16 +23,14 @@
     ![white](.\imgs\22_white.gif)
 
 2. 图片是 `gif` 格式，尺寸：`200x200`
-
-3. 图片一片漆黑，却有 39k
-
+3. 图片一片漆黑，却有 *39k*
 4. 使用“十六进制编辑器”打开图片，为文件头 `47 49 46 38 39 61 c8 00 c8 00 ...`
-
-    - 有过第 12 题的经验，可知前 6 组个字节对应 `GIF89a`
-    - `c8` 的十进制是 `200`，故后 4 个字节对应图片尺寸
-    - 从第 14 个字节开始，3 个数据一组，表示调色板信息
+    - 有过第 *12* 题的经验，可知前六组个字节对应 `GIF89a`
+    - `c8` 的十进制是 `200`，故后四个字节对应图片尺寸
+    - 从第 *14* 个字节开始，三个数据一组，表示调色板信息
     - 再往下走，还能看到 `NETSCAPE2.0` 和 `Created with The GIMP `
     - 再往下走，还能看到 `c800c800`，且不止一次，这说明此图是由好几帧图片合成的动图
+
 ### part2
 
 1. 查看颜色分布
@@ -95,7 +93,7 @@
     133
     ```
 
-2. 该图有 133 帧
+2. 该图有 *133* 帧
 
 ### part4
 
@@ -135,11 +133,10 @@
     (102, 100)
     (102, 100)
     (102,  98)
-    ...
+    ...  # 后面省略
     ```
 
 4. 看上去很像笔画，一竖、一横的，而且是相对图片中心在动
-
 5. 记录相对中心的距离
 
     ```python
@@ -160,7 +157,7 @@
         gif = Image.open("white.gif")
         res = get_movements(gif)
         gif.close()
-    
+        
         print(list(res))
         print('=' * 30)
         print(set(res))
@@ -172,7 +169,7 @@
     {(0, 0), (-2, 0), (2, 2), (-2, 2), (2, -2), (2, 0), (-2, -2), (0, -2), (0, 2)}
     ```
 
-6. 除去 `(0, 0)`，共有 8 种方向，这正对应手柄的八个方向
+6. 除去 `(0, 0)`，共有八种方向，这正对应手柄的八个方向
 
 ### part5
 
@@ -221,23 +218,6 @@ def get_script3(lst):
             y = 50
             cnt += 1
         else:
-            x += dx  # 这样做，每个字母都需要顺时针转 180°
-            y += dy
-        img.putpixel((x, y), white)
-    img.show()
-
-
-def get_script4(lst):
-    white = 255
-    x = y = 50
-    img = Image.new('P', (500, 100), 0)
-    cnt = 0
-    for dx, dy in lst:
-        if dx == dy == 0:
-            x = 50 + cnt * 100
-            y = 50
-            cnt += 1
-        else:
             x -= dx
             y -= dy
         img.putpixel((x, y), white)
@@ -250,8 +230,7 @@ if __name__ == "__main__":
     gif.close()
     # get_script1(res)  # 字母重叠在一起
     # get_script2(res)  # 5 -> 5 letters
-    # get_script3(res)
-    get_script4(res)
+    get_script3(res)
 ```
 
 ![result](.\imgs\22_result.gif)

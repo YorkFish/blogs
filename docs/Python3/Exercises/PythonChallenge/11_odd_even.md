@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/return/5808.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/5808.html</a>
+<a href="http://www.pythonchallenge.com/pc/return/5808.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/5808.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![cave](.\imgs\11_cave.jpg)
 
@@ -18,11 +18,11 @@
 
 1. 此图像是从玻璃窗上看到的，有“倒影”
 2. 标题暗示把图像按“奇偶”分成两张
-3. 至于是什么的奇偶，大胆猜测：像素值的序号（从 0 开始）
+3. 至于是什么的奇偶，大胆猜测：像素的序号（从 *0* 开始）
 
 ### part2
 
-- 取一块并放大
+1. 从题图中取一块并放大
 
     ```python
     from PIL import Image
@@ -33,12 +33,11 @@
     big.save("11_crop_resize.png")
     ```
 
-- 得到如下图片
+2. 得到如下图片
 
     ![crop_resize](.\imgs\11_crop_resize.png)
 
-- 得到如下规律（单位：像素）
-
+3. 得到如下规律（单位：像素，从 *0* 开始计算）
     - 偶数行
         - 偶数列属于图一
         - 奇数列属于图二

@@ -2,7 +2,7 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/ring/grandpa.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/grandpa.html</a>
+<a href="http://www.pythonchallenge.com/pc/ring/grandpa.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/grandpa.html</a>
 
 ## 2. 图片
 
@@ -21,16 +21,14 @@
 1. 点击图片，有提示 `"island : country"`
     - 看来，又要更换账号、密码了
     - 而且，账号是岛屿名称，密码是国家名称
-2. 作者说这里的操作与 Python 的关系不大，那就使用百度识图把
+2. 作者说这里的操作与 Python 的关系不大，那就使用百度识图吧
     - 岛屿：苏梅岛 `kohsamui`
     - 国家：泰国 `thailand`
 
 ### part2
 
 1. 输入账号、密码后，来到 `http://www.pythonchallenge.com/pc/rock/grandpa.html`
-
 2. 新的标题：`UFOs ?`
-
 3. 新的题图
 
     ![UFO](.\imgs\31_mandelbrot.gif)
@@ -39,7 +37,7 @@
 
     > That was too easy. You are still on 31...
 
-4. 网页源码中有一段非注释在假装 HTML 语句
+4. 网页源码中有一段非注释在假装 `HTML` 语句
 
     ```txt
     <window left="0.34" top="0.57" width="0.036" height="0.027"/>
@@ -54,31 +52,25 @@
 
     ![dot](.\imgs\31_dot.png)
 
-
 ### part4
 
 1. 自己生成一张 `mandelbrot` 图，对比新题图
-
 2. `left, top, width, height`，是计算的界限（top 有争议）
-
 3. 经典图如下
    
     ![classic](.\imgs\31_mandelbrot_full.png)
 
 4. 关于上图的说明
-
     - 原点大约在图中的 `O` 处
     - `left` 等四个数字框住的范围大约在图中右上角的方框处
-
 5. 在二维图像 `(x，y)` 中的每个像素都唯一地对应一个复数 `c`
     - 其实部为 `left + x * width/img_size_w`
     - 其虚部为 `top + y * height/img_size_h`
+
 ### part5
 
 1. `z = 0 + 0j`
-
 2. 重复计算 `z = z * z + c`
-
 3. 如果 `z` 收敛，则显示这个像素
 
     ```python
@@ -111,7 +103,7 @@
 
     ![clean](.\imgs\31_mandelbrot_clean.gif)
 
-### part5
+### part6
 
 1. 找出不同点
 
@@ -156,7 +148,7 @@
     img2 = Image.open("newMandelbrot.gif")
     
     diff = [(i-j) for i,j in zip(img1.getdata(), img2.getdata()) if i != j]
-    plot = Image.new('L', (23, 73))  # ‘1’ 表示单色
+    plot = Image.new('L', (23, 73))  # ‘L’ 比 '1' 暗一些
     plot.putdata(diff)
     plot.save("plot.gif")
     ```
@@ -169,7 +161,7 @@
 
     > In 1974, the Arecibo Message[1] was sent into space via radio-waves from the Arecibo Observatory.
 
-6. 题外话：《三体》中，叶文洁在 1971 年也做过差不多的事。。。怪不得新标题是 `UFO ?`
+6. 题外话：《三体》中，叶文洁在 *1971* 年也做过差不多的事。。。怪不得新标题是 `UFO ?`
 
 ## 5. 答案
 

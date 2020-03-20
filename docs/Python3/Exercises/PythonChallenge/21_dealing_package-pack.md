@@ -6,18 +6,20 @@
 
 ## 2. 文件
 
-- `readme.txt`
-- `package.pack`
+1. `readme.txt`
+2. `package.pack`
 
 ## 3. 提示
 
-> Yes! This is really level 21 in here. 
-> And yes, After you solve it, you'll be in level 22!
->
-> Now for the level:
->
-> * We used to play this game when we were kids
-> * When I had no idea what to do, I looked backwards.
+- `readme.txt`中的信息如下
+
+    > Yes! This is really level 21 in here. 
+    > And yes, After you solve it, you'll be in level 22!
+    >
+    > Now for the level:
+    >
+    > * We used to play this game when we were kids
+    > * When I had no idea what to do, I looked backwards.
 
 ## 4. 解法
 
@@ -26,9 +28,8 @@
 1. 使用“十六进制编辑器”打开 `readme.txt`
 2. 搜索得知：`78 9c 00 0a`  为 `zlib` 文件头，此外还搜得
     - `gzip: 1f 8b 08`
-    - `lzma; 6c 00`
-
-3. 至于“小时候玩的游戏”，确实没想到是“击鼓传花”
+    - `lzma: 6c 00`
+3. 至于“小时候玩的游戏”，有人说是“击鼓传花”，我感觉像“套娃”
 
 ### part2
 
@@ -61,8 +62,7 @@
     >>>
     ```
 
-2. 上方使用 `zlib.decompress(data)` 6 次后，`data` 的“文件头”变为了 `BZh`
-
+2. 上方使用 `zlib.decompress(data)` 六次后，`data` 的“文件头”变为了 `BZh`
 3. 改使用 `Bz2`
 
     ```python
@@ -79,8 +79,7 @@
     >>> 
     ```
 
-4. 上方使用 `bz2.decompress(data)` 3 次后又回到 `zlib` 了
-
+4. 上方使用 `bz2.decompress(data)` 三次后又回到 `zlib` 了
 5. 加速，让 `while` 处理
 
     ```python
@@ -101,9 +100,8 @@
 
 ### part3
 
-> When I had no idea what to do, I looked backwards.
-
-1. 按 `readme` 中提示的做
+1. 回想提示：`When I had no idea what to do, I looked backwards.`
+2. 做一次 `reverse`
 
     ```python
     >>> data = data[::-1]
@@ -112,7 +110,7 @@
     >>> 
     ```
 
-2. 看来，总共三种操作：zlib.decompress, bz2.decompress and reverse
+3. 看来，总共三种操作：`zlib.decompress, bz2.decompress, reverse`
 
     ```python
     import bz2
@@ -120,7 +118,7 @@
     
     with open("package.pack", "rb") as f:
         data = f.read()
-    
+        
         while True:
             if data.startswith(b'x\x9c'):
                 data = zlib.decompress(data)
@@ -130,21 +128,26 @@
                 data = data[::-1]
             else:
                 break
-    
+        
         print(data)
     
     >>>
     b'sgol ruoy ta kool'
     ```
 
-3. 这回可以肉眼反转：`look at your logs`
+4. 这回可以肉眼反转：`look at your logs`
 
 ### part4
 
-1. 按 part3 的提示，记录 `zlib.decompress` 与 `bz2.decompress` 与 `data[::-1]` 的次数
+1. 按 *part3* 的提示，记录 `zlib.decompress` 与 `bz2.decompress` 与 `data[::-1]` 的次数
 
     ```python
-    ...
+    import bz2
+    import zlib
+    
+    with open("package.pack", "rb") as f:
+        data = f.read()
+    
     cnt_zlib = cnt_bz2 = cnt_reverse = 0
     while True:
         if data.startswith(b'x\x9c'):
@@ -161,26 +164,31 @@
     print(cnt_zlib, cnt_bz2, cnt_reverse)
     ```
 
-2. 发现反转只做了 9 次
+2. 发现反转只做了 *9* 次
 
 3. 将每次操作记录到列表中
 
     ```python
-    ...
-    lst = []
+    import bz2
+    import zlib
+    
+    with open("package.pack", "rb") as f:
+        data = f.read()
+    
+    res = []
     while True:
         if data.startswith(b'x\x9c'):
             data = zlib.decompress(data)
-            lst.append("zlib")  # 因为不清晰，下一步改为 lst.append('z')
+            res.append("zlib")  # 因为不清晰，下一步改为 res.append('z')
         elif data.startswith(b'BZh'):
             data = bz2.decompress(data)
-            lst.append("bz2")  # 因为不清晰，下一步改为 lst.append('b')
+            res.append("bz2")  # 因为不清晰，下一步改为 res.append('b')
         elif data.endswith(b'\x9cx'):
             data = data[::-1]
-            lst.append("reverse")  # 因为稀有，猜测是 9 行的字符画，改为 \n，下一步把 list 改为 str
+            res.append("reverse")  # 因为稀有，猜测是 9 行的字符画，改为 \n，下一步把 list 改为 str
         else:
             break
-    print(cnt_zlib, cnt_bz2, cnt_reverse)
+    print(res)
     ```
 
 4. 对上一步，按注释改过后，可看出大致轮廓

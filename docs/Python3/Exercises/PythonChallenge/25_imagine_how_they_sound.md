@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/hex/lake.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/lake.html</a>
+<a href="http://www.pythonchallenge.com/pc/hex/lake.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/lake.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![lake](.\imgs\25_lake1.jpg)
 
@@ -18,14 +18,14 @@
 
 ### part1
 
-1. 这一题的图片名为 `lake1.jpg`，按之前的规律（如第 12 题），可能有 `lake2, lake3, ...`
-2. 按标题的提示，发现 `wave sounds like wav` （如第19 题，有用到 `wav` 模块）
+1. 这一题的图片名为 `lake1.jpg`，按之前的规律（如第 *12* 题），可能有 `lake2, lake3, ...`
+2. 标题是在提示使用 *Python* 的 `wave` 库 （如第 *19* 题，`summary` 中有用到 `wave` 模块）
 3. 先将网址的 `lake.html` 改为 `lake1.wav` 试试
 4. 网页源码注释提示 `waves`，这说明可能有许多 `.wav`，我试了 `lake2.wav` 果然有
 
 ### part2
 
-1. 这是第 25 关，而且图中的拼图块也有 25 块，说不定有 25 个 `.wav` 文件
+1. 这是第 *25* 题，而且图中的拼图块也有 *25* 块，说不定有 *25* 个 `.wav` 文件
 
     ```python
     from requests import get
@@ -60,61 +60,40 @@
     ```
 
 2. 上面的方法能下，但中途可能会卡
-
 3. 加入请求头，并将其下载入一个文件夹内
 
     ```python
-    from requests import get
+    import requests
     
     
-    def download_one(filename):
-        url = "http://www.pythonchallenge.com/pc/hex/" + filename
-        res = get(url, auth=("butter", "fly"))
-        if res.ok:
-            f = open(filename, "wb")
+    req = requests.Session()
+    header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 YaBrowser/16.10.0.2564 Yowser/2.5 Safari/537.36"}
+    url = "http://www.pythonchallenge.com/pc/hex/"
+    for i in range(1, 26):
+        name = f"lake{i}.wav"
+        res = req.get(url+name, auth=("butter", "fly"), headers=header)
+        with open(r"lake\{}".format(name), "wb") as f:
             f.write(res.content)
-            f.close()
-            return True
-        else:
-            return False
-    
-    
-    def download_all():
-        n = 1
-        while True:
-            filename = f"lake{n}.wav"
-            if download_one(filename):
-                print(filename, "download!")
-                n += 1
-            else:
-                print("nothing more.")
-                return
-    
-    
-    if __name__ == "__main__":
-        download_all()
+            print(name, "has been downloaded!")
     ```
-
+    
 4. 如果中途还是卡了，可以关闭程序，修改循环起始数据，继续下载
 
 ### part2
 
 1. 随机听几个音频，比较刺耳
-
 2. 右键查看一下属性，发现其大小为 `10,844 bytes`
-
-3. 从第 19 题学到：`.wav` 的文件头大小为 `44 bytes`
-
-4. 拿 Python 的交互环境当一下计算器
+3. 从第 *19* 题学到：`.wav` 的文件头大小为 `44 bytes`
+4. 拿 *Python* 的交互环境当一下计算器
 
     ```python
     >>> from math import sqrt
-    >>> sqrt((10844 - 44) // 3)  # 每个颜色三个字节
+    >>> sqrt((10844 - 44) // 3)  # 每个颜色占三个字节 (R, G, B)
     60.0
     >>> 
     ```
 
-5. 可以大胆猜测每个音频均可化为 60x60 的图片，然后像题图一样拼成 300x300 的大图
+5. 可以大胆猜测每个音频均可化为 `60x60` 的图片，然后像题图一样拼成 `300x300` 的大图
 
     ```python
     from PIL import Image
@@ -135,7 +114,7 @@
 
 ### part3
 
-1. 生成 25 张图片（不必一一保存），并将其以 5x5 的排列拼成一幅图片
+1. 生成 *25* 张图片（不必一一保存），并将其以 `5x5` 的排列拼成一幅图片
 
     ```python
     from PIL import Image

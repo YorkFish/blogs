@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/def/oxygen.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/oxygen.html</a>
+<a href="http://www.pythonchallenge.com/pc/def/oxygen.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/oxygen.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![oxygen](.\imgs\07_oxygen.png)
 
@@ -19,7 +19,7 @@
 1. 图中让人在意的无疑就是中间的那条马赛克似的横线
 2. 使用截图工具查看，可发现
     - “马赛克”处每种颜色各自的 `R, G, B` 三值相等
-    - 每个色块宽约 7，总长约 609
+    - 每个色块宽约 *7*，总长约 *609*
     - `h = 50` 这一行经过所有的色块
 
 ### part2
@@ -29,7 +29,7 @@
 
     ```python
     from PIL import Image
-
+    
     f = open("07_RGB.txt", 'w')
     img = Image.open("oxygen.png")
     pix = img.load()
@@ -45,7 +45,7 @@
 
     ```python
     from PIL import Image
-
+    
     f = open("07_RGB2ASCII.txt", 'w')
     img = Image.open("oxygen.png")
     pix = img.load()
@@ -61,12 +61,12 @@
 
 ### part4
 
-- 对列表中的数字再做一次 ASCII 转换
+- 对列表中的数字再做一次 *ASCII* 转换
 
     ```python
     >>> lst = [105, 110, 116, 101, 103, 114, 105, 116, 121]
-    >>> ''.join([chr(e) for e in lst])
-    'integrity'
+    >>> bytes([c for c in lst])
+    b'integrity'
     >>> 
     ```
 

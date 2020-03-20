@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/yankeedoodle.html</a>
+<a href="http://www.pythonchallenge.com/pc/ring/yankeedoodle.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/yankeedoodle.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![yankeedoodle](.\imgs\30_yankeedoodle.jpg)
 
@@ -23,12 +23,9 @@
 ### part1
 
 1. 题图是作者让我们放松心情的
-
 2. 至于 `csv`，按照惯例，将网址后缀改为 `csv`，如此可以下载到文件 `yankeedoodle.csv`
-
 3. 可以使用 `Excel` 打开看看，都是数字
-
-4. 使用 Python 算一下数据数量
+4. 使用 *Python* 算一下数据数量
 
     ```python
     >>> f = open("yankeedoodle.csv")
@@ -38,7 +35,7 @@
     >>> 
     ```
 
-5. 将 7367 分解质因数
+5. 将 `7367` 分解质因数
 
     ```python
     def prime_factorization(num):
@@ -88,8 +85,8 @@
     
     img = Image.open("30_result.png")
     tmp = img.copy()
-    tmp = tmp.transpose(Image.ROTATE_90)  # 顺时针 90 度
-    tmp = tmp.transpose(Image.FLIP_TOP_BOTTOM)  # 水平翻转
+    tmp = tmp.transpose(Image.ROTATE_90)  # 逆时针旋转 90 度
+    tmp = tmp.transpose(Image.FLIP_TOP_BOTTOM)  # 上下翻转转
     tmp.save("30_result2.png")
     ```
 
@@ -101,20 +98,21 @@
 
 1. 按上图的公式做
 
-```python
-f = open("yankeedoodle.csv")
-nums = [num.strip() for num in f.read().split(',')]
-f.close()
-res = [int(x[0][5] + x[1][5] + x[2][6]) for x in zip(nums[0::3], nums[1::3], nums[2::3])]
-print(''.join([chr(e) for e in res]))
+    ```python
+    f = open("yankeedoodle.csv")
+    nums = [num.strip() for num in f.read().split(',')]
+    f.close()
+    res = [int(x[0][5] + x[1][5] + x[2][6]) for x in zip(nums[0::3], nums[1::3], nums[2::3])]
+    print(''.join([chr(e) for e in res]))
+    
+    >>>
+    So, you found the hidden message.
+    There is lots of room here for a long message, but we only need very little space to say "look at grandpa", so the rest is just garbage.
+    VTZ.l'tf*Om@I"p]#R`cWEBZ40ofSC>OZFkRP0\)+b?Ir)S%Jt3f{ei%n2<FErFx~IzVm JTh =xdx++'de8C5'|>2\/We;ib(b%d$N<2u(o$*d@.*6Fd'nW5#J!}a]T"1Q-7Y~bOF]T+^9d]e^J^=&I&<x|EEgdQ$$pX'f!_n>F0...
+    ```
 
->>>
-So, you found the hidden message.
-There is lots of room here for a long message, but we only need very little space to say "look at grandpa", so the rest is just garbage.
-VTZ.l'tf*Om@I"p]#R`cWEBZ40ofSC>OZFkRP0\)+b?Ir)S%Jt3f{ei%n2<FErFx~IzVm JTh =xdx++'de8C5'|>2\/We;ib(b%d$N<2u(o$*d@.*6Fd'nW5#J!}a]T"1Q-7Y~bOF]T+^9d]e^J^=&I&<x|EEgdQ$$pX'f!_n>F0...
-```
-
-- 关键字：`grandpa`
+2. 关键字：`grandpa`
+3. 之后的 *gibberish* 都可以忽略
 
 ## 5. 答案
 

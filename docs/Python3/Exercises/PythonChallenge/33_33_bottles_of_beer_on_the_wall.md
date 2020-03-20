@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/rock/beer.html" target="_blank">>>> http://www.pythonchallenge.com/pc/rock/beer.html</a>
+<a href="http://www.pythonchallenge.com/pc/rock/beer.html" target="_blank">>>> http://www.pythonchallenge.com/pc/rock/beer.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![beer](.\imgs\33_beer1.jpg)
 
@@ -23,11 +23,11 @@
 
 1. 图片名为 `bear1.jpg`，按照惯例，改地址，得到 `bear2.jpg`
 
-![beer2](.\imgs\beer2.jpg)
+    ![beer2](.\imgs\beer2.jpg)
 
 2. 再改，改为 `beer2.png`，得到一张灰度图
 
-![beer2](.\imgs\beer2.png)
+    ![beer2](.\imgs\beer2.png)
 
 ### part2
 
@@ -65,9 +65,9 @@ print(len(wall))
 33
 ```
 
-- 分析结果
+- 结果分析
     - 194 - 193 = 1, 188 - 187 = 1, 182 - 181 = 1 ...
-    - 若 for 语句中不用 if 筛选，会发现 wall 中的平方数也是间隔的
+    - 若 `for` 语句中不用 `if` 筛选，会发现 `wall` 中的平方数也是间隔的
 
 ### part3
 
@@ -87,7 +87,7 @@ for i in range(33):
     max_value = max(ashes, default=-1)
 ```
 
-- 与第 25 题类似，这一关可以得到 33 张图片
+- 与第 *25* 题类似，这一题是第 *33* 题，故可得 *33* 张图片
 
     ![result](.\imgs\33_result.png)
 

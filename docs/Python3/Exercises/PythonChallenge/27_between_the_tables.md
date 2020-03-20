@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/hex/speedboat.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/speedboat.html</a>
+<a href="http://www.pythonchallenge.com/pc/hex/speedboat.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/speedboat.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![zigzag](.\imgs\27_zigzag.jpg)
 
@@ -31,7 +31,7 @@
 
 ### part2
 
-1. 查看灰度图的**调色板值**与**RGB 值**
+1. 查看灰度图的 **调色板值** 与 **RGB 值**
 
     ```python
     >>> from PIL import Image
@@ -58,9 +58,8 @@
 
 2. `data` 中的在 `colors` 数据像
     - 一个链表，`215 -> 208 -> 203 -> ...`
-    - 第 24 题中，用 BFS 构建迷宫路线的字典
+    - 第 *24* 题中，用 *BFS* 构建迷宫路线的字典
     - 题图中左下角的 `zigzag`
-
 3. 查看是否尾对头
 
     ```python
@@ -91,7 +90,7 @@
     9465
     ```
 
-5. 探索一番，发现：将 `data1` 与 `data2` 不匹配之处的数据转换成 `ascii` 后有熟悉的身影
+5. 探索一番，发现：将 `data1` 与 `data2` 不匹配之处的数据 `ASCII` 码转，有熟悉的身影
 
     ```python
     from PIL import Image
@@ -132,9 +131,8 @@
     ```
 
 2. 分析解码后的内容
-    - 包含许多 Python 关键字（准确地说，是 Python2 的关键字）
+    - 包含许多 *Python* 关键字（准确地说，是 *Python2* 的关键字）
     - 有许多内容是重复的
-
 3. 先去关键字，再去重
 
     ```python
@@ -156,7 +154,7 @@
     {b'switch', b'exec', b'../ring/bell.html', b'repeat', b'print'}
     ```
 
-4. 说明：在 Python3 中，`exec` 与 `print` 已经不是关键字了，所以作者的原意是
+4. 说明：在 *Python3* 中，`exec` 与 `print` 已经不是关键字了，所以作者的原意是
     - `../ring/bell.html`
     - `repeat`
     - `switch`

@@ -2,17 +2,18 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/def/peak.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/peak.html</a>
+<a href="http://www.pythonchallenge.com/pc/def/peak.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/peak.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![peakhell](.\imgs\05_peakhell.jpg)
 
 ## 3. 提示
 
 - 网页内
-  
+
     > pronounce it
+
 - 网页源码注释
   
     > peak hell sounds familiar ?
@@ -20,23 +21,20 @@
 ## 4. 解法
 
 1. 网页源码中除了一条注释，还有一个名为 `banner.p` 的源文件可阅（个人建议复制地址至 `Edge` 下载）
-
 2. 将网页标题 `peak hell` 读快一点，发现像 `pickle`
-
 3. 使用 `pickle` 对 `banner.p` 解密
 
     ```python
     from pickle import load
-
+    
     with open("banner.p", "rb") as f:
         print(load(f))
-
+    
     >>>
     [[(' ', 95)], [(' ', 14), ('#', 5), (' ', 70), (...
     ```
 
-4. 输出的是二维列表，第二维列表中各有 1 至 n 个二元组不等
-
+4. 输出的是二维列表，第二维的列表中各有二元组 *1* 至 *n* 个不等
 5. 每个第二维的列表都可以形成一行字符串，所有的行又可以组成一段
 
     ```python
@@ -47,7 +45,7 @@
         print('\n'.join(res))
     ```
 
-- 输出的是一张字符画
+6. 输出一张字符画
 
     ![channel](.\imgs\05_channel.png)
 

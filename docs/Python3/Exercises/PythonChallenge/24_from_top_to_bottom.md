@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/ambiguity.html</a>
+<a href="http://www.pythonchallenge.com/pc/hex/ambiguity.html" target="_blank">>>> http://www.pythonchallenge.com/pc/hex/ambiguity.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![maze](.\imgs\24_maze.png)
 
@@ -28,7 +28,7 @@
 
     ![out](.\imgs\24_maze_out.png)
 
-7. 当然，使用 Python 解得入口与出口更有说服力
+7. 当然，使用 *Python* 解得入口与出口更有说服力
 
     ```python
     >>> from PIL import Image
@@ -51,7 +51,7 @@
 
 ### part2
 
-- 使用 *BFS* 从出口反推路径，并绘制出路线（也有别的方法，比如 A-Star）
+1. 使用 *BFS* 从出口反推路径，并绘制出路线（也有别的方法，比如 A-Star）
 
     ```python
     from PIL import Image
@@ -98,7 +98,7 @@
         img = Image.open("maze.png")
         entrance = (639, 0)
         export = (1, 640)
-    
+        
         way = find_way(img, entrance, export)
         reproduce(img, way, entrance, export)
     ```
@@ -109,12 +109,11 @@
 
 ### part3
 
-1. 黑色的像素点值是 0，这样的点都是在路径的偶数点 (0, 2, ...)
-
+1. 黑色的像素点值是 `0`，这样的点都是在路径的偶数点 `(0, 2, ...)`
 2. 查看非黑色像素点的值，即路径数为奇数的点的像素值
 
     ```python
-    >>> maze.getpixel((639, 1))  # 入口的下一个点
+    >>> maze.getpixel((639, 1))  # 入口 (639, 0) 的下一个点
     (80, 0, 0, 255)
     >>> maze.getpixel((639, 3))
     (75, 0, 0, 255)
@@ -125,8 +124,7 @@
     >>> 
     ```
 
-3. 发现以 `PK` 开头，有了第 20 题的经验，可知这是 `zip` 格式的文件头
-
+3. 发现以 `PK` 开头，有了第 *20* 题的经验，可知这是 `zip` 格式的文件头
 4. 将这些数据写入
 
     ```python
@@ -164,7 +162,7 @@
             while p != export:
                 data.append(pix[p[0],p[1]][0])
                 p = way[p]
-    
+        
         with open("maze.zip", "wb") as f:
             f.write(bytes(data[1::2]))  # 黑色的像素点值是0，而且都是在偶数字节
     
@@ -175,7 +173,7 @@
         pix = img.load()
         entrance = (639, 0)
         export = (1, 640)
-    
+        
         way = find_way(w, h, pix, entrance, export)
         reproduce(pix, way, entrance, export)
     ```

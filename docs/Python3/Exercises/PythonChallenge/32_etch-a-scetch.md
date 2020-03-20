@@ -2,14 +2,15 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/rock/arecibo.html" target="_blank">>>> http://www.pythonchallenge.com/pc/rock/arecibo.html</a>
+<a href="http://www.pythonchallenge.com/pc/rock/arecibo.html" target="_blank">>>> http://www.pythonchallenge.com/pc/rock/arecibo.html</a>
 
-## 2. 图片
+## 2. 题图
 
 - 准确地说，这一题的网页中显示的不是图片
 - 更像是用 `Js` 写的小游戏
+- 截图
 
-![arecibo](.\imgs\32_arecibo.png)
+    ![arecibo](.\imgs\32_arecibo.png)
 
 ## 3. 提示
 
@@ -27,7 +28,6 @@
 ### part1
 
 1. 进入 `http://www.pythonchallenge.com/pc/rock/warmup.txt`
-
 2. 得到
 
     ```txt
@@ -65,7 +65,7 @@
 
 ### part2
 
-- 这是一种名为 `Nonograms` 的游戏，从纵向数据看，左右很有可能是对称的
+这是一种名为 `Nonograms` 的游戏，从纵向数据看，左右很有可能是对称的
 
 1. 凑横向的 `232`
 
@@ -84,8 +84,8 @@
     ![04](.\imgs\32_04.png)
 
 5. 此时横向第三行已满
-    - 此时的第 4 行只有一种填法
-    - 若第 4 行定下，则第 1 列与第 9 列也只有一种填法
+    - 此时的第 *4* 行只有一种填法
+    - 若第 *4* 行定下，则第 *1* 列与第 *9* 列也只有一种填法
     - 如此，最后两个也就定了
     
 6. 最终效果
@@ -95,7 +95,6 @@
 ### part3
 
 1. 图像是向上的箭头，故关键字为 `up`
-
 2. 更改地址：`http://www.pythonchallenge.com/pc/rock/up.html`，得到
 
     > You want to go up? Let's scale <u>this</u> up then. Now get serious and solve this.
@@ -196,7 +195,7 @@
     1. 递归地获取每行/列的所有组合方式
     2. 若某一行/列的所有组合中，某一点的值不变，则这一点可以被确定
     3. 用行/列中的确定点去筛选掉列/行中不符合该点值的组合
-    4. 反复筛选，直到剩下唯一的组合（作者凑好的）
+    4. 反复筛选，直到剩下唯一的组合（作者肯定凑好的）
 
 ```python
 def get_data(filename):
@@ -257,7 +256,7 @@ def solve(filename):
         for row, lines in enumerate(candi_h):
             if lines == "done":
                 continue
-            elif len(lines) == 1:
+            elif len(lines) == 1:  # 确定
                 cnt += res[row].count('0')
                 for col in range(w):
                     res[row][col] = lines[0][col]
@@ -277,7 +276,7 @@ def solve(filename):
         for col, lines in enumerate(candi_v):
             if lines == "done":
                 continue
-            elif len(lines) == 1:
+            elif len(lines) == 1:  # 确定
                 for row in range(h):
                     if res[row][col] == '0':
                         cnt += 1
@@ -340,7 +339,7 @@ if __name__ == "__main__":
                    #####
 ```
 
-- 迷你龙？不，是一条 Python
+- 迷你龙？不，是一条 *Python*
 - 登入 `http://www.pythonchallenge.com/pc/rock/python.html`，得到
 - 图片
 

@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/return/evil.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/evil.html</a>
+<a href="http://www.pythonchallenge.com/pc/return/evil.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/evil.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![evil1](.\imgs\12_evil1.jpg)
 
@@ -17,33 +17,30 @@
 ### part1
 
 1. 将题图另存为时发现此图名为 `evil1.jpg`
-
-2. 右键-复制图片地址，得到：`http://www.pythonchallenge.com/pc/return/evil1.jpg`
-
+2. 图片地址：`http://www.pythonchallenge.com/pc/return/evil1.jpg`
 3. 将 `evil1` 改为 `evil2`，得到下图
 
     ![evil2](.\imgs\12_evil2.jpg)
-    
+
 4. 按图中提示，将地址的后缀改为 `.gfx`，可以下载到一个 `evil2.gfx` 的文件
+5. 搜索得知，`PS` 支持 `.gfx` 格式，我没有 `PS`，从结果看，这个文件是打不开的
 
 ### part2
 
-- 从 `evil3` 往后试
-- `evil3`
+1. 试试 `evil3`，果然还有图片
 
     ![evil3](.\imgs\12_evil3.jpg)
 
-- `evil4` 有些怪，没有图像（实际上它是文本文件），但可以获取信息（下一题有用）
+2. `evil4` 有些怪，没有图像（实际上它是文本文件），但可以获取信息（下一题有用）
 
     ![evil4](.\imgs\12_evil4.png)
 
-- `evil5` 是 `404`，所以到此为止了
+3. `evil5` 是 `404`，所以到此为止了
 
 ### part3
 
 1. 题图中，主角将牌分成了五堆，这是暗示我们将 `evil2.gfx` 分成五份
-
-2. 检查一下数据是否是 5 的倍数
+2. 检查一下数据是否是 *5* 的倍数
 
     ```python
     img = open("12_evil2.gfx", "rb")
@@ -112,12 +109,11 @@ for i in range(5):
 
 ### part5
 
-- 第 4 张图是破损的
-    - 对应网页中的无法显示的 `evil4`
-    - 五组等长的数据合成不同格式的图片后，分辨率各异，还出现了破损的图片，结合题图，这可能暗示“赌桌”上存在 `evil`
-    - 也许作者的原意是：让我们通过 4 张正常的图片推测剩下的那张
-
-- 第 4 张图片虽然破损，但仍能辨认出，而将前四张图中的字母连起来，可得到：`disproportional`
+- 第 *4* 张图是破损的，个人认为有以下三种解释
+    1. 对应网页中的无法显示的 `evil4`
+    2. 五组等长的数据合成不同格式的图片后，分辨率各异，还出现了破损的图片，结合题图，这可能暗示“赌桌”上存在 `evil`
+    3. 也许作者是想让我们通过四张正常的图片推测剩下的这张
+- 第 *4* 张图片虽然破损，但仍能辨认出，而将前四张图中的字母连起来，可得到：`disproportional`
 
 ## 5. 答案
 

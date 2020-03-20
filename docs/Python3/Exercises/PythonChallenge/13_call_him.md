@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/return/disproportional.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/disproportional.html</a>
+<a href="http://www.pythonchallenge.com/pc/return/disproportional.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/disproportional.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![disprop](.\imgs\13_disprop.jpg)
 
@@ -47,7 +47,7 @@
 
 ### part2
 
-1. 上方的信息是暗示使用 Python 处理 XML
+1. 上方的信息是暗示使用 *Python* 处理 *XML*
 2. 搜索得知 `xmlrpc` 库
 
     ```python

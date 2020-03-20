@@ -2,16 +2,16 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/def/channel.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/channel.html</a>
+<a href="http://www.pythonchallenge.com/pc/def/channel.html" target="_blank">>>> http://www.pythonchallenge.com/pc/def/channel.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![channel](.\imgs\06_channel.jpg)
 
 ## 3. 提示
 
 - 网页内
-    - 图片正下方有个 <kbd>PayPal-Donate</kbd> 的 Button
+    - 图片正下方有个 <kbd>PayPal-Donate</kbd> 的 *Button*
     - 这与解迷无关，是用于“打赏”作者的
 
 - 网页源码注释
@@ -37,7 +37,7 @@
 
     > Next nothing is 94191
 
-7. 由此可见，此题与第 4 题类似，只是载体不同
+7. 由此可见，此题与第 *4* 题类似，只是载体不同
 
 ### part2
 
@@ -51,7 +51,7 @@
         f.close()
         filename = line.split()[-1]
     print(line)
-
+    
     >>>
     Collect the comments.
     ```
@@ -62,7 +62,7 @@
 
     ```python
     from zipfile import ZipFile
-
+    
     comments = []
     filename = "90052"
     channel = ZipFile("channel.zip", 'r')
@@ -75,7 +75,7 @@
         comments.append(str(t, encoding="utf-8"))  # bytes -> str
         filename = bytes.decode(line.split()[-1])  # bytes -> str
     print(comments)
-
+    
     >>> 
     ['*', '*', '*', ...
     ```

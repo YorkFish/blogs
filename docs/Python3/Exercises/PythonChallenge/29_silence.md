@@ -2,22 +2,21 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/ring/guido.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/guido.html</a>
+<a href="http://www.pythonchallenge.com/pc/ring/guido.html" target="_blank">>>> http://www.pythonchallenge.com/pc/ring/guido.html</a>
 
-## 2. 图片
+## 2. 题图
 
 ![whoisit](.\imgs\29_whoisit.jpg)
 
 ## 3. 提示
 
-- 网页源码注释：没有注释，但其中 73 行空行
+- 网页源码注释：没有注释，但其中 *73* 行空行
 
 ## 4. 解法
 
 ### part1
 
 1. 图中有许多玻璃制品，于是，将网址末尾改为 `glass`
-
 2. 进入 `http://www.pythonchallenge.com/pc/ring/glass.html` 后，得到
 
     > yes. this is a glass.
@@ -25,9 +24,7 @@
 ### part2
 
 1. 之前在网上见到有人在论文末尾加入文字并将其改为白色以凑字数，此处有异曲同工之妙
-
 2. 我试着从下往上选择，没想到有“内容”（其实是空格），我将其复制下来，保存在文件 `silence.txt`
-
 3. 既然都是空格，那么大概率与空格的数量有关
 
     ```python

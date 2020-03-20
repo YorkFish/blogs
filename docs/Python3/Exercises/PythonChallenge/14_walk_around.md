@@ -2,9 +2,9 @@
 
 ## 1. 地址
 
-- <a href="http://www.pythonchallenge.com/pc/return/italy.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/italy.html</a>
+<a href="http://www.pythonchallenge.com/pc/return/italy.html" target="_blank">>>> http://www.pythonchallenge.com/pc/return/italy.html</a>
 
-## 2. 图片
+## 2. 题图与提示图
 
 - 题图
 
@@ -14,16 +14,15 @@
 
     ![wire](.\imgs\14_wire_rect.png)
 
-- PS
-
-    - 若直接保存提示图，会得到 `1000X1` 像素的图片
+- ps
+    
+    - 若直接保存提示图，会得到 `1000X1` 像素的图片，下方程序用到的也是这张
 
 ## 3. 提示
 
 - 网页源码注释
 
     > remember: 100*100 = (100+99+99+98) + (..
-    
 
 ## 4. 解法
 
@@ -40,15 +39,12 @@
     ```
 
 2. 将那张 `1000X1` 的图片像一条冬眠的 `Python` 一样“盘起来”
-
 3. 方向：按题图中的来，即顺时针、从外部向里面
-
 4. 注释中的数字是每次排版的边长
 
 ### part2
 
 #### 方法一
-
 
 ```python
 from PIL import Image
@@ -123,7 +119,6 @@ res.save("14_result.jpg")
 ### part3
 
 1. 登入网址：`http://www.pythonchallenge.com/pc/return/cat.html`
-
 2. 得到一张图片（此图没有题号，故不是下一关）
 
     ![cat](.\imgs\14_uzi.jpg)
@@ -136,9 +131,8 @@ res.save("14_result.jpg")
 
 ### other
 
-- part2 生成的图片上有红点，探索后发现，这是“温馨提示”
-
-- 如果是按行叠加得到的图片，这些红点会拼出一个词
+- *part2* 生成的图片上有红点，探索后发现，这些是“温馨提示”
+- 如果是直接按行叠加得到的图片
 
     ```python
     from PIL import Image
@@ -149,13 +143,13 @@ res.save("14_result.jpg")
     new.show()
     ```
 
-- 图中红字：`bit`
+- 这些红点会拼成红字：`bit`
 
     ![wrong](.\imgs\14_wrong_result.png)
 
-- 登入 `http://www.pythonchallenge.com/pc/return/bit.html`
-
-- 会收到这句话：`you took the wrong curve.`
+- 登入 `http://www.pythonchallenge.com/pc/return/bit.html`，只能得到
+    
+    > you took the wrong curve.
 
 ## 5. 答案
 
