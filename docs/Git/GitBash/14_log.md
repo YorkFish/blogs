@@ -15,7 +15,7 @@
 
 - 命令：`git log --oneline --graph`
 
-- 举例：详见 <a href="" target="_blank">23_解决冲突</a> 的第 *4* 步
+- 举例：详见 <a href="https://yorkfish.github.io/blogs/Git/GitBash/23_%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81/" target="_blank">23_解决冲突</a> 的第 *4* 步
 
 ## 3. *git reflog*
 
@@ -25,7 +25,7 @@
 
 ## 4. 小结
 
-![](.\imgs\14-04_summary_mind_mapping.png)
+![](./imgs/14-04_summary_mind_mapping.png)
 
 ## 5. 补充
 

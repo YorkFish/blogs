@@ -27,6 +27,4 @@
 >     - 显示最近一次的提交
 > - $ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-***
-
 [^1]: 摘取自廖雪峰老师的《Git教程》

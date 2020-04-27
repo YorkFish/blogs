@@ -71,7 +71,7 @@
     
 2. 点击主题后，页面会跳转至其 *github* 仓库
 
-3. 下载并解压（可以改个短一点的名字）
+3. 下载并解压（可以改个短一点的名字，比如我用 `nexT` 命名）
 
 4. 将上述文件夹复制到博客文件夹的 `themes` 目录下
 
@@ -90,7 +90,7 @@
         # Extensions
         ## Plugins: https://hexo.io/plugins/
         ## Themes: https://hexo.io/themes/
-        theme: NextT
+        theme: NexT
         ...
 
 7. `york$ hexo generate`

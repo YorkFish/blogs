@@ -1,19 +1,23 @@
-# 参考/感谢
+# 参考与感谢
 
 - 按姓氏拼音
+
+## *git*
+
+- 廖雪峰老师
 
 ## *Linux*
 
 - 李明老师
 - 沈超老师
 
-## *PythonChallenge*
+## *MkDocs*
 
-- https://pillow.readthedocs.io/en/stable/
-- https://www.hackingnote.com/en/python-challenge-solutions/overview
-- 优酷：老赵爱编程
-- 鱼 C 论坛：jerryxjr1220
+- 正月点灯笼(Bilibili's up)
 
+## *Vim*
+
+- TheCW(Bilibili's up)
 
 ## 以及
 

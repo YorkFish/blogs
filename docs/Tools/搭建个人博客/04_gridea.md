@@ -25,8 +25,8 @@
 
 ### 4. 安装 *Gridea* 客户端
 
-1. 配置中，平台选择 *Github Pages**
-2. **Token*: 粘贴上一步生成的 *token*
+1. 配置中，平台选择 *Github Pages*
+2. *Token*: 粘贴上一步生成的 *token*
 3. 点击 <kbd>保存</kbd>
 4. 点击 <kbd>检测远程连接</kbd>
 5. 连接成功后，点击左下角的 <kbd>同步</kbd>

@@ -5,7 +5,7 @@
 ### 1.1 特性回顾
 
 - *Git* 在合并分支时会尽可能地使用 *Fast-forward*
-- 例子见 <a href="" target="_blank">19_branch&checkout_branch</a> 的 *2.4 合并分支*
+- 例子见 <a href="https://yorkfish.github.io/blogs/Git/GitBash/19_branch&checkout_branch/" target="_blank">19_branch&checkout_branch</a> 的 *2.4 合并分支*
 
 ### 1.2 缺点举例
 

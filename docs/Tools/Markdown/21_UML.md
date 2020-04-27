@@ -28,7 +28,7 @@
 
 ## 2. 说明
 
-- *UML*: **U**nified **M**odel **L**anguage
+- *UML*: <font color=#0099ff size=5>U</font>nified <font color=#0099ff size=5>M</font>odel <font color=#0099ff size=5>L</font>anguage
 - 中文名
     - **统一建模语言**
     - **标准建模语言**
