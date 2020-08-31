@@ -19,8 +19,8 @@
     )
     ```
 
-2. 上一步不行的话，可心手动将 `Vim-Plug` 仓库的 `plug.vim` 复制到 `C:\Users\YourName\AppData\Local\nvim\autoload` 文件夹下
-    
+2. 上一步不行的话，可手动将 `Vim-Plug` 仓库的 `plug.vim` 复制到 `C:\Users\YourName\AppData\Local\nvim\autoload` 文件夹下
+   
     - 若没有 `autoload` 文件夹，可自行创建
 4. 在配置文件 `init.vim` 中添加如下 code
 

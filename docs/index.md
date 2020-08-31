@@ -8,27 +8,34 @@ hero: Learning makes us meet
 
 ## 简介
 
-- 这一个博客{++做笔记++}
-- 另一个博客写练习 <a href="https://yorkfish.github.io/exercises/site/" target="_blank">>>> 传送门 </a>
+- 这一个博客 ==做笔记==
+- 另一个博客写练习 <a href="https://yorkfish.github.io/exercises/" target="_blank">>>> 传送门 </a>
 
 ## 更新状态
 
-## 1. *Git*
+### 1. MkDocs
 
-1. - [x] <font color="green">*GitHub* 上的使用</font>
-2. - [x] <font color="green">*GitBash* 下的操作</font>
+- [x] MkDocs-Material 的使用
 
-## 2. *Linux*
+### 2. Editors
 
-1. - [x] <font color="green">基础知识</font>
-2. - [x] <font color="green">常用命令</font>
-3. - [x] <font color="green">包</font>
-4. - [ ] <font color="red">用户管理命令 ...</font>
+- [x] Jupyter Notebook 的快捷键
+- [x] Vim 的快捷键与配置
+    - Gvim
+    - Neovim
 
-## 3. *Tools*
+### 3. Git
 
-1. - [x] <font color="green">Jupyter Notebook 的快捷键</font>
-2. - [x] <font color="green">Markdown 的使用</font>
-3. - [x] <font color="green">MkDocs 的使用</font>
-4. - [x] <font color="green">Vim 的快捷键与配置</font>
-5. - [x] <font color="green">搭建个人博客</font>
+- [x] GitHub 上的使用
+- [x] GitBash 下的操作
+
+### 4. Linux
+
+- [x] 基础知识
+- [x] 常用命令
+- [x] 包
+- [ ] 用户管理命令 ...
+
+### 5. Markdown
+
+- [x] Markdown 的使用
