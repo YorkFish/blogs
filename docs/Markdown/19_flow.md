@@ -1,33 +1,81 @@
-# flow
+# 19. Flow Chart
 
 ## 1. 用法
 
 - 初始化变量
 
+    ```
+    start=>start: 开始
+    end=>end: 结束
+    operation=>operation: 操作
+    condition=>condition: 条件
+    ```
+
+- 设置路径
+
+    `start->operation->condition`
+
+- 添加线路上的标记
+
+    ```
+    condition(yes)->end
+    condition(no)->operation
+    ```
+
+## 2. 说明
+
+- 代码语言填 `flow`
+
+## 3. 示例与效果
+
+- 示例
+
+        ```flow
         start=>start: 开始
         end=>end: 结束
         operation=>operation: 操作
         condition=>condition: 条件
-
-- 设置路径
-
         start->operation->condition
-
-- 添加线路上的标记
-
         condition(yes)->end
         condition(no)->operation
+        ```
 
-## 2. 说明
+- 效果
 
-- 代码语言填 **flow**
-
-## 3. 效果
-
-![](.\imgs\19-01_flow.png)
+    ```flow
+    start=>start: 开始
+    end=>end: 结束
+    operation=>operation: 操作
+    condition=>condition: 条件
+    start->operation->condition
+    condition(yes)->end
+    condition(no)->operation
+    ```
 
 ***
 
-- 注
-    - *MkDocs* 上默认不支持 *Markdown* 的“流程图”功能
-    - 若想使用：需要安装额外的插件、需要借助 *H5* 标签
+## 另一种
+
+### 示例
+
+    ```mermaid
+    graph TD
+        A[Hard] -->|Text| B(Round)
+        B --> C{Decision}
+        C -->|One| D[Result 1]
+        C -->|Two| E[Result 2]
+    ```
+
+### 效果
+
+```mermaid
+graph TD;
+    A[Hard] -->|Text| B(Round);
+    B --> C{Decision};
+    C -->|One| D[Result 1];
+    C -->|Two| E[Result 2];
+```
+
+### ps
+
+- 因为某些原因，在 `MkDocs` 上使用上图，行尾需要加分号

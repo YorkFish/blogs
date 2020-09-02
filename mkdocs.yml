@@ -36,6 +36,9 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
@@ -43,32 +46,45 @@ markdown_extensions:
       linenums_style: pymdownx.inline
   - pymdownx.inlinehilite
   - pymdownx.mark
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tabbed
   - pymdownx.tilde
 
-# MathJax
+# MathJax, Chart
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.0/flowchart.min.js
+  - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+  - javascripts/umlconvert.js
 
 nav:
   - "index": index.md
   - "MkDocs":
-    - "00 Quick start": MkDocs/00_quick_start.md
-    - "01 Install": MkDocs/01_install.md
-    - "02 New log item": MkDocs/02_new_log_item.md
-    - "03 Edit configuration file": MkDocs/03_edit_config_file.md
-    - "04 Export": MkDocs/04_export.md
-    - "05 Deploy to the cloud": MkDocs/05_deploy_to_the_cloud.md
+    - "0 快速上手": MkDocs/00_quick_start.md
+    - "1 安装": MkDocs/01_install.md
+    - "2 新建日志项目": MkDocs/02_new_log_item.md
+    - "3 编辑配置文件": MkDocs/03_edit_config_file.md
+    - "4 导出": MkDocs/04_export.md
+    - "5 部署": MkDocs/05_deploy_to_the_cloud.md
     - "Material-Markdown":
-      - "01 Admonitions": MkDocs/Material/01_admonitions.md
-      - "02 Code blocks": MkDocs/Material/02_code_blocks.md
-      - "03 Caret-Mark-Tilde": MkDocs/Material/03_caret_mark_tilde.md
-      - "04 Mathematical formula": MkDocs/Material/04_mathematical_formula.md
+      - "1 提示框": MkDocs/Material/01_admonitions.md
+      - "2 代码块": MkDocs/Material/02_code_blocks.md
+      - "3 Caret-Mark-Tilde": MkDocs/Material/03_caret_mark_tilde.md
+      - "4 表情符号与任务列表": MkDocs/Material/04_emoji_and_task_list.md
+      - "5 图表": MkDocs/Material/05_flow_chart.md
+      - "6 数学公式": MkDocs/Material/06_mathematical_formula.md
   - "Editors":
     - "Jupyter Notebook":
       - "01 初识丘比特笔记本": Editors/JupyterNotebook/01_初识丘比特笔记本.md
@@ -227,25 +243,25 @@ nav:
     - "脚本安装":
       - "073 脚本安装": Linux/073_脚本安装包.md
   - "Markdown":
-    - "01 目录与标题": Markdown/01_目录与标题.md
-    - "02 块注释与标记": Markdown/02_块注释与标记.md
-    - "03 代码块": Markdown/03_代码块.md
-    - "04 表格": Markdown/04_表格.md
-    - "05 转义字符": Markdown/05_转义字符.md
-    - "06 列表": Markdown/06_列表.md
-    - "07 分割线": Markdown/07_分割线.md
-    - "08 下划线": Markdown/08_下划线.md
-    - "09 删除线": Markdown/09_删除线.md
-    - "10 “三体”": Markdown/10_“三体”.md
-    - "11 上下标与注脚": Markdown/11_上下标与注脚.md
-    - "12 插入链接": Markdown/12_插入链接.md
-    - "13 插入图片": Markdown/13_插入图片.md
-    - "14 YAML 题头": Markdown/14_YAML题头.md
-    - "15 缩写": Markdown/15_缩写.md
-    - "16 kbd & to do list": Markdown/16_两个有意思的功能.md
+    - "01 目录与标题": Markdown/01_toc_and_title.md
+    - "02 引用与标记": Markdown/02_quote_and_sign.md
+    - "03 代码块": Markdown/03_code_blocks.md
+    - "04 表格": Markdown/04_table.md
+    - "05 转义字符": Markdown/05_escape_character.md
+    - "06 列表": Markdown/06_lists.md
+    - "07 分割线": Markdown/07_split_line.md
+    - "08 下划线": Markdown/08_underline.md
+    - "09 删除线": Markdown/09_strikethrough.md
+    - "10 “三体”": Markdown/10_emphasis.md
+    - "11 注脚与上下标": Markdown/11_footnotes_and_sup-sub.md
+    - "12 插入链接": Markdown/12_links.md
+    - "13 插入图片": Markdown/13_images.md
+    - "14 YAML 题头": Markdown/14_YAML.md
+    - "15 缩写": Markdown/15_abbreviation.md
+    - "16 按键与任务列表": Markdown/16_kbd_and_task_list.md
     - "17 emoji": Markdown/17_emoji.md
     - "18 LaTex": Markdown/18_LaTeX.md
-    - "19 flow": Markdown/19_flow.md
+    - "19 Flow Chart": Markdown/19_flow.md
     - "20 GANTT": Markdown/20_GANTT.md
     - "21 UML": Markdown/21_UML.md
   - "about": about.md

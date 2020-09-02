@@ -11,7 +11,7 @@
 
 ## 2. 设置
 
-- 编辑 `mkdocs.yml`
+1. 编辑 `mkdocs.yml`
 
     ```
     ...
@@ -23,6 +23,24 @@
       - javascripts/config.js
       - https://polyfill.io/v3/polyfill.min.js?features=es6
       - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    ```
+
+2. 从博客根目录，进入 `docs` 文件夹，新建 `javascripts` 文件夹，新建 `config.js` 文档
+3. 写入如下语句
+
+    ```javascripts
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        ignoreHtmlClass: ".*|",
+        processHtmlClass: "arithmatex"
+      }
+    };
     ```
 
 ## 3. 使用

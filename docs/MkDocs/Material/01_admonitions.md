@@ -6,6 +6,7 @@
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.superfences
 ```
 
 ## 2. 四种形式
