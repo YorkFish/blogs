@@ -86,30 +86,41 @@ nav:
       - "5 图表": MkDocs/Material/05_flow_chart.md
       - "6 数学公式": MkDocs/Material/06_mathematical_formula.md
   - "Editors":
+    - "Preview": Editors/preview.md
     - "Jupyter Notebook":
-      - "01 初识丘比特笔记本": Editors/JupyterNotebook/01_初识丘比特笔记本.md
-      - "02 命令模式的快捷键": Editors/JupyterNotebook/02_命令模式的快捷键.md
-      - "03 编辑模式的快捷键": Editors/JupyterNotebook/03_编辑模式的快捷键.md
+      - "01 安装并修改默认开启路径": Editors/JupyterNotebook/01_install.md
+      - "02 初识": Editors/JupyterNotebook/02_first_acquaintance.md
+      - "03 命令模式的快捷键": Editors/JupyterNotebook/03_shortcut_keys_for_command_mode.md
+      - "04 编辑模式的快捷键": Editors/JupyterNotebook/04_shortcut_key_for_edit_mode.md
     - "Vim":
       - "Gvim":
-        - "01 “3+1”种膜模式": Editors/Gvim/01_三加一种模式.md
-        - "02 定位命令": Editors/Gvim/02_定位命令.md
-        - "03 删除命令": Editors/Gvim/03_删除命令.md
-        - "04 插入命令": Editors/Gvim/04_插入命令.md
-        - "05 删除并插入": Editors/Gvim/05_删除并插入.md
-        - "06 复制与粘贴": Editors/Gvim/06_复制与粘贴.md
-        - "07 搜索与替换": Editors/Gvim/07_搜索与替换.md
-        - "08 后悔药与特殊字符": Editors/Gvim/08_后悔药与特殊字符.md
-        - "09 保存与退出": Editors/Gvim/09_保存与退出.md
-        - "10 偷懒用的命令": Editors/Gvim/10_偷懒用的命令.md
-        - "11 简洁流配置": Editors/Gvim/11_简洁流配置.md
+        - "01 “3+1”种膜模式": Editors/Gvim/01_three_and_one_modes.md
+        - "02 定位命令": Editors/Gvim/02_positioning_command.md
+        - "03 删除命令": Editors/Gvim/03_delete_command.md
+        - "04 插入命令": Editors/Gvim/04_insert_command.md
+        - "05 删除并插入": Editors/Gvim/05_delete_and_insert.md
+        - "06 复制与粘贴": Editors/Gvim/06_copy_and_paste.md
+        - "07 搜索与替换": Editors/Gvim/07_search_and_replace.md
+        - "08 后悔药与特殊字符": Editors/Gvim/08_regret_medicine_and_special_characters.md
+        - "09 保存与退出": Editors/Gvim/09_save_and_exit.md
+        - "10 添加注释": Editors/Gvim/10_multiline_comments.md
+        - "11 映射": Editors/Gvim/11_map.md
+        - "12 合并文件与打开多个文件": Editors/Gvim/12_files.md
+        - "13 简洁流配置": Editors/Gvim/13_simple_configuration.md
       - "Neovim":
-        - "01 简介与安装": Editors/Neovim/01_简介与安装.md
-        - "02 基本设置": Editors/Neovim/02_基本设置.md
-        - "03 映射快捷键": Editors/Neovim/03_映射快捷键.md
-        - "04 一些有意思的设置": Editors/Neovim/04_一些有意思的设置.md
-        - "05 一键执行": Editors/Neovim/05_一键执行.md
-        - "06 Vim-Plug": Editors/Neovim/06_Vim-Plug.md
+        - "01 安装": Editors/Neovim/01_install.md
+        - "02 基本设置": Editors/Neovim/02_basic_settings.md
+        - "03 基本映射": Editors/Neovim/03_basic_mappings.md
+        - "04 光标移动": Editors/Neovim/04_cursor_movement.md
+        - "05 分屏": Editors/Neovim/05_window_management.md
+        - "06 标签页": Editors/Neovim/06_tab_management.md
+        - "07 配色设置": Editors/Neovim/07_color.md
+        - "08 Markdown": Editors/Neovim/08_markdown_settings.md
+        - "09 一键执行": Editors/Neovim/09_one_click_execution.md
+        - "插件":
+          - "1 Vim-Plug 的使用": Editors/Neovim/10_Vim-Plug.md
+          - "2 vim-airline": Editors/Neovim/11_vim-airline.md
+          - "3 NERDTree": Editors/Neovim/12_nerdtree.md
   - "Git":
     - "GitHub 上的使用":
       - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
