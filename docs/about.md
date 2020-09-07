@@ -2,20 +2,24 @@
 
 - 按姓氏拼音
 
-## *git*
+## Git
 
 - 廖雪峰老师
 
-## *Linux*
+## Linux
 
 - 李明老师
 - 沈超老师
 
-## *MkDocs*
+## MkDocs
 
 - 正月点灯笼(Bilibili's up)
 
-## *Vim*
+## Sublime Text 3
+
+- 向军老师
+
+## Vim
 
 - TheCW(Bilibili's up)
 

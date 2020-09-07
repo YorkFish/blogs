@@ -20,6 +20,7 @@ hero: Learning makes us meet
 ### 2. Editors
 
 - [x] Jupyter Notebook 的快捷键
+- [x] Sublime Text 3 的快捷键与配置
 - [x] Vim 的快捷键与配置
     - Gvim
     - Neovim

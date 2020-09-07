@@ -92,6 +92,27 @@ nav:
       - "02 初识": Editors/JupyterNotebook/02_first_acquaintance.md
       - "03 命令模式的快捷键": Editors/JupyterNotebook/03_shortcut_keys_for_command_mode.md
       - "04 编辑模式的快捷键": Editors/JupyterNotebook/04_shortcut_key_for_edit_mode.md
+    - "Sublime Text 3":
+      - "01 基础设置": Editors/SublimeText3/01_basic_settings.md
+      - "02 快捷键": Editors/SublimeText3/02_shortcut_keys.md
+      - "03 Python3 运行环境": Editors/SublimeText3/03_python3_operating_env.md
+      - "04 C 运行环境": Editors/SublimeText3/04_c_operating_env.md
+      - "05 C++ 运行环境": Editors/SublimeText3/05_cpp_operating_env.md
+      - "06 Makefile": Editors/SublimeText3/06_makefile.md
+      - "07 HTML 运行环境": Editors/SublimeText3/07_html_operating_env.md
+      - "08 Snippet": Editors/SublimeText3/08_snippet.md
+      - "09 plugin": Editors/SublimeText3/09_plugin.md
+      - "插件":
+        - "01 Package Control": Editors/SublimeText3/10_package_control.md
+        - "02 A File Icon": Editors/SublimeText3/a_file_icon.md
+        - "03 Anaconda": Editors/SublimeText3/anaconda.md
+        - "04 Python PEP8 Autoformat": Editors/SublimeText3/python_pep8_autoformat.md
+        - "05 SublimeGDB": Editors/SublimeText3/sublimegdb.md
+        - "06 sublimeREPL": Editors/SublimeText3/sublimerepl.md
+        - "07 Vintageous": Editors/SublimeText3/vintageous.md
+        - "08 Virtualenv": Editors/SublimeText3/virtualenv.md
+        - "09 Theme - ayu": Editors/SublimeText3/theme-ayu.md
+        - "10 Theme - Spacegray": Editors/SublimeText3/theme-spacegray.md
     - "Vim":
       - "Gvim":
         - "01 “3+1”种膜模式": Editors/Gvim/01_three_and_one_modes.md
@@ -118,9 +139,9 @@ nav:
         - "08 Markdown": Editors/Neovim/08_markdown_settings.md
         - "09 一键执行": Editors/Neovim/09_one_click_execution.md
         - "插件":
-          - "1 Vim-Plug 的使用": Editors/Neovim/10_Vim-Plug.md
-          - "2 vim-airline": Editors/Neovim/11_vim-airline.md
-          - "3 NERDTree": Editors/Neovim/12_nerdtree.md
+          - "01 Vim-Plug 的使用": Editors/Neovim/10_Vim-Plug.md
+          - "02 vim-airline": Editors/Neovim/11_vim-airline.md
+          - "03 NERDTree": Editors/Neovim/12_nerdtree.md
   - "Git":
     - "GitHub 上的使用":
       - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
