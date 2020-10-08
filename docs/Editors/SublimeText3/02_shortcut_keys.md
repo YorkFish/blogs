@@ -22,8 +22,8 @@
 
 | 命令 | 释义 |
 | :--- | :--- |
-| `name.py` | 查找文件 |
-| `name.py:15` | 查找文件 + 定位行数 |
+| `name.py`      | 查找文件 |
+| `name.py:15`   | 查找文件 + 定位行数 |
 | `name.py@main` | 查找文件 + 定位函数 |
 
 ### Ctrl [Shift] Enter
@@ -31,7 +31,7 @@
 - <kbd>Ctrl</kbd> + <kbd>Enter</kbd> : 向下插入新行
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> : 向上插入新行
 
-### Alt [Shift] -/+
+### Alt [Shift] -
 
 - 在前后编辑处跳转
 - <kbd>Alt</kbd> + <kbd>-</kbd> :往前跳
@@ -85,6 +85,8 @@
 - <kbd>Shift</kbd> + 鼠标右键 : 列选
 
 - <kbd>Ctrl</kbd> + 方向键 : 单词间跳转
+- <kbd>Ctrl</kbd> + <kbd>Home</kbd> : 跳转至文件开头
+- <kbd>Ctrl</kbd> + <kbd>End</kbd> : 跳转至文件末尾
 - <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> : 在本“词”，删除光标之前部分
 - <kbd>Ctrl</kbd> + <kbd>Delete</kbd> : 在本“词”，删除光标之后部分
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Backspace</kbd> : 在本行，删除光标之前部分
@@ -118,11 +120,6 @@
         "keys": ["ctrl+f7"],
         "command": "build",
         "args": {"variant": "Run in CMD"}
-    },
-    {
-        "keys": ["ctrl+f8"],
-        "command": "build",
-        "args": {"variant": "gdb Debug"}
     }
     ```
 

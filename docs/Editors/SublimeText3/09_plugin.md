@@ -37,3 +37,4 @@
 !!! note
     - 如此，可在任意处按 <kbd>Alt</kbd> + <kbd>t</kbd> 打印时间
     - 写 `YAML` 题头时挺有用的
+    - 上一篇 `snippet` 的第三行可以改成 `title: ${1:alt+t}`

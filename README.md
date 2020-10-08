@@ -1,12 +1,16 @@
-# 更新状态
+## 网址
+
+[address](https://yorkfish.github.io/blogs)
+
+## 更新状态
 
 | 分类 | 明细 |  | 状态 |
 | :---: | :--- | :--- | :--- |
 | MkDocs  | `MkDocs-Material` 的使用 |       | <font color="green">update complete</font> |
 | Editors | `Jupyter Notebook` 的快捷键 |     | <font color="green">update complete</font> |
 |         | `Sublime Text 3` 的快捷键与配置 |  | <font color="green">update complete</font> |
-|         | `GVim` 的快捷键与配置 |            | <font color="green">update complete</font> |
-|         | `Neovim` 的快捷键与配置 |          | <font color="green">update complete</font> |
+|         | `Vim` | `GVim` 的快捷键与配置      | <font color="green">update complete</font> |
+|         |       | `Neovim` 的快捷键与配置    | <font color="green">update complete</font> |
 | Git     | `GitHub` 上的使用  |  | <font color="green">update complete</font> |
 |         | `GitBash` 下的操作 |  | <font color="green">update complete</font> |
 | Linux   | 基础知识 |       | <font color="green">update complete</font> |

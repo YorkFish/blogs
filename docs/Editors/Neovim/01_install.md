@@ -20,3 +20,4 @@
 ### ps
 
 - `D:\Neovim\bin` 下有一个 `nvim-qt.exe`，可以双击打开，有些像 `Gvim`
+- 安装完可以用 `:checkhealth` 检查 Neovim 的安装状态

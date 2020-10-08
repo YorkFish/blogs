@@ -47,19 +47,16 @@ vnoremap <LEADER>tt :s/    /\t/g
 ## 6. 缩进
 
 ```
-nnoremap < <<
 nnoremap > >>
 ```
 
 !!! note ""
-    原来要按两次，现在一次就行了
+    - 原来要按两次，现在一次就行了
+    - `nnoremap < <<` 不好用
 
 ## 7. 高亮
 
 ```
-" 开机执行 “取消搜索高亮”
-exec "nohlsearch"
-
 " 快速取消搜索后的高亮
 noremap <LEADER><CR> :nohlsearch<CR>
 

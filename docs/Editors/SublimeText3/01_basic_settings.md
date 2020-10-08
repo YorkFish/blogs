@@ -101,7 +101,10 @@
 
 ```json
 // 所在行高亮
-"highlight_line": true
+"highlight_line": true,
+
+// 80 列提示线
+"rulers": [79],
 ```
 
 ## 8. Tab 键

@@ -24,7 +24,7 @@ autocmd Filetype markdown inoremap <buffer> ,t - [ ]
 | `,m` | **<font color="red">m</font>**ark | 标记 |
 | `,i` | **<font color="red">i</font>**talics | 斜体 |
 | `,b` | **<font color="red">b</font>**old | 粗体 |
-| `,s` | **<font color="red">s</font>**hanchu （拼音） | 删除 |
+| `,d` | **<font color="red">d</font>**elete | 删除 |
 | `,a` | `<a>` 标签 | 链接 |
 | `,p` | **<font color="red">p</font>**icture | 图片 |
 

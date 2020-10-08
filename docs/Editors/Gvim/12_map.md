@@ -1,4 +1,4 @@
-# 11. 映射
+# 12. 映射
 
 !!! info
     - `:help map` 可以查看相关帮助信息
@@ -23,5 +23,5 @@
     2. `inoremap`
     3. `nnoremap`
     4. `vnoremap`
-- `nore`: `no recursion`
+- `nore`: `no recursive`
 - 以 `i`, `n`, `v` 开头，表示只在对应的模式生效

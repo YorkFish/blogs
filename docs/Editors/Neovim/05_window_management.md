@@ -49,14 +49,18 @@ noremap <LEADER>h <C-w>h
 noremap <LEADER>l <C-w>l
 ```
 
-## 5. 关闭屏幕
+## 5. 打开右屏
+
+`noremap st :set splitright<CR>:vsplit<CR>:term<CR>3jA`
+
+## 6. 关闭屏幕
 
 `noremap <LEADER>q <C-w>j:q<CR>`
 
 !!! note ""
-    关闭下边/右边
+    关闭 下边/右边
 
-## 6. 便于阅读
+## 7. 便于阅读
 
 ```
 " 横向（上下）分割的窗口间显示分割线

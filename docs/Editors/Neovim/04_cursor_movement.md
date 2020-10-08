@@ -3,9 +3,11 @@
 ### 1. 更快的上下移动
 
 ```
-noremap <silent> K 5k
 noremap <silent> J 5j
 ```
+
+!!! note ""
+    K: 查看光标处词语的帮助文档
 
 ### 2. 更快的词语移动
 
@@ -17,8 +19,8 @@ noremap B 5b
 ### 3. 更快的屏幕移动
 
 ```
-noremap <C-E> 5<C-e>
-noremap <C-U> 5<C-y>
+noremap <C-e> 5<C-e>
+noremap <C-y> 5<C-y>
 ```
 
 ### 4. 更改 H 与 L
@@ -31,15 +33,9 @@ noremap <silent> H 0
 noremap <silent> L $
 ```
 
-## 5. Home 与 End
+## 5. End
 
 ```
 " 插入模式下，将光标移动到行尾
 inoremap <C-a> <ESC>A
-
-" 命令模式下，将光标移动到行首
-cnoremap <C-a> <Home>
-
-" 命令模式下，将光标移动到行尾
-cnoremap <C-e> <End>
 ```

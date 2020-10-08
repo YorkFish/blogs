@@ -115,7 +115,7 @@ nav:
         - "10 Theme - Spacegray": Editors/SublimeText3/theme-spacegray.md
     - "Vim":
       - "Gvim":
-        - "01 “3+1”种膜模式": Editors/Gvim/01_three_and_one_modes.md
+        - "01 几种模式": Editors/Gvim/01_several_modes.md
         - "02 定位命令": Editors/Gvim/02_positioning_command.md
         - "03 删除命令": Editors/Gvim/03_delete_command.md
         - "04 插入命令": Editors/Gvim/04_insert_command.md
@@ -124,10 +124,12 @@ nav:
         - "07 搜索与替换": Editors/Gvim/07_search_and_replace.md
         - "08 后悔药与特殊字符": Editors/Gvim/08_regret_medicine_and_special_characters.md
         - "09 保存与退出": Editors/Gvim/09_save_and_exit.md
-        - "10 添加注释": Editors/Gvim/10_multiline_comments.md
-        - "11 映射": Editors/Gvim/11_map.md
-        - "12 合并文件与打开多个文件": Editors/Gvim/12_files.md
-        - "13 简洁流配置": Editors/Gvim/13_simple_configuration.md
+        - "10 多行注释": Editors/Gvim/10_multiline_comments.md
+        - "11 宏与补全": Editors/Gvim/11_macro_and_complete.md
+        - "12 映射": Editors/Gvim/12_map.md
+        - "13 合并文件与打开多个文件": Editors/Gvim/13_files.md
+        - "14 简洁流配置": Editors/Gvim/14_simple_configuration.md
+        - "15 有意思的命令": Editors/Gvim/15_interesting_order.md
       - "Neovim":
         - "01 安装": Editors/Neovim/01_install.md
         - "02 基本设置": Editors/Neovim/02_basic_settings.md
@@ -138,10 +140,12 @@ nav:
         - "07 配色设置": Editors/Neovim/07_color.md
         - "08 Markdown": Editors/Neovim/08_markdown_settings.md
         - "09 一键执行": Editors/Neovim/09_one_click_execution.md
+        - "10 checkhealth": Editors/Neovim/10_checkhealth.md
         - "插件":
-          - "01 Vim-Plug 的使用": Editors/Neovim/10_Vim-Plug.md
-          - "02 vim-airline": Editors/Neovim/11_vim-airline.md
-          - "03 NERDTree": Editors/Neovim/12_nerdtree.md
+          - "01 Vim-Plug 的使用": Editors/Neovim/11_Vim-Plug.md
+          - "02 vim-airline": Editors/Neovim/12_vim-airline.md
+          - "03 NERDTree": Editors/Neovim/13_nerdtree.md
+          - "04 coc.nvim": Editors/Neovim/14_coc-nvim.md
   - "Git":
     - "GitHub 上的使用":
       - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
