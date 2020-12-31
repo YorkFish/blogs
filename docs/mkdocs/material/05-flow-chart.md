@@ -2,11 +2,11 @@
 
 ## 参考文档
 
-`pymdown-extensions` 官方文档
+- `pymdown-extensions` 官方文档
     - `superfences` <a href="https://facelessuser.github.io/pymdown-extensions/extensions/superfences/" target="_blank">>>> 传送门</a>
     - `mermaid` <a href="https://facelessuser.github.io/pymdown-extensions/extras/mermaid/" target="_blank">>>> 传送门</a>
 
-`mermaid` 官方文档：<a href="https://mermaid-js.github.io/mermaid/#/" target="_blank">>>> 传送门</a>
+- `mermaid` 官方文档：<a href="https://mermaid-js.github.io/mermaid/#/" target="_blank">>>> 传送门</a>
 
 ## flow
 

@@ -1,4 +1,4 @@
-# 5. Deploy to the Cloud
+# 5. 部署到云端
 
 ## 1. 第三方服务器
 

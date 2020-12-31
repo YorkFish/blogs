@@ -1,4 +1,4 @@
-# 4. Mathematical Formula
+# 6. 数学公式
 
 ## 1. MathJax
 
@@ -7,7 +7,7 @@
 
 !!! info
     - `MkDocs` 想更好地使用数学公式，需要 `MathJax` 的帮助
-    - `MkDocs-Material` 一直在升级，设置方式一直在变，需要关注官方文档
+    - `MkDocs-Material` 一直在升级，设置方式一直在变，需要关注<a href="https://squidfunk.github.io/mkdocs-material/reference/mathjax/" target="_blank">官方文档</a>
 
 ## 2. 设置
 

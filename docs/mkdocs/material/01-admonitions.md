@@ -1,4 +1,4 @@
-# 1. Admonition
+# 1. 提示框
 
 ## 1. 编辑 mkdocs.yml
 

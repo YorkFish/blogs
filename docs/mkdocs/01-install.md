@@ -1,9 +1,11 @@
-# 1. Install
+# 1. 安装
 
-## 1. 官方教程
+## 1. 官方文档
 
-- 英文文档：<a href="https://mkdocs.readthedocs.io/en/stable/" target="_balnk">>>> 传送门</a>
-- 中文文档：<a href="https://markdown-docs-zh.readthedocs.io/zh_CN/latest/" target="_blank">>>> 传送门</a>
+- MkDocs: <a href="https://www.mkdocs.org/" target="_blank">>>> 传送门</a>
+- MkDocs(with version): <a href="https://mkdocs.readthedocs.io/en/stable/" target="_balnk">>>> 传送门</a>
+- MkDocs（中文）<a href="https://markdown-docs-zh.readthedocs.io/zh_CN/latest/" target="_blank">>>> 传送门</a>
+- MkDocs-Material: <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">>>> 传送门</a>
 
 ## 2. 安装
 

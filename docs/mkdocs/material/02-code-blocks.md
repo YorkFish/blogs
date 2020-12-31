@@ -1,4 +1,4 @@
-# 2. Code Blocks
+# 2. 代码块
 
 ## 1. 编辑 mkdocs.yml
 
@@ -96,3 +96,9 @@ markdown_extensions:
           return 0;
         }
         ```
+
+## 5. 修改颜色主题
+
+- MkDocs 可以较方便地借助 `highlight.js` 修改代码块高亮配色
+    - <a href="https://www.mkdocs.org/user-guide/styling-your-docs/#built-in-themes" target="_blank">>>> 传送门</a>
+- MkDocs-Material 目前没有那么方便

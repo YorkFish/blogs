@@ -4,6 +4,9 @@
     - 官网地址：<a href="https://packagecontrol.io/" target="_blank">>>> 传送门</a>
     - 中文镜像：<a href="http://packagecontrol.cn/" target="_blank">>>> 传送门</a>
 
+!!! info
+    官网有很大的机率访问不了
+
 ## 1. 安装
 
 1. <kbd>Ctrl</kbd> + <kbd>\`</kbd> 或 `View` > `Show Console` : 打开控制台
@@ -37,7 +40,7 @@
     ```json
     "channels":
     [
-        "E:/SublimeProjects/channel_v3.json"
+        "D:/SublimeText3/channel_v3.json"
     ],
     ```
 

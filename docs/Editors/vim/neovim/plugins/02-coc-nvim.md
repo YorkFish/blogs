@@ -1,4 +1,4 @@
-# 14. Coc.nvim
+# 2. coc.nvim
 
 !!! note "coc.nvim"
     - 补全

@@ -12,5 +12,5 @@
 
 1. `Preference` > `Package Settings` > `Anaconda` > `Settings - Default`
 2. 修改文本
-    - `"python_interpreter": "python",` => `"python_interpreter": "D:/anaconda3/python.exe",`
+    - `"python_interpreter": "python",` > `"python_interpreter": "D:/anaconda3/python.exe",`
 3. 保存、退出

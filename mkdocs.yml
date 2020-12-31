@@ -5,7 +5,7 @@ site_author: YorkYu
 site_description: notes of learning
 
 # Copyright
-copyright: 'Copyright &copy; 2020 YorkFish'
+copyright: 'Copyright &copy; 2020 - 2021 YorkFish'
 
 # Configuration
 theme:
@@ -24,7 +24,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/YorkFish
+      link: https://github.com/yorkfish
       name: github
 
 # Extensions
@@ -70,83 +70,87 @@ extra_javascript:
   - javascripts/umlconvert.js
 
 nav:
-  - "index": index.md
-  - "MkDocs":
-    - "0 快速上手": MkDocs/00_quick_start.md
-    - "1 安装": MkDocs/01_install.md
-    - "2 新建日志项目": MkDocs/02_new_log_item.md
-    - "3 编辑配置文件": MkDocs/03_edit_config_file.md
-    - "4 导出": MkDocs/04_export.md
-    - "5 部署": MkDocs/05_deploy_to_the_cloud.md
+  - index: index.md
+  - about: about.md
+  - MkDocs:
+    - "00 快速上手": mkdocs/00-quick-start.md
+    - "01 安装": mkdocs/01-install.md
+    - "02 新建日志项目": mkdocs/02-new-log-item.md
+    - "03 编辑配置文件": mkdocs/03-edit-config-file.md
+    - "04 导出": mkdocs/04-export.md
+    - "05 部署": mkdocs/05-deploy-to-the-cloud.md
     - "Material-Markdown":
-      - "1 提示框": MkDocs/Material/01_admonitions.md
-      - "2 代码块": MkDocs/Material/02_code_blocks.md
-      - "3 Caret-Mark-Tilde": MkDocs/Material/03_caret_mark_tilde.md
-      - "4 表情符号与任务列表": MkDocs/Material/04_emoji_and_task_list.md
-      - "5 图表": MkDocs/Material/05_flow_chart.md
-      - "6 数学公式": MkDocs/Material/06_mathematical_formula.md
-  - "Editors":
-    - "Preview": Editors/preview.md
+      - "01 提示框": mkdocs/material/01-admonitions.md
+      - "02 代码块": mkdocs/material/02-code-blocks.md
+      - "03 Caret, Mark, Tilde": mkdocs/material/03-caret-mark-tilde.md
+      - "04 表情符号与任务列表": mkdocs/material/04-emoji-and-task-list.md
+      - "05 图表": mkdocs/material/05-flow-chart.md
+      - "06 数学公式": mkdocs/material/06-mathematical-formula.md
+  - Editors:
+    - "Preview": editors/preview.md
     - "Jupyter Notebook":
-      - "01 安装并修改默认开启路径": Editors/JupyterNotebook/01_install.md
-      - "02 初识": Editors/JupyterNotebook/02_first_acquaintance.md
-      - "03 命令模式的快捷键": Editors/JupyterNotebook/03_shortcut_keys_for_command_mode.md
-      - "04 编辑模式的快捷键": Editors/JupyterNotebook/04_shortcut_key_for_edit_mode.md
+      - "01 安装并修改默认开启路径": editors/jupyter-notebook/01-install.md
+      - "02 初识": editors/jupyter-notebook/02-first-acquaintance.md
+      - "03 命令模式的快捷键": editors/jupyter-notebook/03-shortcut-keys-for-command-mode.md
+      - "04 编辑模式的快捷键": editors/jupyter-notebook/04-shortcut-key-for-edit-mode.md
     - "Sublime Text 3":
-      - "01 基础设置": Editors/SublimeText3/01_basic_settings.md
-      - "02 快捷键": Editors/SublimeText3/02_shortcut_keys.md
-      - "03 Python3 运行环境": Editors/SublimeText3/03_python3_operating_env.md
-      - "04 C 运行环境": Editors/SublimeText3/04_c_operating_env.md
-      - "05 C++ 运行环境": Editors/SublimeText3/05_cpp_operating_env.md
-      - "06 Makefile": Editors/SublimeText3/06_makefile.md
-      - "07 HTML 运行环境": Editors/SublimeText3/07_html_operating_env.md
-      - "08 Snippet": Editors/SublimeText3/08_snippet.md
-      - "09 plugin": Editors/SublimeText3/09_plugin.md
-      - "插件":
-        - "01 Package Control": Editors/SublimeText3/10_package_control.md
-        - "02 A File Icon": Editors/SublimeText3/a_file_icon.md
-        - "03 Anaconda": Editors/SublimeText3/anaconda.md
-        - "04 Python PEP8 Autoformat": Editors/SublimeText3/python_pep8_autoformat.md
-        - "05 SublimeGDB": Editors/SublimeText3/sublimegdb.md
-        - "06 sublimeREPL": Editors/SublimeText3/sublimerepl.md
-        - "07 Vintageous": Editors/SublimeText3/vintageous.md
-        - "08 Virtualenv": Editors/SublimeText3/virtualenv.md
-        - "09 Theme - ayu": Editors/SublimeText3/theme-ayu.md
-        - "10 Theme - Spacegray": Editors/SublimeText3/theme-spacegray.md
+      - "01 基础设置": editors/sublime-text-3/01-basic-settings.md
+      - "02 快捷键": editors/sublime-text-3/02-shortcut-keys.md
+      - "03 Python3 运行环境": editors/sublime-text-3/03-python3-operating-env.md
+      - "04 C 运行环境": editors/sublime-text-3/04-c-operating-env.md
+      - "05 C++ 运行环境": editors/sublime-text-3/05-cpp-operating-env.md
+      - "06 Makefile": editors/sublime-text-3/06-makefile.md
+      - "07 HTML 运行环境": editors/sublime-text-3/07-html-operating-env.md
+      - "08 Snippet": editors/sublime-text-3/08-snippet.md
+      - "09 Plugin": editors/sublime-text-3/09-plugin.md
+      - "Plugins":
+        - "01 Package Control": editors/sublime-text-3/plugins/01-package-control.md
+        - "02 A File Icon": editors/sublime-text-3/plugins/02-a-file-icon.md
+        - "03 Anaconda": editors/sublime-text-3/plugins/03-anaconda.md
+        - "04 Python PEP8 Autoformat": editors/sublime-text-3/plugins/04-convert-to-utf-8.md
+        - "05 Python PEP8 Autoformat": editors/sublime-text-3/plugins/05-python-pep8-autoformat.md
+        - "06 SublimeGDB": editors/sublime-text-3/plugins/06-sublimegdb.md
+        - "07 sublimeREPL": editors/sublime-text-3/plugins/07-sublimerepl.md
+        - "08 Theme - ayu": editors/sublime-text-3/plugins/08-theme-ayu.md
+        - "09 Theme - Spacegray": editors/sublime-text-3/plugins/09-theme-spacegray.md
+        - "10 Vintageous": editors/sublime-text-3/plugins/10-vintageous.md
+        - "11 Virtualenv": editors/sublime-text-3/plugins/11-virtualenv.md
     - "Vim":
       - "Gvim":
-        - "01 几种模式": Editors/Gvim/01_several_modes.md
-        - "02 定位命令": Editors/Gvim/02_positioning_command.md
-        - "03 删除命令": Editors/Gvim/03_delete_command.md
-        - "04 插入命令": Editors/Gvim/04_insert_command.md
-        - "05 删除并插入": Editors/Gvim/05_delete_and_insert.md
-        - "06 复制与粘贴": Editors/Gvim/06_copy_and_paste.md
-        - "07 搜索与替换": Editors/Gvim/07_search_and_replace.md
-        - "08 后悔药与特殊字符": Editors/Gvim/08_regret_medicine_and_special_characters.md
-        - "09 保存与退出": Editors/Gvim/09_save_and_exit.md
-        - "10 多行注释": Editors/Gvim/10_multiline_comments.md
-        - "11 宏与补全": Editors/Gvim/11_macro_and_complete.md
-        - "12 映射": Editors/Gvim/12_map.md
-        - "13 合并文件与打开多个文件": Editors/Gvim/13_files.md
-        - "14 简洁流配置": Editors/Gvim/14_simple_configuration.md
-        - "15 有意思的命令": Editors/Gvim/15_interesting_order.md
+        - "01 几种模式": editors/vim/gvim/01-several-modes.md
+        - "02 定位命令": editors/vim/gvim/02-positioning-command.md
+        - "03 删除命令": editors/vim/gvim/03-delete-command.md
+        - "04 插入命令": editors/vim/gvim/04-insert-command.md
+        - "05 删除并插入": editors/vim/gvim/05-delete-and-insert.md
+        - "06 复制与粘贴": editors/vim/gvim/06-copy-and-paste.md
+        - "07 搜索与替换": editors/vim/gvim/07-search-and-replace.md
+        - "08 后悔药与特殊字符": editors/vim/gvim/08-regret-medicine-and-special-characters.md
+        - "09 保存与退出": editors/vim/gvim/09-save-and-exit.md
+        - "10 多行注释": editors/vim/gvim/10-multiline-comments.md
+        - "11 宏与补全": editors/vim/gvim/11-macro-and-complete.md
+        - "12 映射": editors/vim/gvim/12-map.md
+        - "13 合并文件与打开多个文件": editors/vim/gvim/13-files.md
+        - "14 简洁流配置": editors/vim/gvim/14-simple-configuration.md
+        - "15 有意思的命令": editors/vim/gvim/15-interesting-order.md
       - "Neovim":
-        - "01 安装": Editors/Neovim/01_install.md
-        - "02 基本设置": Editors/Neovim/02_basic_settings.md
-        - "03 基本映射": Editors/Neovim/03_basic_mappings.md
-        - "04 光标移动": Editors/Neovim/04_cursor_movement.md
-        - "05 分屏": Editors/Neovim/05_window_management.md
-        - "06 标签页": Editors/Neovim/06_tab_management.md
-        - "07 配色设置": Editors/Neovim/07_color.md
-        - "08 Markdown": Editors/Neovim/08_markdown_settings.md
-        - "09 一键执行": Editors/Neovim/09_one_click_execution.md
-        - "10 checkhealth": Editors/Neovim/10_checkhealth.md
-        - "插件":
-          - "01 Vim-Plug 的使用": Editors/Neovim/11_Vim-Plug.md
-          - "02 vim-airline": Editors/Neovim/12_vim-airline.md
-          - "03 NERDTree": Editors/Neovim/13_nerdtree.md
-          - "04 coc.nvim": Editors/Neovim/14_coc-nvim.md
-  - "Git":
+        - "01 安装": editors/vim/neovim/01-install.md
+        - "02 基本设置": editors/vim/neovim/02-basic-settings.md
+        - "03 基本映射": editors/vim/neovim/03-basic-mappings.md
+        - "04 光标移动": editors/vim/neovim/04-cursor-movement.md
+        - "05 分屏": editors/vim/neovim/05-window-management.md
+        - "06 标签页": editors/vim/neovim/06-tab-management.md
+        - "07 配色设置": editors/vim/neovim/07-color.md
+        - "08 Markdown": editors/vim/neovim/08-markdown-settings.md
+        - "09 一键执行": editors/vim/neovim/09-one-click-execution.md
+        - "10 checkhealth": editors/vim/neovim/10-checkhealth.md
+        - "Plugins":
+          - "01 Vim-Plug 的使用": editors/vim/neovim/plugins/01-vim-plug.md
+          - "02 coc.nvim": editors/vim/neovim/plugins/02-coc-nvim.md
+          - "03 NERDTree": editors/vim/neovim/plugins/03-nerdtree.md
+          - "04 vim-airline": editors/vim/neovim/plugins/04-vim-airline.md
+    # - "VS Code":
+    #   - 
+  - Git:
     - "GitHub 上的使用":
       - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
       - "02 往仓库里添加文件": Git/GitHub/02_往仓库里添加文件.md
@@ -188,7 +192,7 @@ nav:
       - "29 rebase": Git/GitBash/29_rebase.md
       - "30 tag": Git/GitBash/30_tag.md
       - "31 config": Git/GitBash/31_config.md
-  - "Linux":
+  - Linux:
     - "基础知识":
       - "001 Unix": Linux/001_Unix.md
       - "002 Linux": Linux/002_Linux.md
@@ -278,26 +282,25 @@ nav:
       - "072 源码包的安装过程": Linux/072_源码包的安装过程.md
     - "脚本安装":
       - "073 脚本安装": Linux/073_脚本安装包.md
-  - "Markdown":
-    - "01 目录与标题": Markdown/01_toc_and_title.md
-    - "02 引用与标记": Markdown/02_quote_and_sign.md
-    - "03 代码块": Markdown/03_code_blocks.md
-    - "04 表格": Markdown/04_table.md
-    - "05 转义字符": Markdown/05_escape_character.md
-    - "06 列表": Markdown/06_lists.md
-    - "07 分割线": Markdown/07_split_line.md
-    - "08 下划线": Markdown/08_underline.md
-    - "09 删除线": Markdown/09_strikethrough.md
-    - "10 “三体”": Markdown/10_emphasis.md
-    - "11 注脚与上下标": Markdown/11_footnotes_and_sup-sub.md
-    - "12 插入链接": Markdown/12_links.md
-    - "13 插入图片": Markdown/13_images.md
-    - "14 YAML 题头": Markdown/14_YAML.md
-    - "15 缩写": Markdown/15_abbreviation.md
-    - "16 按键与任务列表": Markdown/16_kbd_and_task_list.md
-    - "17 emoji": Markdown/17_emoji.md
-    - "18 LaTex": Markdown/18_LaTeX.md
-    - "19 Flow Chart": Markdown/19_flow.md
-    - "20 GANTT": Markdown/20_GANTT.md
-    - "21 UML": Markdown/21_UML.md
-  - "about": about.md
+  - Markdown:
+    - "01 目录与标题": markdown/01-toc-and-title.md
+    - "02 引用与标记": markdown/02-quote-and-sign.md
+    - "03 代码块": markdown/03-code-blocks.md
+    - "04 表格": markdown/04-table.md
+    - "05 转义字符": markdown/05-escape-character.md
+    - "06 列表": markdown/06-lists.md
+    - "07 分割线": markdown/07-split-line.md
+    - "08 下划线": markdown/08-underline.md
+    - "09 删除线": markdown/09-strikethrough.md
+    - "10 “三体”": markdown/10-emphasis.md
+    - "11 注脚与上下标": markdown/11-footnotes-and-sup-sub.md
+    - "12 插入链接": markdown/12-links.md
+    - "13 插入图片": markdown/13-images.md
+    - "14 YAML 题头": markdown/14-yaml.md
+    - "15 缩写": markdown/15-abbreviation.md
+    - "16 按键与任务列表": markdown/16-kbd-and-task-list.md
+    - "17 emoji": markdown/17-emoji.md
+    - "18 LaTex": markdown/18-latex.md
+    - "19 Flow Chart": markdown/19-flow.md
+    - "20 GANTT": markdown/20-gantt.md
+    - "21 UML": markdown/21-uml.md

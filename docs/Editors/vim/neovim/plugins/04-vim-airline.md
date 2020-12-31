@@ -1,4 +1,4 @@
-# 2. vim-airline
+# 4. vim-airline
 
 !!! note "vim-airline"
     - 底部状态栏

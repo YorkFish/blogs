@@ -88,14 +88,15 @@
 ## 6. 显示
 
 ```json
-// 显示编码
+// 显示编码（显示在右下角）
 "show_encoding": true,
 
-// 显示换行方式
+// 显示换行方式（显示在右下角）
 "show_line_endings": true,
-```
 
-- 显示在右下角
+// 显示空格
+"draw_white_space": "all"
+```
 
 ## 7. 高亮
 

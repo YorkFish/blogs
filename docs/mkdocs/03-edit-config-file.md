@@ -1,4 +1,4 @@
-# 3. Edit Configuration File
+# 3. 编辑配置文件
 
 - `mkdocs.yml` 就是配置文件
 
@@ -10,11 +10,11 @@
 
 ### 2.1 主题简介
 
-- `MkDocs` 列出的主题：<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">>>> 传送门</a>
-- `material` 官方文档：<a href="https://squidfunk.github.io/mkdocs-material" target="_blank">>>> 传送门</a>
+- MkDocs 列出的主题：<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">>>> 传送门</a>
+- MkDocs-Material 官方文档：<a href="https://squidfunk.github.io/mkdocs-material" target="_blank">>>> 传送门</a>
 
 !!! info
-    `material` 一直在更新升级、需要经常关注
+    Mmaterial 一直在更新升级、需要经常关注
 
 ### 2.2 安装主题
 
@@ -43,7 +43,7 @@
     ```
     my-project/
         docs/
-            01_my_first_blog.md
+            01-my-first-blog.md
             about.md
             index.md
         mkdocs.yml
@@ -55,7 +55,7 @@
     ...
     nav:
       - "index": index.md
-      - "article": 01_my_first_blog.md
+      - "article": 01-my-first-blog.md
       - "about": about.md
     ```
 
@@ -76,9 +76,9 @@
     my-project/
         docs/
             article/
-                01_my_first_blog.md
-                02_my_second_blog.md
-                03_my_third_blog.md
+                01-my-first-blog.md
+                02-my-second-blog.md
+                03-my-third-blog.md
             about.md
             index.md
         mkdocs.yml
@@ -90,8 +90,8 @@
     nav:
       - index: index.md
       - article:  # 不一定要用 article，也可以是 blogs，下面的路径能对上就行
-        - blog1: article/01_my_first_blog.md
-        - blog2: article/02_my_second_blog.md
-        - blog3: article/03_my_third_blog.md
+        - blog1: article/01-my-first-blog.md
+        - blog2: article/02-my-second-blog.md
+        - blog3: article/03-my-third-blog.md
       - about: about.md
     ```

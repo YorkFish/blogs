@@ -1,4 +1,4 @@
-# 3. Caret, Mark & Tilde
+# 3. Caret, Mark, Tilde
 
 ## 1. 编辑 mkdocs.yml
 
