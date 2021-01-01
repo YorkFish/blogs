@@ -107,7 +107,7 @@ nav:
         - "01 Package Control": editors/sublime-text-3/plugins/01-package-control.md
         - "02 A File Icon": editors/sublime-text-3/plugins/02-a-file-icon.md
         - "03 Anaconda": editors/sublime-text-3/plugins/03-anaconda.md
-        - "04 Python PEP8 Autoformat": editors/sublime-text-3/plugins/04-convert-to-utf-8.md
+        - "04 ConvertToUTF8": editors/sublime-text-3/plugins/04-convert-to-utf-8.md
         - "05 Python PEP8 Autoformat": editors/sublime-text-3/plugins/05-python-pep8-autoformat.md
         - "06 SublimeGDB": editors/sublime-text-3/plugins/06-sublimegdb.md
         - "07 sublimeREPL": editors/sublime-text-3/plugins/07-sublimerepl.md
@@ -148,8 +148,15 @@ nav:
           - "02 coc.nvim": editors/vim/neovim/plugins/02-coc-nvim.md
           - "03 NERDTree": editors/vim/neovim/plugins/03-nerdtree.md
           - "04 vim-airline": editors/vim/neovim/plugins/04-vim-airline.md
-    # - "VS Code":
-    #   - 
+    - "VS Code":
+      - "01 Python 环境": editors/vscode/01-for-python.md
+      - "02 C 环境": editors/vscode/02-for-c.md
+      - "03 C++ 环境": editors/vscode/03-for-cpp.md
+      - "04 vim": editors/vscode/04-vim.md
+      - "05 彩虹屁": editors/vscode/05-rainbow-fart.md
+      - "06 Snippet": editors/vscode/06-markdown-snippet.md
+      - "07 终端样式": editors/vscode/07-terminal.md
+      - "08 gitbash - env": editors/vscode/08-gitbash-virtualenv.md
   - Git:
     - "GitHub 上的使用":
       - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
