@@ -22,4 +22,5 @@ hero: 工欲善其事，必先利其器
     - [x] Theme - Spacegray
     - [x] Vintageous
     - [x] Virtualenv
-- [ ] VS Code
+- [x] VS Code
+    - [x] Rainbow Fart

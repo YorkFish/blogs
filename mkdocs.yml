@@ -158,47 +158,49 @@ nav:
       - "07 终端样式": editors/vscode/07-terminal.md
       - "08 gitbash - env": editors/vscode/08-gitbash-virtualenv.md
   - Git:
+    - "Preview": git/preview.md
     - "GitHub 上的使用":
-      - "01 在 GitHub 上新建仓库": Git/GitHub/01_在图形界面新建仓库.md
-      - "02 往仓库里添加文件": Git/GitHub/02_往仓库里添加文件.md
-      - "03 修改仓库里的文件": Git/GitHub/03_修改仓库里的文件.md
-      - "04 查看历史记录": Git/GitHub/04_查看历史记录.md
-      - "05 创建分支与切换分支": Git/GitHub/05_创建分支与切换分支.md
-      - "06 查看历史图像": Git/GitHub/06_查看历史图像.md
-      - "07 合并分支": Git/GitHub/07_合并分支.md
-      - "08 将远程仓库克隆到本地": Git/GitHub/08_将远程仓库克隆到本地.md
+      - "01 在 GitHub 上新建仓库": git/github/01-new-repository-on-github.md
+      - "02 往仓库里添加文件": git/github/02-add-file-to-the-repository.md
+      - "03 修改仓库里的文件": git/github/03-modify-file-in-the-repository.md
+      - "04 查看历史记录": git/github/04-view-history.md
+      - "05 创建分支": git/github/05-create-a-branch.md
+      - "06 切换分支": git/github/06-switch-branch.md
+      - "07 查看历史图像": git/github/07-view-historical-images.md
+      - "08 合并分支": git/github/08-merge-branches.md
+      - "09 将远程仓库克隆到本地": git/github/09-clone-the-remote-repo-locally.md
     - "GitBash 下的操作":
-      - "01 设置身份信息": Git/GitBash/01_设置身份信息.md
-      - "02 创建 SSH Key": Git/GitBash/02_创建密钥.md
-      - "03 在 GitHub 上添加公钥": Git/GitBash/03_添加公钥.md
-      - "04 克隆远程仓库": Git/GitBash/04_克隆远程仓库.md
-      - "05 本地仓库关联远程仓库": Git/GitBash/05_本地仓库关联远程仓库.md
-      - "06 本地仓库向远程仓库推送": Git/GitBash/06_本地仓库向远程仓库推送.md
-      - "07 连接失败问题的解决": Git/GitBash/07_连接失败问题的解决.md
-      - "08 删除远程仓库": Git/GitBash/08_删除远程仓库.md
-      - "09 在本地建一个仓库": Git/GitBash/09_在本地建一个仓库.md
-      - "10 三棵树": Git/GitBash/10_三棵树.md
-      - "11 向本地仓库添加文件": Git/GitBash/11_向本地仓库添加文件.md
-      - "12 status": Git/GitBash/12_status.md
-      - "13 commit": Git/GitBash/13_commit.md
-      - "14 log": Git/GitBash/14_log.md
-      - "15 checkout file": Git/GitBash/15_checkout_file.md
-      - "16 diff": Git/GitBash/16_diff.md
-      - "17 reset": Git/GitBash/17_reset.md
-      - "18 rm": Git/GitBash/18_rm.md
-      - "19 branch & checkout branch": Git/GitBash/19_branch&checkout_branch.md
-      - "20 制造冲突一": Git/GitBash/20_制造冲突一.md
-      - "21 制造冲突二": Git/GitBash/21_制造冲突二.md
-      - "22 制造冲突三": Git/GitBash/22_制造冲突三.md
-      - "23 解决冲突": Git/GitBash/23_解决冲突.md
-      - "24 merge": Git/GitBash/24_merge.md
-      - "25 stash1": Git/GitBash/25_stash1.md
-      - "26 stash2": Git/GitBash/26_stash2.md
-      - "27 删除未合并的分支": Git/GitBash/27_删除未合并的分支.md
-      - "28 推拉": Git/GitBash/28_推拉.md
-      - "29 rebase": Git/GitBash/29_rebase.md
-      - "30 tag": Git/GitBash/30_tag.md
-      - "31 config": Git/GitBash/31_config.md
+      - "01 设置身份信息": git/gitbash/01-set-identity-information.md
+      - "02 创建 SSH Key": git/gitbash/02-create-ssh-key.md
+      - "03 在 GitHub 上添加公钥": git/gitbash/03-add-the-public-key.md
+      - "04 克隆远程仓库": git/gitbash/04-clone.md
+      - "05 本地仓库关联远程仓库": git/gitbash/05-remote-add.md
+      - "06 本地仓库向远程仓库推送": git/gitbash/06-push.md
+      - "07 解决连接失败的问题": git/gitbash/07-fix-failed-connection.md
+      - "08 删除远程仓库": git/gitbash/08-remove-remote-repository.md
+      - "09 在本地建一个仓库": git/gitbash/09-create-a-new-repo-locally.md
+      - "10 三棵树": git/gitbash/10-three-trees.md
+      - "11 添加": git/gitbash/11-add-file-to-local-repo.md
+      - "12 查看状态": git/gitbash/12-status.md
+      - "13 提交": git/gitbash/13-commit.md
+      - "14 查看记录": git/gitbash/14-log.md
+      - "15 回滚文件": git/gitbash/15-checkout-file.md
+      - "16 查看更改": git/gitbash/16-diff.md
+      - "17 逆转未来": git/gitbash/17-reset.md
+      - "18 删除": git/gitbash/18-rm.md
+      - "19 分支": git/gitbash/19-branch.md
+      - "20 制造冲突一": git/gitbash/20-create-conflict-1.md
+      - "21 制造冲突二": git/gitbash/21-create-conflict-2.md
+      - "22 制造冲突三": git/gitbash/22-create-conflict-3.md
+      - "23 解决冲突": git/gitbash/23-conflict-resolution.md
+      - "24 合并分支": git/gitbash/24-merge.md
+      - "25 stash1": git/gitbash/25-stash1.md
+      - "26 stash2": git/gitbash/26-stash2.md
+      - "27 删除未合并的分支": git/gitbash/27-delete-merged-branches.md
+      - "28 推拉": git/gitbash/28-push-and-pull.md
+      - "29 rebase": git/gitbash/29-rebase.md
+      - "30 标签": git/gitbash/30-tag.md
+      - "31 config": git/gitbash/31-config.md
   - Linux:
     - "基础知识":
       - "001 Unix": Linux/001_Unix.md
