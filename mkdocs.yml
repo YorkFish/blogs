@@ -33,59 +33,19 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.caret
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
       linenums: true
       linenums_style: pymdownx.inline
-  - pymdownx.inlinehilite
-  - pymdownx.mark
-  - pymdownx.superfences:
-      custom_fences:
-        - name: flow
-          class: uml-flowchart
-          format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
-
-# MathJax, Chart
-extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.0/flowchart.min.js
-  - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
-  - javascripts/umlconvert.js
 
 nav:
   - index: index.md
   - about: about.md
-  - MkDocs:
-    - "00 快速上手": mkdocs/00-quick-start.md
-    - "01 安装": mkdocs/01-install.md
-    - "02 新建日志项目": mkdocs/02-new-log-item.md
-    - "03 编辑配置文件": mkdocs/03-edit-config-file.md
-    - "04 导出": mkdocs/04-export.md
-    - "05 部署": mkdocs/05-deploy-to-the-cloud.md
-    - "Material-Markdown":
-      - "01 提示框": mkdocs/material/01-admonitions.md
-      - "02 代码块": mkdocs/material/02-code-blocks.md
-      - "03 Caret, Mark, Tilde": mkdocs/material/03-caret-mark-tilde.md
-      - "04 表情符号与任务列表": mkdocs/material/04-emoji-and-task-list.md
-      - "05 图表": mkdocs/material/05-flow-chart.md
-      - "06 数学公式": mkdocs/material/06-mathematical-formula.md
   - Editors:
     - "Preview": editors/preview.md
     - "Jupyter Notebook":
@@ -291,25 +251,3 @@ nav:
       - "072 源码包的安装过程": Linux/072_源码包的安装过程.md
     - "脚本安装":
       - "073 脚本安装": Linux/073_脚本安装包.md
-  - Markdown:
-    - "01 目录与标题": markdown/01-toc-and-title.md
-    - "02 引用与标记": markdown/02-quote-and-sign.md
-    - "03 代码块": markdown/03-code-blocks.md
-    - "04 表格": markdown/04-table.md
-    - "05 转义字符": markdown/05-escape-character.md
-    - "06 列表": markdown/06-lists.md
-    - "07 分割线": markdown/07-split-line.md
-    - "08 下划线": markdown/08-underline.md
-    - "09 删除线": markdown/09-strikethrough.md
-    - "10 “三体”": markdown/10-emphasis.md
-    - "11 注脚与上下标": markdown/11-footnotes-and-sup-sub.md
-    - "12 插入链接": markdown/12-links.md
-    - "13 插入图片": markdown/13-images.md
-    - "14 YAML 题头": markdown/14-yaml.md
-    - "15 缩写": markdown/15-abbreviation.md
-    - "16 按键与任务列表": markdown/16-kbd-and-task-list.md
-    - "17 emoji": markdown/17-emoji.md
-    - "18 LaTex": markdown/18-latex.md
-    - "19 Flow Chart": markdown/19-flow.md
-    - "20 GANTT": markdown/20-gantt.md
-    - "21 UML": markdown/21-uml.md

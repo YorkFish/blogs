@@ -1,23 +1,17 @@
 # 参考与感谢
 
-- 按姓氏拼音
-
 ## Git
 
-- 廖雪峰老师
+- 廖雪峰老师(Bilibili's up)
 
 ## Linux
 
 - 李明老师
 - 沈超老师
 
-## MkDocs
-
-- 正月点灯笼(Bilibili's up)
-
 ## Sublime Text 3
 
-- 向军老师
+- 后盾人教程(Bilibili's up)
 
 ## Vim
 
@@ -25,6 +19,8 @@
 
 ## 以及
 
-- B 站上热心的 Up 主
-- 论坛的楼主
+- B站的Up主
+- CNBlogs的博主
+- CSDN的博主
+- FishC的楼主
 - 网上的分享知识的博主
