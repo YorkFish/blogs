@@ -7,18 +7,15 @@
 2. 删除默认代码，填入如下代码
 
     ```python
-    import datetime
-    import sublime
-    import sublime_plugin
-    
-    
-    class AddCurrentTimeCommand(sublime_plugin.TextCommand):
+    from datetime import datetime
+    from sublime_plugin import TextCommand
+
+
+    class AddCurrentTimeCommand(TextCommand):
         def run(self, edit):
-            self.view.run_command("insert_snippet", 
-                {
-                    "contents": "%s" % datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
-                }
-            )
+            t = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            d = {"contents": t}
+            self.view.run_command("insert_snippet", d)
     ```
 
 3. 保存为 `addCurrentTime.py`

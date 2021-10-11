@@ -15,10 +15,12 @@ hero: 工欲善其事，必先利其器
     - [x] Anaconda
     - [x] ConvertToUTF8
     - [ ] Emmet 2
+    - [ ] Git
     - [x] Python PEP8 Autoformat
     - [x] SublimeGDB
     - [x] sublimeREPL
     - [x] Theme - ayu
+    - [ ] Theme - Material
     - [x] Theme - Spacegray
     - [x] Vintageous
     - [x] Virtualenv

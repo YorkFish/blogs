@@ -10,6 +10,7 @@
         // "cmd": ["C:/Users/York/AppData/Local/Programs/Python/Python38/python", "-u", "$file"],
         "cmd": ["D:/anaconda3/python", "-u", "$file"],
         "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+        // "env": {"PYTHONPATH": "D:\\Project\\PycharmProjects\\xxx"},  # 写小案例时方便 import
         "selector": "source.python",
 
         "variants":
@@ -25,6 +26,10 @@
             {
                 "name": "pylint pep8",
                 "shell_cmd": "cmd /c \"pycodestyle ${file_name}\""
+            },
+            {
+                "name": "pytest",
+                "shell_cmd": "cmd /c \"pytest ${file_name}\""
             }
         ]
     }

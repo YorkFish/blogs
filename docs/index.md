@@ -21,9 +21,6 @@ hero: Learning makes us meet
 - [x] GitHub 上的使用
 - [x] GitBash 下的操作
 
-### Linux
+### Tools
 
-- [x] 基础知识
-- [x] 常用命令
-- [x] 包
-- [ ] 用户管理命令 ...
+- [x] Rime 小狼毫的简单配置
