@@ -171,3 +171,6 @@ nav:
     - Rime:
       - "01 基本设置": tools/rime/01-basic-settings.md
       - "02 快捷键": tools/rime/02-shortcut-keys.md
+    - tmux:
+      - "01 简介": tools/tmux/01-introduce.md
+      - "02 快捷键": tools/tmux/02-operation.md

@@ -26,3 +26,6 @@ hero: 工欲善其事，必先利其器
     - [x] Virtualenv
 - [x] VS Code
     - [x] Rainbow Fart
+    - [ ] LaTex Workshop
+    - [ ] SQLite
+    - [ ] Remote - WSL

@@ -14,3 +14,4 @@
 | Git     | GitHub           |        | <font color="green">update complete</font> |
 |         | GitBash          |        | <font color="green">update complete</font> |
 | Tools   | Rime             |        | <font color="green">update complete</font> |
+|         | tmux             |        | <font color="green">update complete</font> |

@@ -24,3 +24,4 @@ hero: Learning makes us meet
 ### Tools
 
 - [x] Rime 小狼毫的简单配置
+- [x] tmux 简单使用
